@@ -1,0 +1,19 @@
+<svg width="640" height="240" viewBox="0 0 640 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="240" rx="40" fill="#121B35"/>
+  <circle cx="112" cy="68" r="84" fill="#F7C948" fill-opacity="0.18"/>
+  <circle cx="538" cy="188" r="96" fill="#F97316" fill-opacity="0.2"/>
+  <rect x="28" y="28" width="584" height="184" rx="30" fill="url(#paint0_linear)"/>
+  <path d="M168 94C168 69.6995 187.699 50 212 50H426C450.301 50 470 69.6995 470 94V146C470 170.301 450.301 190 426 190H212C187.699 190 168 170.301 168 146V94Z" fill="#FFF7E8" fill-opacity="0.12"/>
+  <text x="66" y="86" fill="#FFD447" font-family="Trebuchet MS, Verdana, sans-serif" font-size="30" font-weight="700" letter-spacing="4">B1a</text>
+  <text x="64" y="146" fill="#FFF7E8" font-family="Trebuchet MS, Verdana, sans-serif" font-size="62" font-weight="900">Crimson</text>
+  <text x="64" y="196" fill="#FFB36A" font-family="Trebuchet MS, Verdana, sans-serif" font-size="52" font-weight="900">Blaze</text>
+  <circle cx="522" cy="82" r="44" fill="#FFE072"/>
+  <path d="M522 38C545.196 38 564 56.804 564 80H480C480 56.804 498.804 38 522 38Z" fill="#E95045"/>
+  <circle cx="522" cy="82" r="17" fill="#FFFDF8" stroke="#18233D" stroke-width="10"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="58" y1="38" x2="582" y2="204" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#243B7A"/>
+      <stop offset="1" stop-color="#6B1220"/>
+    </linearGradient>
+  </defs>
+</svg>

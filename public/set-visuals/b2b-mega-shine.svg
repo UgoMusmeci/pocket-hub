@@ -1,0 +1,19 @@
+<svg width="640" height="240" viewBox="0 0 640 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="240" rx="40" fill="#201437"/>
+  <circle cx="110" cy="62" r="88" fill="#FDE68A" fill-opacity="0.18"/>
+  <circle cx="540" cy="188" r="94" fill="#C084FC" fill-opacity="0.18"/>
+  <rect x="28" y="28" width="584" height="184" rx="30" fill="url(#paint0_linear)"/>
+  <path d="M160 92C160 67.6995 179.699 48 204 48H436C460.301 48 480 67.6995 480 92V148C480 172.301 460.301 192 436 192H204C179.699 192 160 172.301 160 148V92Z" fill="#FFFDF8" fill-opacity="0.12"/>
+  <text x="66" y="84" fill="#FDE68A" font-family="Trebuchet MS, Verdana, sans-serif" font-size="30" font-weight="700" letter-spacing="4">B2b</text>
+  <text x="66" y="144" fill="#FFFDF8" font-family="Trebuchet MS, Verdana, sans-serif" font-size="60" font-weight="900">Mega</text>
+  <text x="66" y="194" fill="#F9A8D4" font-family="Trebuchet MS, Verdana, sans-serif" font-size="54" font-weight="900">Shine</text>
+  <circle cx="522" cy="82" r="44" fill="#FFE072"/>
+  <path d="M522 38C545.196 38 564 56.804 564 80H480C480 56.804 498.804 38 522 38Z" fill="#E95045"/>
+  <circle cx="522" cy="82" r="17" fill="#FFFDF8" stroke="#18233D" stroke-width="10"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="52" y1="36" x2="594" y2="206" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+</svg>

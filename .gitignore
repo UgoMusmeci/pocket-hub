@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.tmp
+.vercel
+*.tsbuildinfo
+preview.err
+preview.log
+preview-error.log
+avvio-manuale-build.log
+link-report.txt
+log_audit.txt
+log_update.txt
+promt per ulteriori modifiche.txt
+test-transparent.png
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

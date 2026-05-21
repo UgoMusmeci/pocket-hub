@@ -1,0 +1,118 @@
+# Audit Collegamenti Eventi e Ricompense
+
+- Eventi controllati: 67
+- Emblemi controllati: 91
+- Eventi senza emblemi collegati: 40
+- Eventi con sole carte promo collegate: 14
+- Emblemi senza eventi collegati: 45
+- Emblemi senza eventi ma con origine già classificata: 45
+- Emblemi senza eventi e ancora senza origine esplicita: 0
+
+## Eventi Senza Emblemi Collegati
+- Missioni Community Week di aprile 2026 | 2026-04-04 - 2026-04-11
+- Missioni bonus di marzo 2026 | 2026-03-07 - 2026-03-14
+- Evento Wonder Pick di Pawmi e Clodsire di Paldea | 2026-03-06 - 2026-03-16
+- 30 giorni di regali | 2026-02-27 - 2026-06-27
+- Evento Wonder Pick di febbraio 2026 | 2026-02-15 - 2026-02-25
+- Missioni bonus di febbraio 2026 | 2026-02-07 - 2026-02-14
+- Missioni regalo carte utili | 2026-01-30 - 2026-04-27
+- Missioni regalo mazzi elite | 2026-01-30 - 2026-04-27
+- Evento Wonder Pick di gennaio 2026 | 2026-01-09 - 2026-01-19
+- Missioni bonus di gennaio 2026 | 2026-01-04 - 2026-01-11
+- Missioni evento di Capodanno 2026 | 2026-01-01 - 2026-01-08
+- Missioni evento festive 2025 | 2025-12-25 - 2026-01-01
+- Evento Wonder Pick di dicembre 2025 | 2025-12-07 - 2025-12-17
+- Evento Wonder Pick di novembre 2025 | 2025-11-27 - 2025-12-07
+- Missioni bonus di novembre 2025 | 2025-11-09 - 2025-11-16
+- Evento Drop ristampa promo 2025 | 2025-10-30 - 2025-11-09
+- Evento Wonder Pick ristampa promo 2025 | 2025-10-30 - 2025-11-09
+- Missioni speciali primo anniversario - Parte 1 | 2025-10-30 - 2025-12-17
+- Missioni conto alla rovescia del primo anniversario | 2025-10-25 - 2025-11-08
+- Evento apparizioni di massa carte foil parallele | 2025-10-23 - 2025-10-30
+- Evento Wonder Pick di ottobre 2025 | 2025-10-13 - 2025-10-23
+- Missioni bonus di ottobre 2025 | 2025-10-12 - 2025-10-19
+- Evento apparizioni di massa tipo Acqua | 2025-09-25 - 2025-10-01
+- Evento Wonder Pick di settembre 2025 | 2025-09-14 - 2025-09-24
+- Missioni bonus di settembre 2025 | 2025-09-07 - 2025-09-14
+- Evento apparizioni di massa tipo Erba | 2025-03-24 - 2025-03-31
+- Evento Wonder Pick di marzo 2025 - Parte 2 | 2025-03-17 - 2025-03-24
+- Evento Wonder Pick di marzo 2025 - Parte 1 | 2025-03-10 - 2025-03-24
+- Evento apparizioni di massa tipo Oscurita | 2025-02-21 - 2025-02-28
+- Evento Wonder Pick di febbraio 2025 - Parte 2 | 2025-02-14 - 2025-02-21
+- Evento Wonder Pick di febbraio 2025 - Parte 1 | 2025-02-07 - 2025-02-21
+- Evento apparizioni di massa tipo Psico | 2025-01-23 - 2025-01-29
+- Evento Wonder Pick di gennaio 2025 - Parte 2 | 2025-01-15 - 2025-01-22
+- Evento Wonder Pick di gennaio 2025 - Parte 1 | 2025-01-07 - 2025-01-22
+- Missioni evento di Capodanno 2025 | 2025-01-01 - 2025-01-07
+- Evento apparizioni di massa tipo Lampo | 2024-12-26 - 2025-01-01
+- Missioni evento festive 2024 | 2024-12-25 - 2025-01-01
+- Evento apparizioni di massa tipo Fuoco | 2024-11-22 - 2024-11-29
+- Evento Wonder Pick di novembre 2024 - Parte 1 | 2024-11-01 - 2024-11-15
+- Evento Wonder Pick di novembre 2024 - Parte 2 | 2024-11-08 - 2024-11-15
+
+## Emblemi Senza Eventi ma Già Classificati
+- Alcremie Emblema | espansione | Eevee Grove
+- Alolan Dugtrio Emblema | espansione | Extradimensional Crisis
+- Arceus Emblema | espansione | Triumphant Light
+- Articuno Zapdos Moltres Emblema | espansione | Genetic Apex
+- Buzzwole Emblema | espansione | Extradimensional Crisis
+- Celebi Emblema | espansione | Mythical Island
+- Charizard Emblema | espansione | Genetic Apex
+- Dialga Emblema | espansione | Space-Time Smackdown
+- Eevee Emblema | espansione | Eevee Grove
+- Garchomp Emblema | espansione | Triumphant Light
+- Gholdengo Emblema | espansione | Shining Revelry
+- Giratina Emblema | espansione | Shining Revelry
+- Greninja Emblema | espansione | Deluxe Pack ex
+- Ho-Oh Emblema | espansione | Wisdom of Sea and Sky
+- Lugia Emblema | espansione | Wisdom of Sea and Sky
+- Lunala Emblema | espansione | Celestial Guardians
+- Mabosstiff Emblema | espansione | Paldean Wonders
+- Mantyke Emblema | espansione | Secluded Springs
+- Mega Altaria Emblema | espansione | Mega Rising
+- Mega Blastoise Emblema | espansione | Crimson Blaze
+- Mega Blaziken Emblema | espansione | Mega Rising
+- Mega Charizard Y Emblema | espansione | Crimson Blaze
+- Mega Gardevoir Emblema | espansione | Fantastical Parade
+- Mega Gyarados Emblema | espansione | Mega Rising
+- Mega Lucario Emblema | missione | Pulsing Aura
+- Mega Pinsir Emblema | espansione | Mega Rising
+- Mega Sceptile Emblema | missione | Pulsing Aura
+- Mega Venusaur Emblema | espansione | Crimson Blaze
+- Meowth Emblema | espansione | Fantastical Parade
+- Mew Emblema | espansione | Mythical Island
+- Mewtwo Emblema | espansione | Genetic Apex
+- Ogerpon Emblema | espansione | Paldean Wonders
+- Oricorio Emblema | espansione | Deluxe Pack ex
+- Palkia Emblema | espansione | Space-Time Smackdown
+- Pikachu Emblema | espansione | Genetic Apex
+- Pikachu ver. 2 Emblema | espansione | Deluxe Pack ex
+- Shaymin Emblema | espansione | Triumphant Light
+- Shiny Mega Gengar Emblema | espansione | Mega Shine
+- Shiny Mew Emblema | espansione | Mega Shine
+- Smeargle Emblema | espansione | Deluxe Pack ex
+- Sobble Emblema | themed_collection | Pulsing Aura
+- Solgaleo Emblema | espansione | Celestial Guardians
+- Sprigatito Fuecoco and Quaxly Emblema | espansione | Paldean Wonders
+- Suicune Emblema | espansione | Secluded Springs
+- Wishiwashi Emblema | espansione | Celestial Guardians
+
+## Eventi Con Sole Carte Promo
+- Evento Drop speciale 2026 | 2026-04-29 - 2026-05-09 | promo: P-B-050, P-B-051, P-B-052, P-B-053, P-B-054, P-B-055
+- Evento Wonder Pick di Gastly e Wigglytuff | 2026-04-17 - 2026-04-27 | promo: P-B-047, P-B-048
+- Evento Drop di Slowpoke | 2026-04-09 - 2026-04-19 | promo: P-B-042, P-B-043, P-B-044, P-B-045, P-B-046
+- Evento Drop di Charcadet | 2026-03-11 - 2026-03-21 | promo: P-B-035
+- Evento Drop di Mega Medicham ex | 2026-02-12 - 2026-02-22 | promo: P-B-029
+- Evento Drop di Mega Latios ex | 2026-01-17 - 2026-01-27 | promo: P-B-024
+- Evento Drop di Mareep | 2026-01-01 - 2026-01-11 | promo: P-B-015
+- Evento Drop di Mega Pidgeot ex | 2025-11-18 - 2025-11-28 | promo: P-B-006
+- Evento Drop di Raichu ex | 2025-10-06 - 2025-10-16 | promo: P-A-112
+- Evento Drop di Zoroark | 2025-09-03 - 2025-09-13 | promo: P-A-106
+- Evento Drop di Gible | 2025-03-03 - 2025-03-17 | promo: P-A-046
+- Evento Drop di Cresselia ex | 2025-02-03 - 2025-02-17 | promo: P-A-037
+- Evento Drop di Blastoise | 2025-01-01 - 2025-01-15 | promo: P-A-029
+- Evento Drop di Venusaur | 2024-11-29 - 2024-12-13 | promo: P-A-018
+
+## Emblemi Senza Origine Esplicita
+- Nessuna voce
+

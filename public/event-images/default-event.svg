@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Evento">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8e8"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" rx="54" fill="url(#bg)"/>
+  <circle cx="720" cy="160" r="150" fill="#ffd447" opacity="0.22"/>
+  <circle cx="180" cy="410" r="120" fill="#143571" opacity="0.1"/>
+  <circle cx="600" cy="270" r="120" fill="#ffffff" stroke="#143571" stroke-opacity="0.18" stroke-width="16"/>
+  <path d="M480 270h240" stroke="#143571" stroke-opacity="0.22" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="600" cy="270" r="42" fill="#ffffff" stroke="#143571" stroke-opacity="0.24" stroke-width="14"/>
+  <text x="74" y="220" font-family="Georgia, serif" font-size="62" font-weight="800" fill="#1f2937">Evento</text>
+  <text x="74" y="292" font-family="Verdana, Geneva, sans-serif" font-size="24" font-weight="700" fill="#143571">Archivio locale del portale</text>
+  </svg>

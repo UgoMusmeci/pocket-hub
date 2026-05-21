@@ -1,0 +1,863 @@
+{
+  "generatedAt": "2026-05-07T10:02:50.339Z",
+  "summary": {
+    "eventCount": 67,
+    "rewardCount": 91,
+    "eventsWithoutRewardsCount": 40,
+    "eventsWithPromoCardsOnlyCount": 14,
+    "rewardsWithoutEventsCount": 45,
+    "rewardsWithoutEventsButClassifiedCount": 45,
+    "rewardsWithoutAnyOriginCount": 0
+  },
+  "eventsWithoutRewards": [
+    {
+      "slug": "community-week-missions-april-2026",
+      "name": "Missioni Community Week di aprile 2026",
+      "type": "special_missions",
+      "startDate": "2026-04-04",
+      "endDate": "2026-04-11",
+      "linkedSetName": null
+    },
+    {
+      "slug": "bonus-week-missions-march-2026",
+      "name": "Missioni bonus di marzo 2026",
+      "type": "special_missions",
+      "startDate": "2026-03-07",
+      "endDate": "2026-03-14",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-march-2026",
+      "name": "Evento Wonder Pick di Pawmi e Clodsire di Paldea",
+      "type": "wonder_pick",
+      "startDate": "2026-03-06",
+      "endDate": "2026-03-16",
+      "linkedSetName": "Paldean Wonders"
+    },
+    {
+      "slug": "30-days-of-gifts",
+      "name": "30 giorni di regali",
+      "type": "special_event",
+      "startDate": "2026-02-27",
+      "endDate": "2026-06-27",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-february-2026",
+      "name": "Evento Wonder Pick di febbraio 2026",
+      "type": "wonder_pick",
+      "startDate": "2026-02-15",
+      "endDate": "2026-02-25",
+      "linkedSetName": null
+    },
+    {
+      "slug": "bonus-week-missions-february-2026",
+      "name": "Missioni bonus di febbraio 2026",
+      "type": "special_missions",
+      "startDate": "2026-02-07",
+      "endDate": "2026-02-14",
+      "linkedSetName": null
+    },
+    {
+      "slug": "handy-card-gift-missions",
+      "name": "Missioni regalo carte utili",
+      "type": "special_missions",
+      "startDate": "2026-01-30",
+      "endDate": "2026-04-27",
+      "linkedSetName": null
+    },
+    {
+      "slug": "elite-deck-gift-missions",
+      "name": "Missioni regalo mazzi elite",
+      "type": "special_missions",
+      "startDate": "2026-01-30",
+      "endDate": "2026-04-27",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-january-2026",
+      "name": "Evento Wonder Pick di gennaio 2026",
+      "type": "wonder_pick",
+      "startDate": "2026-01-09",
+      "endDate": "2026-01-19",
+      "linkedSetName": null
+    },
+    {
+      "slug": "bonus-week-missions-january-2026",
+      "name": "Missioni bonus di gennaio 2026",
+      "type": "special_missions",
+      "startDate": "2026-01-04",
+      "endDate": "2026-01-11",
+      "linkedSetName": null
+    },
+    {
+      "slug": "new-year-event-missions-2026",
+      "name": "Missioni evento di Capodanno 2026",
+      "type": "special_missions",
+      "startDate": "2026-01-01",
+      "endDate": "2026-01-08",
+      "linkedSetName": null
+    },
+    {
+      "slug": "holiday-event-missions-2025",
+      "name": "Missioni evento festive 2025",
+      "type": "special_missions",
+      "startDate": "2025-12-25",
+      "endDate": "2026-01-01",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-december-2025",
+      "name": "Evento Wonder Pick di dicembre 2025",
+      "type": "wonder_pick",
+      "startDate": "2025-12-07",
+      "endDate": "2025-12-17",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-november-2025",
+      "name": "Evento Wonder Pick di novembre 2025",
+      "type": "wonder_pick",
+      "startDate": "2025-11-27",
+      "endDate": "2025-12-07",
+      "linkedSetName": null
+    },
+    {
+      "slug": "bonus-week-missions-november-2025",
+      "name": "Missioni bonus di novembre 2025",
+      "type": "special_missions",
+      "startDate": "2025-11-09",
+      "endDate": "2025-11-16",
+      "linkedSetName": null
+    },
+    {
+      "slug": "promo-reissue-drop-event-2025",
+      "name": "Evento Drop ristampa promo 2025",
+      "type": "drop_event",
+      "startDate": "2025-10-30",
+      "endDate": "2025-11-09",
+      "linkedSetName": null
+    },
+    {
+      "slug": "promo-reissue-wonder-pick-event-2025",
+      "name": "Evento Wonder Pick ristampa promo 2025",
+      "type": "wonder_pick",
+      "startDate": "2025-10-30",
+      "endDate": "2025-11-09",
+      "linkedSetName": null
+    },
+    {
+      "slug": "first-anniversary-special-missions-part-1",
+      "name": "Missioni speciali primo anniversario - Parte 1",
+      "type": "special_missions",
+      "startDate": "2025-10-30",
+      "endDate": "2025-12-17",
+      "linkedSetName": null
+    },
+    {
+      "slug": "first-anniversary-countdown-missions",
+      "name": "Missioni conto alla rovescia del primo anniversario",
+      "type": "special_missions",
+      "startDate": "2025-10-25",
+      "endDate": "2025-11-08",
+      "linkedSetName": null
+    },
+    {
+      "slug": "parallel-foil-cards-mass-outbreak-event",
+      "name": "Evento apparizioni di massa carte foil parallele",
+      "type": "mass_outbreak",
+      "startDate": "2025-10-23",
+      "endDate": "2025-10-30",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-october-2025",
+      "name": "Evento Wonder Pick di ottobre 2025",
+      "type": "wonder_pick",
+      "startDate": "2025-10-13",
+      "endDate": "2025-10-23",
+      "linkedSetName": null
+    },
+    {
+      "slug": "bonus-week-missions-october-2025",
+      "name": "Missioni bonus di ottobre 2025",
+      "type": "special_missions",
+      "startDate": "2025-10-12",
+      "endDate": "2025-10-19",
+      "linkedSetName": null
+    },
+    {
+      "slug": "water-type-mass-outbreak-event",
+      "name": "Evento apparizioni di massa tipo Acqua",
+      "type": "mass_outbreak",
+      "startDate": "2025-09-25",
+      "endDate": "2025-10-01",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-september-2025",
+      "name": "Evento Wonder Pick di settembre 2025",
+      "type": "wonder_pick",
+      "startDate": "2025-09-14",
+      "endDate": "2025-09-24",
+      "linkedSetName": null
+    },
+    {
+      "slug": "bonus-week-missions-september-2025",
+      "name": "Missioni bonus di settembre 2025",
+      "type": "special_missions",
+      "startDate": "2025-09-07",
+      "endDate": "2025-09-14",
+      "linkedSetName": null
+    },
+    {
+      "slug": "grass-type-mass-outbreak-event",
+      "name": "Evento apparizioni di massa tipo Erba",
+      "type": "mass_outbreak",
+      "startDate": "2025-03-24",
+      "endDate": "2025-03-31",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-march-2025-part-2",
+      "name": "Evento Wonder Pick di marzo 2025 - Parte 2",
+      "type": "wonder_pick",
+      "startDate": "2025-03-17",
+      "endDate": "2025-03-24",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-march-2025-part-1",
+      "name": "Evento Wonder Pick di marzo 2025 - Parte 1",
+      "type": "wonder_pick",
+      "startDate": "2025-03-10",
+      "endDate": "2025-03-24",
+      "linkedSetName": null
+    },
+    {
+      "slug": "darkness-type-mass-outbreak-event",
+      "name": "Evento apparizioni di massa tipo Oscurita",
+      "type": "mass_outbreak",
+      "startDate": "2025-02-21",
+      "endDate": "2025-02-28",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-february-2025-part-2",
+      "name": "Evento Wonder Pick di febbraio 2025 - Parte 2",
+      "type": "wonder_pick",
+      "startDate": "2025-02-14",
+      "endDate": "2025-02-21",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-february-2025-part-1",
+      "name": "Evento Wonder Pick di febbraio 2025 - Parte 1",
+      "type": "wonder_pick",
+      "startDate": "2025-02-07",
+      "endDate": "2025-02-21",
+      "linkedSetName": null
+    },
+    {
+      "slug": "psychic-type-mass-outbreak-event",
+      "name": "Evento apparizioni di massa tipo Psico",
+      "type": "mass_outbreak",
+      "startDate": "2025-01-23",
+      "endDate": "2025-01-29",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-january-2025-part-2",
+      "name": "Evento Wonder Pick di gennaio 2025 - Parte 2",
+      "type": "wonder_pick",
+      "startDate": "2025-01-15",
+      "endDate": "2025-01-22",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-january-2025-part-1",
+      "name": "Evento Wonder Pick di gennaio 2025 - Parte 1",
+      "type": "wonder_pick",
+      "startDate": "2025-01-07",
+      "endDate": "2025-01-22",
+      "linkedSetName": null
+    },
+    {
+      "slug": "new-year-event-missions-2025",
+      "name": "Missioni evento di Capodanno 2025",
+      "type": "special_missions",
+      "startDate": "2025-01-01",
+      "endDate": "2025-01-07",
+      "linkedSetName": null
+    },
+    {
+      "slug": "lightning-type-mass-outbreak-event",
+      "name": "Evento apparizioni di massa tipo Lampo",
+      "type": "mass_outbreak",
+      "startDate": "2024-12-26",
+      "endDate": "2025-01-01",
+      "linkedSetName": null
+    },
+    {
+      "slug": "holiday-event-missions-2024",
+      "name": "Missioni evento festive 2024",
+      "type": "special_missions",
+      "startDate": "2024-12-25",
+      "endDate": "2025-01-01",
+      "linkedSetName": null
+    },
+    {
+      "slug": "fire-type-mass-outbreak-event",
+      "name": "Evento apparizioni di massa tipo Fuoco",
+      "type": "mass_outbreak",
+      "startDate": "2024-11-22",
+      "endDate": "2024-11-29",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-november-2024-part-1",
+      "name": "Evento Wonder Pick di novembre 2024 - Parte 1",
+      "type": "wonder_pick",
+      "startDate": "2024-11-01",
+      "endDate": "2024-11-15",
+      "linkedSetName": null
+    },
+    {
+      "slug": "wonder-pick-event-november-2024-part-2",
+      "name": "Evento Wonder Pick di novembre 2024 - Parte 2",
+      "type": "wonder_pick",
+      "startDate": "2024-11-08",
+      "endDate": "2024-11-15",
+      "linkedSetName": null
+    }
+  ],
+  "eventsWithPromoCardsOnly": [
+    {
+      "slug": "special-drop-event-2026",
+      "name": "Evento Drop speciale 2026",
+      "type": "drop_event",
+      "startDate": "2026-04-29",
+      "endDate": "2026-05-09",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-B-050",
+        "P-B-051",
+        "P-B-052",
+        "P-B-053",
+        "P-B-054",
+        "P-B-055"
+      ]
+    },
+    {
+      "slug": "wonder-pick-event-april-2026",
+      "name": "Evento Wonder Pick di Gastly e Wigglytuff",
+      "type": "wonder_pick",
+      "startDate": "2026-04-17",
+      "endDate": "2026-04-27",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-B-047",
+        "P-B-048"
+      ]
+    },
+    {
+      "slug": "slowpoke-drop-event",
+      "name": "Evento Drop di Slowpoke",
+      "type": "drop_event",
+      "startDate": "2026-04-09",
+      "endDate": "2026-04-19",
+      "linkedSetName": "Mega Shine",
+      "promoCardIds": [
+        "P-B-042",
+        "P-B-043",
+        "P-B-044",
+        "P-B-045",
+        "P-B-046"
+      ]
+    },
+    {
+      "slug": "charcadet-drop-event",
+      "name": "Evento Drop di Charcadet",
+      "type": "drop_event",
+      "startDate": "2026-03-11",
+      "endDate": "2026-03-21",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-B-035"
+      ]
+    },
+    {
+      "slug": "mega-medicham-ex-drop-event",
+      "name": "Evento Drop di Mega Medicham ex",
+      "type": "drop_event",
+      "startDate": "2026-02-12",
+      "endDate": "2026-02-22",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-B-029"
+      ]
+    },
+    {
+      "slug": "mega-latios-ex-drop-event",
+      "name": "Evento Drop di Mega Latios ex",
+      "type": "drop_event",
+      "startDate": "2026-01-17",
+      "endDate": "2026-01-27",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-B-024"
+      ]
+    },
+    {
+      "slug": "mareep-drop-event",
+      "name": "Evento Drop di Mareep",
+      "type": "drop_event",
+      "startDate": "2026-01-01",
+      "endDate": "2026-01-11",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-B-015"
+      ]
+    },
+    {
+      "slug": "mega-pidgeot-ex-drop-event",
+      "name": "Evento Drop di Mega Pidgeot ex",
+      "type": "drop_event",
+      "startDate": "2025-11-18",
+      "endDate": "2025-11-28",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-B-006"
+      ]
+    },
+    {
+      "slug": "raichu-ex-drop-event",
+      "name": "Evento Drop di Raichu ex",
+      "type": "drop_event",
+      "startDate": "2025-10-06",
+      "endDate": "2025-10-16",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-A-112"
+      ]
+    },
+    {
+      "slug": "zoroark-drop-event",
+      "name": "Evento Drop di Zoroark",
+      "type": "drop_event",
+      "startDate": "2025-09-03",
+      "endDate": "2025-09-13",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-A-106"
+      ]
+    },
+    {
+      "slug": "gible-drop-event",
+      "name": "Evento Drop di Gible",
+      "type": "drop_event",
+      "startDate": "2025-03-03",
+      "endDate": "2025-03-17",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-A-046"
+      ]
+    },
+    {
+      "slug": "cresselia-ex-drop-event",
+      "name": "Evento Drop di Cresselia ex",
+      "type": "drop_event",
+      "startDate": "2025-02-03",
+      "endDate": "2025-02-17",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-A-037"
+      ]
+    },
+    {
+      "slug": "blastoise-drop-event",
+      "name": "Evento Drop di Blastoise",
+      "type": "drop_event",
+      "startDate": "2025-01-01",
+      "endDate": "2025-01-15",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-A-029"
+      ]
+    },
+    {
+      "slug": "venusaur-drop-event",
+      "name": "Evento Drop di Venusaur",
+      "type": "drop_event",
+      "startDate": "2024-11-29",
+      "endDate": "2024-12-13",
+      "linkedSetName": null,
+      "promoCardIds": [
+        "P-A-018"
+      ]
+    }
+  ],
+  "rewardsWithoutEventsButClassified": [
+    {
+      "slug": "alcremie-emblema",
+      "name": "Alcremie Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Eevee Grove"
+    },
+    {
+      "slug": "alolan-dugtrio-emblema",
+      "name": "Alolan Dugtrio Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Extradimensional Crisis"
+    },
+    {
+      "slug": "arceus-emblema",
+      "name": "Arceus Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Triumphant Light"
+    },
+    {
+      "slug": "articuno-zapdos-moltres-emblema",
+      "name": "Articuno Zapdos Moltres Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Genetic Apex"
+    },
+    {
+      "slug": "buzzwole-emblema",
+      "name": "Buzzwole Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Extradimensional Crisis"
+    },
+    {
+      "slug": "celebi-emblema",
+      "name": "Celebi Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Mythical Island"
+    },
+    {
+      "slug": "charizard-emblema",
+      "name": "Charizard Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Genetic Apex"
+    },
+    {
+      "slug": "dialga-emblema",
+      "name": "Dialga Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Space-Time Smackdown"
+    },
+    {
+      "slug": "eevee-emblema",
+      "name": "Eevee Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Eevee Grove"
+    },
+    {
+      "slug": "garchomp-emblema",
+      "name": "Garchomp Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Triumphant Light"
+    },
+    {
+      "slug": "gholdengo-emblema",
+      "name": "Gholdengo Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Shining Revelry"
+    },
+    {
+      "slug": "giratina-emblema",
+      "name": "Giratina Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Shining Revelry"
+    },
+    {
+      "slug": "greninja-emblema",
+      "name": "Greninja Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Deluxe Pack ex"
+    },
+    {
+      "slug": "ho-oh-emblema",
+      "name": "Ho-Oh Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Wisdom of Sea and Sky"
+    },
+    {
+      "slug": "lugia-emblema",
+      "name": "Lugia Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Wisdom of Sea and Sky"
+    },
+    {
+      "slug": "lunala-emblema",
+      "name": "Lunala Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Celestial Guardians"
+    },
+    {
+      "slug": "mabosstiff-emblema",
+      "name": "Mabosstiff Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Paldean Wonders"
+    },
+    {
+      "slug": "mantyke-emblema",
+      "name": "Mantyke Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Secluded Springs"
+    },
+    {
+      "slug": "mega-altaria-emblema",
+      "name": "Mega Altaria Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Mega Rising"
+    },
+    {
+      "slug": "mega-blastoise-emblema",
+      "name": "Mega Blastoise Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Crimson Blaze"
+    },
+    {
+      "slug": "mega-blaziken-emblema",
+      "name": "Mega Blaziken Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Mega Rising"
+    },
+    {
+      "slug": "mega-charizard-y-emblema",
+      "name": "Mega Charizard Y Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Crimson Blaze"
+    },
+    {
+      "slug": "mega-gardevoir-emblema",
+      "name": "Mega Gardevoir Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Fantastical Parade"
+    },
+    {
+      "slug": "mega-gyarados-emblema",
+      "name": "Mega Gyarados Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Mega Rising"
+    },
+    {
+      "slug": "mega-lucario-emblema",
+      "name": "Mega Lucario Emblema",
+      "type": "emblema",
+      "method": "missione",
+      "availability": "ottenibile",
+      "sourceContext": "Pulsing Aura"
+    },
+    {
+      "slug": "mega-pinsir-emblema",
+      "name": "Mega Pinsir Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Mega Rising"
+    },
+    {
+      "slug": "mega-sceptile-emblema",
+      "name": "Mega Sceptile Emblema",
+      "type": "emblema",
+      "method": "missione",
+      "availability": "ottenibile",
+      "sourceContext": "Pulsing Aura"
+    },
+    {
+      "slug": "mega-venusaur-emblema",
+      "name": "Mega Venusaur Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Crimson Blaze"
+    },
+    {
+      "slug": "meowth-emblema",
+      "name": "Meowth Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Fantastical Parade"
+    },
+    {
+      "slug": "mew-emblema",
+      "name": "Mew Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Mythical Island"
+    },
+    {
+      "slug": "mewtwo-emblema",
+      "name": "Mewtwo Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Genetic Apex"
+    },
+    {
+      "slug": "ogerpon-emblema",
+      "name": "Ogerpon Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Paldean Wonders"
+    },
+    {
+      "slug": "oricorio-emblema",
+      "name": "Oricorio Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Deluxe Pack ex"
+    },
+    {
+      "slug": "palkia-emblema",
+      "name": "Palkia Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Space-Time Smackdown"
+    },
+    {
+      "slug": "pikachu-emblema",
+      "name": "Pikachu Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Genetic Apex"
+    },
+    {
+      "slug": "pikachu-ver-2-emblema",
+      "name": "Pikachu ver. 2 Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Deluxe Pack ex"
+    },
+    {
+      "slug": "shaymin-emblema",
+      "name": "Shaymin Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Triumphant Light"
+    },
+    {
+      "slug": "shiny-mega-gengar-emblema",
+      "name": "Shiny Mega Gengar Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Mega Shine"
+    },
+    {
+      "slug": "shiny-mew-emblema",
+      "name": "Shiny Mew Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Mega Shine"
+    },
+    {
+      "slug": "smeargle-emblema",
+      "name": "Smeargle Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Deluxe Pack ex"
+    },
+    {
+      "slug": "sobble-emblema",
+      "name": "Sobble Emblema",
+      "type": "emblema",
+      "method": "themed_collection",
+      "availability": "ottenibile",
+      "sourceContext": "Pulsing Aura"
+    },
+    {
+      "slug": "solgaleo-emblema",
+      "name": "Solgaleo Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Celestial Guardians"
+    },
+    {
+      "slug": "sprigatito-fuecoco-and-quaxly-emblema",
+      "name": "Sprigatito Fuecoco and Quaxly Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Paldean Wonders"
+    },
+    {
+      "slug": "suicune-emblema",
+      "name": "Suicune Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Secluded Springs"
+    },
+    {
+      "slug": "wishiwashi-emblema",
+      "name": "Wishiwashi Emblema",
+      "type": "emblema",
+      "method": "espansione",
+      "availability": "ottenibile",
+      "sourceContext": "Celestial Guardians"
+    }
+  ],
+  "rewardsWithoutAnyOrigin": []
+}

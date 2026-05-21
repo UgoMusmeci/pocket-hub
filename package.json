@@ -1,0 +1,44 @@
+{
+  "name": "prj1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "sync:cards:data": "node scripts/sync-tcgp-data.mjs",
+    "sync:assets": "node scripts/sync-local-assets.mjs",
+    "sync:cards": "npm run sync:cards:data && npm run sync:assets",
+    "sync:rewards:data": "powershell -ExecutionPolicy Bypass -File scripts/sync-reward-catalog.ps1",
+    "sync:rewards": "npm run sync:rewards:data && powershell -ExecutionPolicy Bypass -File scripts/sync-reward-assets.ps1",
+    "sync:events:assets": "node scripts/sync-event-assets.mjs",
+    "audit:content": "node scripts/content-audit.mjs",
+    "audit:content:remote": "node scripts/content-audit.mjs --remote",
+    "audit:event-reward-links": "node scripts/event-reward-link-audit.mjs",
+    "audit:all": "npm run audit:content && npm run audit:event-reward-links",
+    "check:links": "node scripts/check-links.mjs",
+    "update": "npm run sync:cards && npm run sync:events:assets && npm run sync:rewards && npm run audit:all && npm run build"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^24.12.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.57.0",
+    "vite": "^8.0.1"
+  }
+}
