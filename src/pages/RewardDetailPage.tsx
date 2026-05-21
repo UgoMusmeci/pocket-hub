@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { RewardVisual } from '../components/RewardVisual'
+import { usePageMeta } from '../hooks/usePageMeta'
 import {
   formatRewardDate,
   getRewardBySlug,
@@ -17,6 +18,15 @@ export function RewardDetailPage() {
   const reward = rewardSlug ? getRewardBySlug(rewardSlug) : undefined
   const origin = reward ? getRewardOriginDetails(reward) : null
   const relatedEvents = origin?.linkedEvents ?? []
+
+  usePageMeta({
+    title: reward
+      ? `${localizeRewardName(reward.name)} | Emblema Pokemon Pocket | Pocket Hub`
+      : 'Emblema Pokemon Pocket | Pocket Hub',
+    description: reward
+      ? `${localizeRewardText(reward.description)} Scopri come si ottiene e gli eventi collegati.`
+      : 'Scheda dettaglio di un emblema Pokemon Pocket con metodo di ottenimento ed eventi collegati.',
+  })
 
   return (
     <div className="page-shell detail-shell">
@@ -92,7 +102,7 @@ export function RewardDetailPage() {
                 <ul className="detail-list">
                   <li>Tipo: Emblema</li>
                   <li>Metodo catalogato: {localizeRewardMethod(reward.method)}</li>
-                  <li>Disponibilita: {localizeRewardAvailability(reward.availability)}</li>
+                  <li>Disponibilità: {localizeRewardAvailability(reward.availability)}</li>
                   <li>Origine principale: {origin.label}</li>
                   <li>Contesto: {localizeRewardContext(origin.context)}</li>
                 </ul>

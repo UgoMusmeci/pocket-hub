@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { useCatalog } from '../hooks/useCatalog'
+import { usePageMeta } from '../hooks/usePageMeta'
 import {
   getCardImageUrl,
   getPrimaryType,
@@ -22,6 +23,15 @@ export function CardDetailPage() {
   const categoryLabel = card ? localizeCategory(card.category) : ''
   const imageUrl = card ? getCardImageUrl(card) : null
   const isPokemonCard = card?.category === 'Pokemon'
+
+  usePageMeta({
+    title: card
+      ? `${localizeCardName(card.name)} | Carta Pokemon Pocket | Pocket Hub`
+      : 'Carta Pokemon Pocket | Pocket Hub',
+    description: card
+      ? `Scheda completa di ${localizeCardName(card.name)} con rarità, tipo, set, attacchi e dettagli principali.`
+      : 'Apri la scheda completa di una carta di Pokemon Pocket.',
+  })
 
   return (
     <div className="page-shell detail-shell">

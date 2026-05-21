@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { SetVisual } from '../components/SetVisual'
 import { useCatalog } from '../hooks/useCatalog'
+import { usePageMeta } from '../hooks/usePageMeta'
 import {
   compareCatalogDatesDesc,
   formatCatalogDate,
@@ -10,6 +11,12 @@ import {
 import { getFeaturedDeckIdeas, getDeckCardTotal, getDeckIdeasSortedByRecent } from '../lib/decks'
 
 export function CatalogHome() {
+  usePageMeta({
+    title: 'Pocket Hub | Carte, espansioni, eventi e mazzi Pokemon Pocket',
+    description:
+      'Archivio Pokemon Pocket con carte, espansioni, eventi, mazzi e ricompense consultabili in un unico portale.',
+  })
+
   const { catalog, loading } = useCatalog()
   const sets = catalog?.sets ?? []
   const featuredSets = sets
@@ -23,6 +30,7 @@ export function CatalogHome() {
     catalog?.cards.find((card) => getCardImageUrl(card))
   const spotlightSet = featuredSets[0]
   const spotlightDeck = featuredDecks[0]
+
   return (
     <div className="page-shell">
       <header className="hero-section home-hero">
@@ -31,7 +39,7 @@ export function CatalogHome() {
             <p className="eyebrow">Archivio Pokemon Pocket</p>
             <h1>Tutto quello che ti serve per trovare carte e scoprire mazzi Pokemon Pocket.</h1>
             <p className="hero-text">
-              Consulta l archivio completo, sfoglia le espansioni e trova idee per i tuoi
+              Consulta l&apos;archivio completo, sfoglia le espansioni e trova idee per i tuoi
               prossimi mazzi in un unico posto.
             </p>
           </div>
@@ -70,7 +78,7 @@ export function CatalogHome() {
           <article className="showcase-card showcase-card-1">
             <p>Carte</p>
             <strong>Trovale in un attimo</strong>
-            <span>Cerca per nome, tipo, rarita ed espansione.</span>
+            <span>Cerca per nome, tipo, rarità ed espansione.</span>
           </article>
 
           <article className="showcase-card showcase-card-2">
@@ -118,7 +126,7 @@ export function CatalogHome() {
                 <div className="shortcut-glow shortcut-glow-cards"></div>
               </div>
               <p>Carte</p>
-              <h3>Esplora l archivio</h3>
+              <h3>Esplora l&apos;archivio</h3>
               <span>Trova subito la carta che ti serve e apri la sua scheda completa.</span>
               <small>Ricerca veloce, filtri e pagine dedicate per ogni carta.</small>
             </Link>
@@ -134,8 +142,8 @@ export function CatalogHome() {
               </div>
               <p>Espansioni</p>
               <h3>Scopri i set</h3>
-              <span>Consulta le uscite piu recenti e naviga tutte le carte di ogni espansione.</span>
-              <small>Dalle ultime novita alle promo, tutto ordinato in un solo posto.</small>
+              <span>Consulta le uscite più recenti e naviga tutte le carte di ogni espansione.</span>
+              <small>Dalle ultime novità alle promo, tutto ordinato in un solo posto.</small>
             </Link>
 
             <Link to="/mazzi" className="home-shortcut-card home-shortcut-card-decks">
@@ -166,7 +174,7 @@ export function CatalogHome() {
           <div className="section-heading">
             <div>
               <p className="section-kicker">Espansioni in evidenza</p>
-              <h2>Le ultime uscite da tenere d occhio.</h2>
+              <h2>Le ultime uscite da tenere d&apos;occhio.</h2>
             </div>
           </div>
 
@@ -240,7 +248,7 @@ export function CatalogHome() {
         <section className="section-block home-value-section">
           <div className="section-heading">
             <div>
-              <p className="section-kicker">Perche tornare qui</p>
+              <p className="section-kicker">Perché tornare qui</p>
               <h2>Un sito pensato per essere davvero utile.</h2>
             </div>
           </div>
@@ -249,7 +257,7 @@ export function CatalogHome() {
             <article className="quick-panel home-value-card">
               <h3>Trovi le carte in fretta</h3>
               <p>
-                L archivio e organizzato per aiutarti a trovare subito quello che cerchi, senza perderti.
+                L&apos;archivio è organizzato per aiutarti a trovare subito quello che cerchi, senza perderti.
               </p>
             </article>
 
@@ -261,9 +269,9 @@ export function CatalogHome() {
             </article>
 
             <article className="quick-panel home-value-card">
-              <h3>Tutto e collegato meglio</h3>
+              <h3>Tutto è collegato meglio</h3>
               <p>
-                Carte, espansioni e mazzi parlano tra loro, cosi puoi passare da una sezione all altra in modo naturale.
+                Carte, espansioni e mazzi parlano tra loro, così puoi passare da una sezione all&apos;altra in modo naturale.
               </p>
             </article>
           </div>
@@ -288,7 +296,7 @@ export function CatalogHome() {
             </article>
             <article className="home-update-card home-future-card">
               <strong>Area personale</strong>
-              <p>Gestisci i mazzi preferiti, tieni d occhio la collezione e segui più facilmente le novità che ti interessano.</p>
+              <p>Tieni d&apos;occhio la collezione, salva i mazzi preferiti e segui più facilmente le novità che ti interessano.</p>
             </article>
           </div>
         </section>

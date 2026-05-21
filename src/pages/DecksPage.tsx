@@ -2,10 +2,17 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { missionDecks } from '../data/missionDecks'
 import { metaDecks, metaDeckSnapshot } from '../data/metaDecks'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { getDeckCardTotal, getDeckIdeasSortedByRecent } from '../lib/decks'
 import { localizeCardName } from '../lib/catalog'
 
 export function DecksPage() {
+  usePageMeta({
+    title: 'Mazzi Pokemon Pocket | Pocket Hub',
+    description:
+      'Scopri mazzi competitivi, liste per missioni e guide editoriali complete da 20 carte per Pokemon Pocket.',
+  })
+
   const decks = getDeckIdeasSortedByRecent()
   const [sortBy, setSortBy] = useState<'winrate' | 'share'>('winrate')
 

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { RewardVisual } from '../components/RewardVisual'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { getAllEvents } from '../lib/events'
 import { getRewardOriginDetails } from '../lib/rewardOrigins'
 import {
@@ -48,6 +49,12 @@ function getRewardMeta() {
 }
 
 export function RewardsPage() {
+  usePageMeta({
+    title: 'Emblemi Pokemon Pocket | Pocket Hub',
+    description:
+      'Archivio degli emblemi di Pokemon Pocket con filtri per metodo, disponibilità, espansione ed evento.',
+  })
+
   const [filters, setFilters] = useState<RewardFilters>(initialFilters)
 
   const { rewardMeta, events, expansionNames } = useMemo(() => getRewardMeta(), [])
@@ -70,13 +77,7 @@ export function RewardsPage() {
         const eventMatch =
           filters.event === 'all' ? true : reward.linkedEvents.some((event) => event.slug === filters.event)
 
-        return (
-          methodMatch &&
-          availabilityMatch &&
-          searchMatch &&
-          expansionMatch &&
-          eventMatch
-        )
+        return methodMatch && availabilityMatch && searchMatch && expansionMatch && eventMatch
       }),
     [filters, rewardMeta],
   )
@@ -112,7 +113,6 @@ export function RewardsPage() {
             </div>
 
             <div className="filters-panel filters-panel-top">
-
               <label className="input-group">
                 <span>Come si ottiene</span>
                 <select
@@ -131,7 +131,7 @@ export function RewardsPage() {
               </label>
 
               <label className="input-group">
-                <span>Disponibilita</span>
+                <span>Disponibilità</span>
                 <select
                   value={filters.availability}
                   onChange={(event) =>

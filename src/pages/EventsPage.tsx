@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { usePageMeta } from '../hooks/usePageMeta'
 import {
   formatEventDate,
   getAllEvents,
@@ -25,6 +26,11 @@ const initialFilters: EventFilters = {
 }
 
 export function EventsPage() {
+  usePageMeta({
+    title: 'Eventi Pokemon Pocket | Pocket Hub',
+    description:
+      'Cronologia e archivio degli eventi di Pokemon TCG Pocket con stato, date, premi consumabili ed emblemi collegati.',
+  })
   const [filters, setFilters] = useState<EventFilters>(initialFilters)
   const events = getAllEvents()
 

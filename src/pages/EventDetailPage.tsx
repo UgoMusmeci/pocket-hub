@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { useCatalog } from '../hooks/useCatalog'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { getCardImageUrl, localizeCardName, localizeCategory, localizeRarity } from '../lib/catalog'
 import {
   formatEventDate,
@@ -27,6 +28,13 @@ export function EventDetailPage() {
           .map((cardId) => catalog.cards.find((card) => card.id === cardId))
           .filter((card): card is NonNullable<typeof card> => Boolean(card))
       : []
+
+  usePageMeta({
+    title: event ? `${event.name} | Evento Pokemon Pocket | Pocket Hub` : 'Evento Pokemon Pocket | Pocket Hub',
+    description: event
+      ? `${event.summary} Consulta periodo, premi consumabili, emblemi collegati e carte promo dell'evento.`
+      : 'Apri una scheda evento di Pokemon Pocket con date, premi ed emblemi collegati.',
+  })
 
   return (
     <div className="page-shell detail-shell">

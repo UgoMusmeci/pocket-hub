@@ -8,6 +8,7 @@ import {
   localizeType,
   normalizeSearchText,
 } from '../lib/catalog'
+import { usePageMeta } from '../hooks/usePageMeta'
 import type { CatalogCard, CatalogSet } from '../types/catalog'
 
 type FilterState = {
@@ -60,6 +61,11 @@ function matchesFilters(card: CatalogCard, filters: FilterState) {
 }
 
 export function CardsPage() {
+  usePageMeta({
+    title: 'Carte Pokemon Pocket | Pocket Hub',
+    description:
+      'Sfoglia tutte le carte di Pokemon Pocket con ricerca, filtri per espansione, categoria, tipo e rarità.',
+  })
   const [filters, setFilters] = useState<FilterState>(initialFilters)
   const { catalog, loading, error } = useCatalog()
 
@@ -148,7 +154,7 @@ export function CardsPage() {
             <div className="filters-intro">
               <p className="section-kicker">Filtri rapidi</p>
               <h2>Trova subito la carta giusta.</h2>
-              <span>Combina ricerca, espansione, categoria, tipo e rarita.</span>
+              <span>Combina ricerca, espansione, categoria, tipo e rarità.</span>
             </div>
 
             <div className="filters-panel filters-panel-top">
@@ -232,8 +238,8 @@ export function CardsPage() {
 
             <div className="filters-secondary-row">
               <div className="rarity-filter-group">
-                <span className="filter-group-label">Rarita</span>
-                <div className="rarity-chip-list" role="group" aria-label="Filtro per rarita">
+                <span className="filter-group-label">Rarità</span>
+                <div className="rarity-chip-list" role="group" aria-label="Filtro per rarità">
                   {rarities.map((rarity) => {
                     const active = filters.rarities.includes(rarity)
 

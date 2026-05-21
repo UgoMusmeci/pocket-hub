@@ -3,6 +3,7 @@ import { HoverCardLink } from '../components/HoverCardLink'
 import { metaDecks, metaDeckSnapshot } from '../data/metaDecks'
 import { missionDecks } from '../data/missionDecks'
 import { useCatalog } from '../hooks/useCatalog'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { getCardImageUrl, localizeCardName } from '../lib/catalog'
 import { findCatalogCard, getDeckBySlug, getDeckCardTotal, getMetaDeckBySlug } from '../lib/decks'
 import type { CatalogCard } from '../types/catalog'
@@ -33,6 +34,11 @@ export function DeckDetailPage() {
     : isMissionGuide
       ? 'Una guida rapida e concreta, utile per chi vuole un mazzo solido da usare contro la CPU e nelle missioni ricorrenti.'
       : 'Una guida sintetica per capire la struttura del mazzo, le carte chiave e il suo piano di gioco.'
+
+  usePageMeta({
+    title: pageTitle ? `${pageTitle} | Mazzo Pokemon Pocket | Pocket Hub` : 'Mazzo Pokemon Pocket | Pocket Hub',
+    description: pageDescription,
+  })
 
   return (
     <div className="page-shell detail-shell">

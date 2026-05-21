@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom'
 import { SetVisual } from '../components/SetVisual'
 import { useCatalog } from '../hooks/useCatalog'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { compareCatalogDatesDesc, formatCatalogDate } from '../lib/catalog'
 
 export function ExpansionsPage() {
+  usePageMeta({
+    title: 'Espansioni Pokemon Pocket | Pocket Hub',
+    description:
+      'Consulta tutte le espansioni di Pokemon Pocket e apri ogni set con le carte collegate.',
+  })
   const { catalog, loading, error } = useCatalog()
   const sets = catalog?.sets ?? []
 

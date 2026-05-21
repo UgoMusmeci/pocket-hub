@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import { CardTile } from '../components/CardTile'
 import { SetVisual } from '../components/SetVisual'
 import { useCatalog } from '../hooks/useCatalog'
+import { usePageMeta } from '../hooks/usePageMeta'
 import { formatCatalogDate } from '../lib/catalog'
 
 export function ExpansionDetailPage() {
@@ -10,6 +11,14 @@ export function ExpansionDetailPage() {
 
   const set = catalog?.sets.find((entry) => entry.id === setId)
   const cards = catalog?.cards.filter((entry) => entry.setId === setId) ?? []
+  const setName = set?.name ?? 'Espansione Pokemon Pocket'
+
+  usePageMeta({
+    title: set ? `${set.name} | Espansione Pokemon Pocket | Pocket Hub` : 'Espansione Pokemon Pocket | Pocket Hub',
+    description: set
+      ? `Scopri ${set.name}: data di uscita, numero di carte e archivio completo delle carte del set.`
+      : 'Apri una espansione di Pokemon Pocket e consulta tutte le carte collegate.',
+  })
 
   return (
     <div className="page-shell detail-shell">
@@ -20,7 +29,7 @@ export function ExpansionDetailPage() {
 
         {loading ? (
           <article className="empty-state">
-            <h3>Sto caricando l espansione</h3>
+            <h3>Sto caricando l&apos;espansione</h3>
             <p>Recupero i dati del set e le carte collegate.</p>
           </article>
         ) : error ? (
@@ -31,7 +40,7 @@ export function ExpansionDetailPage() {
         ) : !set ? (
           <article className="empty-state">
             <h3>Espansione non trovata</h3>
-            <p>Controlla l URL oppure torna alla lista completa delle espansioni.</p>
+            <p>Controlla l&apos;URL oppure torna alla lista completa delle espansioni.</p>
           </article>
         ) : (
           <>
@@ -70,7 +79,7 @@ export function ExpansionDetailPage() {
               <div className="section-heading">
                 <div>
                   <p className="section-kicker">Carte del set</p>
-                  <h2>Tutte le carte di {set.name}.</h2>
+                  <h2>Tutte le carte di {setName}.</h2>
                 </div>
                 <p className="section-note">{cards.length} carte collegate a questa espansione</p>
               </div>
