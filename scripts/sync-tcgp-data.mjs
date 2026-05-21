@@ -232,6 +232,97 @@ function hasBrokenImage(card) {
   return !card?.image || card.image.startsWith('undefined/')
 }
 
+function hasNonEmptyValue(value) {
+  return value !== undefined && value !== null && value !== ''
+}
+
+function hasNonEmptyArray(value) {
+  return Array.isArray(value) && value.length > 0
+}
+
+function isMeaningfulCategory(value) {
+  return hasNonEmptyValue(value) && value !== 'Unknown'
+}
+
+function choosePreferredValue(primaryValue, fallbackValue, isFallbackPreferred) {
+  if (!hasNonEmptyValue(fallbackValue)) {
+    return primaryValue
+  }
+
+  if (!hasNonEmptyValue(primaryValue)) {
+    return fallbackValue
+  }
+
+  return isFallbackPreferred ? fallbackValue : primaryValue
+}
+
+function choosePreferredArray(primaryValue, fallbackValue, isFallbackPreferred) {
+  if (!hasNonEmptyArray(fallbackValue)) {
+    return primaryValue
+  }
+
+  if (!hasNonEmptyArray(primaryValue)) {
+    return fallbackValue
+  }
+
+  return isFallbackPreferred ? fallbackValue : primaryValue
+}
+
+function mergeCardData(primaryCard, fallbackCard) {
+  const shouldPreferFallbackDetails =
+    primaryCard.source === 'game8-fallback' && fallbackCard.source === 'serebii-fallback'
+
+  const mergedCategory =
+    !isMeaningfulCategory(primaryCard.category) && isMeaningfulCategory(fallbackCard.category)
+      ? fallbackCard.category
+      : shouldPreferFallbackDetails && isMeaningfulCategory(fallbackCard.category)
+        ? fallbackCard.category
+        : primaryCard.category
+
+  const mergedName =
+    shouldPreferFallbackDetails &&
+    hasNonEmptyValue(fallbackCard.name) &&
+    fallbackCard.name.length >= primaryCard.name.length
+      ? fallbackCard.name
+      : primaryCard.name
+
+  return {
+    ...primaryCard,
+    name: mergedName,
+    category: mergedCategory,
+    rarity: choosePreferredValue(primaryCard.rarity, fallbackCard.rarity, shouldPreferFallbackDetails),
+    hp: choosePreferredValue(primaryCard.hp, fallbackCard.hp, shouldPreferFallbackDetails),
+    stage: choosePreferredValue(primaryCard.stage, fallbackCard.stage, shouldPreferFallbackDetails),
+    suffix: choosePreferredValue(primaryCard.suffix, fallbackCard.suffix, shouldPreferFallbackDetails),
+    types: choosePreferredArray(primaryCard.types, fallbackCard.types, shouldPreferFallbackDetails),
+    image:
+      hasBrokenImage(primaryCard) || shouldPreferFallbackDetails
+        ? choosePreferredValue(primaryCard.image, fallbackCard.image, shouldPreferFallbackDetails)
+        : primaryCard.image,
+    localImage:
+      hasBrokenImage(primaryCard) || shouldPreferFallbackDetails
+        ? choosePreferredValue(primaryCard.localImage, fallbackCard.localImage, shouldPreferFallbackDetails)
+        : primaryCard.localImage,
+    attacks: choosePreferredArray(primaryCard.attacks, fallbackCard.attacks, shouldPreferFallbackDetails),
+    weaknesses: choosePreferredArray(
+      primaryCard.weaknesses,
+      fallbackCard.weaknesses,
+      shouldPreferFallbackDetails,
+    ),
+    retreat: choosePreferredValue(primaryCard.retreat, fallbackCard.retreat, shouldPreferFallbackDetails),
+    illustrator: choosePreferredValue(
+      primaryCard.illustrator,
+      fallbackCard.illustrator,
+      shouldPreferFallbackDetails,
+    ),
+    updated: choosePreferredValue(primaryCard.updated, fallbackCard.updated, false),
+    source:
+      hasBrokenImage(primaryCard) || shouldPreferFallbackDetails
+        ? fallbackCard.source
+        : primaryCard.source,
+  }
+}
+
 function uniqueBy(items, keySelector) {
   const seen = new Set()
 
@@ -645,8 +736,21 @@ async function fetchSerebiiSet(setCode, setName, releaseDateFallback = '', slugO
     SEREBII_DETAIL_CONCURRENCY,
     async (rawCard) => {
       const pageUrl = `${SEREBII_BASE_URL}/${slug}/${rawCard.pageId}.shtml`
-      const pageHtml = await fetchText(pageUrl)
-      const details = parseSerebiiCardPageDetails(pageHtml, rawCard)
+      let details = {
+        attacks: rawCard.attacks,
+        illustrator: rawCard.illustrator,
+      }
+
+      try {
+        const pageHtml = await fetchText(pageUrl)
+        details = parseSerebiiCardPageDetails(pageHtml, rawCard)
+      } catch (error) {
+        console.warn(
+          `Could not fetch Serebii detail page for ${rawCard.id}.`,
+          error instanceof Error ? error.message : error,
+        )
+      }
+
       const override = MANUAL_CARD_OVERRIDES[rawCard.id] ?? {}
 
       let stage = rawCard.stage
@@ -758,16 +862,7 @@ function mergeCards(primaryCards, fallbackCards) {
       return card
     }
 
-    if (hasBrokenImage(card) && fallback.image) {
-      return {
-        ...card,
-        image: fallback.image,
-        localImage: fallback.localImage,
-        source: fallback.source,
-      }
-    }
-
-    return card
+    return mergeCardData(card, fallback)
   })
 
   const existingIds = new Set(mergedPrimary.map((card) => card.id))
@@ -799,7 +894,18 @@ async function fetchGame8MissingSets(existingSetIds, tcgdexLastReleaseDate, tcgd
   )
 
   const supplementalPayloads = await mapLimit(missingSetLinks, 2, async (setLink) => {
-    const game8Html = await fetchText(setLink.url)
+    let game8Html
+
+    try {
+      game8Html = await fetchText(setLink.url)
+    } catch (error) {
+      console.warn(
+        `Could not fetch Game8 set page for ${setLink.code}.`,
+        error instanceof Error ? error.message : error,
+      )
+      return null
+    }
+
     const setTitleMatch = game8Html.match(/<title>(.*?) Card List \((.*?)\)/i)
     if (!setTitleMatch) {
       return null
