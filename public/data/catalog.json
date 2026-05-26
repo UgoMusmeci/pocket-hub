@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-05-24T08:01:03.395Z",
+    "generatedAt": "2026-05-26T08:44:01.082Z",
     "source": "https://api.tcgdex.net/v2/en + Serebii fallback + Game8 fallback",
     "seriesId": "tcgp",
     "seriesName": "Pokémon TCG Pocket",
@@ -86051,7 +86051,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/megashine/66.jpg",
       "localImage": "/card-images/B2b-066.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Toyste Beach"
     },
     {
       "id": "B2b-067",
@@ -86066,7 +86067,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/megashine/67.jpg",
       "localImage": "/card-images/B2b-067.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Susumu Maeya"
     },
     {
       "id": "B2b-068",
@@ -86081,7 +86083,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/megashine/68.jpg",
       "localImage": "/card-images/B2b-068.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Ryuta Fuse"
     },
     {
       "id": "B2b-069",
@@ -86096,7 +86099,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/megashine/69.jpg",
       "localImage": "/card-images/B2b-069.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "AYUMI ODASHIMA"
     },
     {
       "id": "B2b-070",
