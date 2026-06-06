@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-06-05T08:52:40.711Z",
+    "generatedAt": "2026-06-06T08:02:35.310Z",
     "source": "https://api.tcgdex.net/v2/en + Serebii fallback + Game8 fallback",
     "seriesId": "tcgp",
     "seriesName": "Pokémon TCG Pocket",
@@ -96450,7 +96450,7 @@
     {
       "id": "B3a-073",
       "localId": "073",
-      "name": "Professor Turoa",
+      "name": "Professor Turo",
       "category": "Supporter",
       "rarity": "Two Diamond",
       "types": [],
@@ -96853,7 +96853,7 @@
     {
       "id": "B3a-088",
       "localId": "088",
-      "name": "Professor Turoa",
+      "name": "Professor Turo",
       "category": "Supporter",
       "rarity": "Two Star",
       "types": [],
