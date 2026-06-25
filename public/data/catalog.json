@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-06-24T08:33:23.746Z",
+    "generatedAt": "2026-06-25T08:31:22.569Z",
     "source": "https://api.tcgdex.net/v2/en + Serebii fallback + Game8 fallback",
     "seriesId": "tcgp",
     "seriesName": "Pokémon TCG Pocket",
@@ -91716,7 +91716,7 @@
       "attacks": [
         {
           "name": "Giant Twister Flip 3 coins. For each heads, discard a random Energy from your opponent's Active Pokémon. If all of them are tails, this attack does nothing",
-          "damage": "30",
+          "damage": "100",
           "cost": [
             "Colorless",
             "Colorless",
