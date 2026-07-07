@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-07-06T09:10:18.017Z",
+    "generatedAt": "2026-07-07T08:41:51.239Z",
     "source": "https://api.tcgdex.net/v2/en + Serebii fallback + Game8 fallback",
     "seriesId": "tcgp",
     "seriesName": "Pokémon TCG Pocket",
@@ -9483,13 +9483,20 @@
       "localImage": "/card-images/A1-260.webp",
       "attacks": [
         {
-          "name": "Raging Thunder",
-          "damage": "100",
-          "effect": "This attack also does 30 damage to 1 of your Benched Pokémon.",
+          "name": "Peck",
+          "damage": "20",
+          "cost": [
+            "Lightning"
+          ]
+        },
+        {
+          "name": "Thundering Hurricane",
+          "damage": "50×",
+          "effect": "Flip 4 coins. This attack does 50 damage for each heads.",
           "cost": [
             "Lightning",
             "Lightning",
-            "Colorless"
+            "Lightning"
           ]
         }
       ],
@@ -9501,7 +9508,7 @@
       ],
       "retreat": 1,
       "illustrator": "PLANETA Saito",
-      "updated": "2026-03-06T14:10:14Z"
+      "updated": "2026-06-29T13:22:58+01:00"
     },
     {
       "id": "A1-261",
