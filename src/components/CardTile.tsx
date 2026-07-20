@@ -2,6 +2,7 @@ import { HoverCardLink } from './HoverCardLink'
 import {
   getCardImageUrl,
   getPrimaryType,
+  handleCardImageError,
   localizeCardName,
   localizeCategory,
   localizeRarity,
@@ -28,8 +29,7 @@ export function CardTile({ card }: CardTileProps) {
             alt={localizeCardName(card.name)}
             loading="lazy"
             onError={(event) => {
-              event.currentTarget.parentElement?.classList.add('card-art-empty')
-              event.currentTarget.remove()
+              handleCardImageError(event.currentTarget, 'card-art-empty')
             }}
           />
         ) : null}

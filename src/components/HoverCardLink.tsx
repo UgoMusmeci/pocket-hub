@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom'
 import { Link } from 'react-router-dom'
 import {
   getCardImageUrl,
+  handleCardImageError,
   localizeCardName,
   localizeCategory,
   localizeRarity,
@@ -73,10 +74,10 @@ export function HoverCardLink({ to, className, card, children }: HoverCardLinkPr
                     alt={localizeCardName(card.name)}
                     loading="lazy"
                     onError={(event) => {
-                      event.currentTarget.parentElement?.classList.add(
+                      handleCardImageError(
+                        event.currentTarget,
                         'hover-card-preview-art-empty',
                       )
-                      event.currentTarget.remove()
                     }}
                   />
                 ) : null}

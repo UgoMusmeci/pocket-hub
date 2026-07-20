@@ -296,13 +296,17 @@ function mergeCardData(primaryCard, fallbackCard) {
     suffix: choosePreferredValue(primaryCard.suffix, fallbackCard.suffix, shouldPreferFallbackDetails),
     types: choosePreferredArray(primaryCard.types, fallbackCard.types, shouldPreferFallbackDetails),
     image:
-      hasBrokenImage(primaryCard) || shouldPreferFallbackDetails
-        ? choosePreferredValue(primaryCard.image, fallbackCard.image, shouldPreferFallbackDetails)
-        : primaryCard.image,
+      hasBrokenImage(primaryCard)
+        ? fallbackCard.image
+        : shouldPreferFallbackDetails
+          ? choosePreferredValue(primaryCard.image, fallbackCard.image, true)
+          : primaryCard.image,
     localImage:
-      hasBrokenImage(primaryCard) || shouldPreferFallbackDetails
-        ? choosePreferredValue(primaryCard.localImage, fallbackCard.localImage, shouldPreferFallbackDetails)
-        : primaryCard.localImage,
+      hasBrokenImage(primaryCard)
+        ? fallbackCard.localImage
+        : shouldPreferFallbackDetails
+          ? choosePreferredValue(primaryCard.localImage, fallbackCard.localImage, true)
+          : primaryCard.localImage,
     attacks: choosePreferredArray(primaryCard.attacks, fallbackCard.attacks, shouldPreferFallbackDetails),
     weaknesses: choosePreferredArray(
       primaryCard.weaknesses,
@@ -317,9 +321,11 @@ function mergeCardData(primaryCard, fallbackCard) {
     ),
     updated: choosePreferredValue(primaryCard.updated, fallbackCard.updated, false),
     source:
-      hasBrokenImage(primaryCard) || shouldPreferFallbackDetails
+      hasBrokenImage(primaryCard)
         ? fallbackCard.source
-        : primaryCard.source,
+        : shouldPreferFallbackDetails
+          ? fallbackCard.source
+          : primaryCard.source,
   }
 }
 

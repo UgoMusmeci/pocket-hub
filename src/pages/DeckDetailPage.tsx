@@ -4,7 +4,7 @@ import { metaDecks, metaDeckSnapshot } from '../data/metaDecks'
 import { missionDecks } from '../data/missionDecks'
 import { useCatalog } from '../hooks/useCatalog'
 import { usePageMeta } from '../hooks/usePageMeta'
-import { getCardImageUrl, localizeCardName } from '../lib/catalog'
+import { getCardImageUrl, handleCardImageError, localizeCardName } from '../lib/catalog'
 import { findCatalogCard, getDeckBySlug, getDeckCardTotal, getMetaDeckBySlug } from '../lib/decks'
 import type { CatalogCard } from '../types/catalog'
 
@@ -274,8 +274,7 @@ function DeckCardLink({ card, count }: DeckCardLinkProps) {
             alt={cardName}
             loading="lazy"
             onError={(event) => {
-              event.currentTarget.parentElement?.classList.add('deck-card-thumb-empty')
-              event.currentTarget.remove()
+              handleCardImageError(event.currentTarget, 'deck-card-thumb-empty')
             }}
           />
         ) : null}

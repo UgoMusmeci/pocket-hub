@@ -1,7 +1,13 @@
 import { Link, useParams } from 'react-router-dom'
 import { useCatalog } from '../hooks/useCatalog'
 import { usePageMeta } from '../hooks/usePageMeta'
-import { getCardImageUrl, localizeCardName, localizeCategory, localizeRarity } from '../lib/catalog'
+import {
+  getCardImageUrl,
+  handleCardImageError,
+  localizeCardName,
+  localizeCategory,
+  localizeRarity,
+} from '../lib/catalog'
 import {
   formatEventDate,
   getAdditionalRewardsForEvent,
@@ -226,10 +232,10 @@ export function EventDetailPage() {
                                 alt={localizeCardName(card.name)}
                                 loading="lazy"
                                 onError={(eventImage) => {
-                                  eventImage.currentTarget.parentElement?.classList.add(
+                                  handleCardImageError(
+                                    eventImage.currentTarget,
                                     'event-promo-art-empty',
                                   )
-                                  eventImage.currentTarget.remove()
                                 }}
                               />
                             ) : null}

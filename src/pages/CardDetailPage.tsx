@@ -4,6 +4,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 import {
   getCardImageUrl,
   getPrimaryType,
+  handleCardImageError,
   localizeCardName,
   localizeCategory,
   localizeRarity,
@@ -65,8 +66,7 @@ export function CardDetailPage() {
                     alt={localizeCardName(card.name)}
                     loading="lazy"
                     onError={(event) => {
-                      event.currentTarget.parentElement?.classList.add('detail-art-empty')
-                      event.currentTarget.remove()
+                      handleCardImageError(event.currentTarget, 'detail-art-empty')
                     }}
                   />
                 ) : null}

@@ -280,3 +280,33 @@ export function getCardImageUrl(card: CatalogCard) {
 
   return card.image
 }
+
+export function getAlternateCardImageUrl(url: string) {
+  if (/\.webp(?:$|\?)/i.test(url)) {
+    return url.replace(/\.webp(?=$|\?)/i, '.jpg')
+  }
+
+  if (/\.jpe?g(?:$|\?)/i.test(url)) {
+    return url.replace(/\.jpe?g(?=$|\?)/i, '.webp')
+  }
+
+  return null
+}
+
+export function handleCardImageError(image: HTMLImageElement, emptyClass?: string) {
+  const currentUrl = image.getAttribute('src') ?? image.src
+  const alternateUrl =
+    image.dataset.altImageTried === 'true' ? null : getAlternateCardImageUrl(currentUrl)
+
+  if (alternateUrl && alternateUrl !== currentUrl) {
+    image.dataset.altImageTried = 'true'
+    image.src = alternateUrl
+    return
+  }
+
+  if (emptyClass) {
+    image.parentElement?.classList.add(emptyClass)
+  }
+
+  image.remove()
+}

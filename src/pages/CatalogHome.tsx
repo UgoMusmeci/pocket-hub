@@ -6,6 +6,7 @@ import {
   compareCatalogDatesDesc,
   formatCatalogDate,
   getCardImageUrl,
+  handleCardImageError,
   localizeCardName,
 } from '../lib/catalog'
 import { getFeaturedDeckIdeas, getDeckCardTotal, getDeckIdeasSortedByRecent } from '../lib/decks'
@@ -119,6 +120,9 @@ export function CatalogHome() {
                     src={getCardImageUrl(spotlightCard) ?? undefined}
                     alt={localizeCardName(spotlightCard.name)}
                     loading="lazy"
+                    onError={(event) => {
+                      handleCardImageError(event.currentTarget)
+                    }}
                   />
                 ) : (
                   <div className="home-shortcut-fallback-mark">Carte</div>
