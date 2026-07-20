@@ -85,6 +85,57 @@ const MANUAL_CARD_OVERRIDES = {
   'P-B-057': {
     stage: 'Basic',
   },
+  'B3a-007': {
+    stage: 'Stage 1',
+    attacks: [
+      {
+        name: 'Psychic',
+        damage: '20+',
+        effect:
+          "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon.",
+        cost: ['Colorless'],
+      },
+    ],
+    weaknesses: [{ type: 'Lightning', value: '+20' }],
+    retreat: 1,
+  },
+  'B3b-007': {
+    stage: 'Stage 1',
+  },
+  'B3b-031': {
+    attacks: [
+      {
+        name: 'Glittering Gift',
+        damage: undefined,
+        effect:
+          'Choose 2 of your Benched Pokemon. For each of those Pokemon, take a Psychic Energy from your Energy Zone and attach it to that Pokemon.',
+        cost: ['Psychic'],
+      },
+    ],
+    weaknesses: [{ type: 'Metal', value: '+20' }],
+    retreat: 1,
+  },
+  'B3b-049': {
+    stage: 'Stage 1',
+  },
+  'B3b-050': {
+    stage: 'Stage 2',
+  },
+  'B3b-059': {
+    stage: 'Basic',
+  },
+  'B3b-060': {
+    stage: 'Stage 1',
+  },
+  'B3b-082': {
+    stage: 'Stage 1',
+  },
+  'B3b-089': {
+    stage: 'Stage 1',
+  },
+  'P-B-076': {
+    stage: 'Basic',
+  },
 }
 const MANUAL_SEREBII_SETS = [
   {
@@ -112,6 +163,7 @@ const CONCURRENCY = 16
 const SEREBII_DETAIL_CONCURRENCY = 8
 const speciesStageCache = new Map()
 const evolutionChainCache = new Map()
+const manualSerebiiSetConfigById = new Map(MANUAL_SEREBII_SETS.map((set) => [set.id, set]))
 
 async function fetchJson(url) {
   const response = await fetch(url)
@@ -123,19 +175,39 @@ async function fetchJson(url) {
   return response.json()
 }
 
-async function fetchText(url) {
-  const response = await fetch(url, {
-    headers: {
-      'user-agent':
-        'Mozilla/5.0 (compatible; PokemonPocketCatalogBot/1.0; +https://example.com)',
-    },
-  })
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
 
-  if (!response.ok) {
-    throw new Error(`Request failed for ${url} with status ${response.status}`)
+async function fetchText(url, retries = 2) {
+  let lastError
+
+  for (let attempt = 0; attempt <= retries; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        headers: {
+          'user-agent':
+            'Mozilla/5.0 (compatible; PokemonPocketCatalogBot/1.0; +https://example.com)',
+        },
+      })
+
+      if (!response.ok) {
+        throw new Error(`Request failed for ${url} with status ${response.status}`)
+      }
+
+      return response.text()
+    } catch (error) {
+      lastError = error
+
+      if (attempt === retries) {
+        throw lastError
+      }
+
+      await sleep(400 * (attempt + 1))
+    }
   }
 
-  return response.text()
+  throw lastError
 }
 
 async function mapLimit(items, limit, mapper) {
@@ -435,8 +507,27 @@ function normalizePokemonLookupName(name) {
 }
 
 const POKEAPI_SPECIES_OVERRIDES = {
+  'Alolan Exeggutor': 'exeggutor-alola',
+  'Alolan Grimer': 'grimer-alola',
+  'Alolan Ninetales': 'ninetales-alola',
+  'Alolan Vulpix': 'vulpix-alola',
+  'Castform Rainy Form': 'castform-rainy',
+  'Castform Snowy Form': 'castform-snowy',
+  'Castform Sunny Form': 'castform-sunny',
+  'Dawn Wings Necrozma': 'necrozma-dawn-wings',
+  'Dusk Mane Necrozma': 'necrozma-dusk-mane',
+  'Hisuian Goodra': 'goodra-hisui',
+  'Hisuian Lilligant': 'lilligant-hisui',
+  'Hisuian Sliggoo': 'sliggoo-hisui',
+  'Hisuian Zoroark': 'zoroark-hisui',
+  'Hisuian Zorua': 'zorua-hisui',
   'Paldean Wooper': 'wooper-paldea',
-  'Paldean Tauros': 'tauros-paldea-combat',
+  'Paldean Tauros': 'tauros-paldea-combat-breed',
+  'Paldean Clodsire': 'clodsire',
+  'Porygon-Z': 'porygon-z',
+  'Rapid Strike Urshifu': 'urshifu-rapid-strike',
+  'Single Strike Urshifu': 'urshifu-single-strike',
+  'Ultra Necrozma': 'necrozma-ultra',
   'Wo-Chien': 'wo-chien',
   'Chi-Yu': 'chi-yu',
   'Chien-Pao': 'chien-pao',
@@ -842,7 +933,13 @@ async function fetchSerebiiRepairsForBrokenSets(sets, cards) {
 
   const payloads = await mapLimit(setConfigs, 2, async (setConfig) => {
     try {
-      return await fetchSerebiiSet(setConfig.id, setConfig.name, setConfig.releaseDate)
+      const manualSetConfig = manualSerebiiSetConfigById.get(setConfig.id)
+      return await fetchSerebiiSet(
+        setConfig.id,
+        setConfig.name,
+        setConfig.releaseDate,
+        manualSetConfig?.slug,
+      )
     } catch (error) {
       console.warn(
         `Could not repair ${setConfig.id} from Serebii.`,

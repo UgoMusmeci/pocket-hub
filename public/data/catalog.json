@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-07-20T09:19:52.779Z",
+    "generatedAt": "2026-07-20T09:24:45.506Z",
     "source": "https://api.tcgdex.net/v2/en + Serebii fallback + Game8 fallback",
     "seriesId": "tcgp",
     "seriesName": "Pokémon TCG Pocket",
@@ -94457,9 +94457,20 @@
       "source": "serebii-fallback",
       "image": "https://www.serebii.net/tcgpocket/th/paradoxdrive/4.jpg",
       "localImage": "/card-images/B3a-004.jpg",
-      "attacks": [],
+      "attacks": [
+        {
+          "name": "Wildly Writhe This Pokémon also does 60 damage to itself",
+          "damage": "120",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ]
+        }
+      ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Anesaki Dynamic"
     },
     {
       "id": "B3a-005",
@@ -94477,9 +94488,19 @@
       "source": "serebii-fallback",
       "image": "https://www.serebii.net/tcgpocket/th/paradoxdrive/5.jpg",
       "localImage": "/card-images/B3a-005.jpg",
-      "attacks": [],
+      "attacks": [
+        {
+          "name": "Thermal Gust Flip 3 coins. If 1 of them is heads, this attack does 20 more damage. If 2 of them are heads, this attack does 50 ,ore damage. If all of them are heads, this attack does 120 more damage",
+          "damage": "10+",
+          "cost": [
+            "Fire",
+            "Colorless"
+          ]
+        }
+      ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kouki Saitou"
     },
     {
       "id": "B3a-006",
@@ -94497,9 +94518,18 @@
       "source": "serebii-fallback",
       "image": "https://www.serebii.net/tcgpocket/th/paradoxdrive/6.jpg",
       "localImage": "/card-images/B3a-006.jpg",
-      "attacks": [],
+      "attacks": [
+        {
+          "name": "Ram",
+          "damage": "10",
+          "cost": [
+            "Colorless"
+          ]
+        }
+      ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kouki Saitou"
     },
     {
       "id": "B3a-007",
@@ -94517,8 +94547,22 @@
       "source": "serebii-fallback",
       "image": "https://www.serebii.net/tcgpocket/th/paradoxdrive/7.jpg",
       "localImage": "/card-images/B3a-007.jpg",
-      "attacks": [],
-      "weaknesses": [],
+      "attacks": [
+        {
+          "name": "Psychic",
+          "damage": "20+",
+          "effect": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon.",
+          "cost": [
+            "Colorless"
+          ]
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "+20"
+        }
+      ],
       "retreat": 0
     },
     {
@@ -94537,9 +94581,19 @@
       "source": "serebii-fallback",
       "image": "https://www.serebii.net/tcgpocket/th/paradoxdrive/8.jpg",
       "localImage": "/card-images/B3a-008.jpg",
-      "attacks": [],
+      "attacks": [
+        {
+          "name": "Impound During your opponent's next turn, the Defending Pokémon can't retreat.",
+          "damage": "60",
+          "cost": [
+            "Water",
+            "Water"
+          ]
+        }
+      ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "kirisAki"
     },
     {
       "id": "B3a-009",
@@ -97677,7 +97731,8 @@
       ],
       "weaknesses": [],
       "retreat": 0,
-      "illustrator": "Mizue"
+      "illustrator": "Mizue",
+      "stage": "Stage 1"
     },
     {
       "id": "B3b-008",
@@ -98168,9 +98223,19 @@
       "source": "serebii-fallback",
       "image": "https://www.serebii.net/tcgpocket/th/everydaywonders/24.jpg",
       "localImage": "/card-images/B3b-024.jpg",
-      "attacks": [],
+      "attacks": [
+        {
+          "name": "Dede-Circuit This attack does 40 damage for each Pokémon Tool attached to all of your Pokémon",
+          "damage": "40x",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ]
+        }
+      ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "5ban Graphics"
     },
     {
       "id": "B3b-025",
@@ -98367,15 +98432,20 @@
       "localImage": "/card-images/B3b-031.jpg",
       "attacks": [
         {
-          "name": "Glittering Gift Choose 2 of your Benched Pokémon. For each of those Pokémon, take a Psychic Energy from your Energy Zone and attach it to that Pokémon",
+          "name": "Glittering Gift",
+          "effect": "Choose 2 of your Benched Pokemon. For each of those Pokemon, take a Psychic Energy from your Energy Zone and attach it to that Pokemon.",
           "cost": [
             "Psychic"
           ]
         }
       ],
-      "weaknesses": [],
-      "retreat": 0,
-      "illustrator": "Akira Komayama"
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "+20"
+        }
+      ],
+      "retreat": 0
     },
     {
       "id": "B3b-032",
@@ -98918,7 +98988,8 @@
       ],
       "weaknesses": [],
       "retreat": 0,
-      "illustrator": "Kouki Saitou"
+      "illustrator": "Kouki Saitou",
+      "stage": "Stage 1"
     },
     {
       "id": "B3b-050",
@@ -98948,7 +99019,8 @@
       ],
       "weaknesses": [],
       "retreat": 0,
-      "illustrator": "Akira Komayama"
+      "illustrator": "Akira Komayama",
+      "stage": "Stage 2"
     },
     {
       "id": "B3b-051",
@@ -99215,7 +99287,8 @@
       ],
       "weaknesses": [],
       "retreat": 1,
-      "illustrator": "Akira Komayama"
+      "illustrator": "Akira Komayama",
+      "stage": "Basic"
     },
     {
       "id": "B3b-060",
@@ -99246,7 +99319,8 @@
       ],
       "weaknesses": [],
       "retreat": 1,
-      "illustrator": "PLANETA CG Works"
+      "illustrator": "PLANETA CG Works",
+      "stage": "Stage 1"
     },
     {
       "id": "B3b-061",
@@ -99827,7 +99901,8 @@
       ],
       "weaknesses": [],
       "retreat": 1,
-      "illustrator": "PLANETA CG Works"
+      "illustrator": "PLANETA CG Works",
+      "stage": "Stage 1"
     },
     {
       "id": "B3b-083",
@@ -100001,7 +100076,8 @@
       ],
       "weaknesses": [],
       "retreat": 1,
-      "illustrator": "Yoshikoa"
+      "illustrator": "Yoshikoa",
+      "stage": "Stage 1"
     },
     {
       "id": "B3b-090",
@@ -106803,7 +106879,8 @@
       ],
       "weaknesses": [],
       "retreat": 1,
-      "illustrator": "Teeziro"
+      "illustrator": "Teeziro",
+      "stage": "Basic"
     },
     {
       "id": "P-B-077",

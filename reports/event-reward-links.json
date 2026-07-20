@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-07T10:02:50.339Z",
+  "generatedAt": "2026-07-20T13:23:00.308Z",
   "summary": {
     "eventCount": 67,
-    "rewardCount": 91,
+    "rewardCount": 96,
     "eventsWithoutRewardsCount": 40,
     "eventsWithPromoCardsOnlyCount": 14,
-    "rewardsWithoutEventsCount": 45,
-    "rewardsWithoutEventsButClassifiedCount": 45,
+    "rewardsWithoutEventsCount": 50,
+    "rewardsWithoutEventsButClassifiedCount": 50,
     "rewardsWithoutAnyOriginCount": 0
   },
   "eventsWithoutRewards": [
@@ -611,6 +611,22 @@
       "sourceContext": "Wisdom of Sea and Sky"
     },
     {
+      "slug": "iron-valiant-emblema",
+      "name": "Iron Valiant Emblema",
+      "type": "emblema",
+      "method": "themed_collection",
+      "availability": "ottenibile",
+      "sourceContext": "Paradox Drive"
+    },
+    {
+      "slug": "koraidon-miraidon-emblema",
+      "name": "Koraidon & Miraidon Emblema",
+      "type": "emblema",
+      "method": "missione",
+      "availability": "ottenibile",
+      "sourceContext": "Paradox Drive"
+    },
+    {
       "slug": "lugia-emblema",
       "name": "Lugia Emblema",
       "type": "emblema",
@@ -787,6 +803,14 @@
       "sourceContext": "Deluxe Pack ex"
     },
     {
+      "slug": "roaring-moon-emblema",
+      "name": "Roaring Moon Emblema",
+      "type": "emblema",
+      "method": "themed_collection",
+      "availability": "ottenibile",
+      "sourceContext": "Paradox Drive"
+    },
+    {
       "slug": "shaymin-emblema",
       "name": "Shaymin Emblema",
       "type": "emblema",
@@ -851,12 +875,28 @@
       "sourceContext": "Secluded Springs"
     },
     {
+      "slug": "sylveon-emblema",
+      "name": "Sylveon Emblema",
+      "type": "emblema",
+      "method": "missione",
+      "availability": "ottenibile",
+      "sourceContext": "Everyday Wonders"
+    },
+    {
       "slug": "wishiwashi-emblema",
       "name": "Wishiwashi Emblema",
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
       "sourceContext": "Celestial Guardians"
+    },
+    {
+      "slug": "yamper-emblema",
+      "name": "Yamper Emblema",
+      "type": "emblema",
+      "method": "themed_collection",
+      "availability": "ottenibile",
+      "sourceContext": "Everyday Wonders"
     }
   ],
   "rewardsWithoutAnyOrigin": []

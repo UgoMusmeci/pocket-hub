@@ -155,6 +155,35 @@ function createEventEmblem(
   })
 }
 
+function createEventIcon(
+  slug: string,
+  name: string,
+  imageKey: string,
+  eventName: string,
+  requirement: string,
+  sourceUrl: string,
+  sourceLabel: string,
+  startDate?: string,
+  endDate?: string,
+) {
+  return {
+    slug,
+    name,
+    type: 'icona',
+    imageUrl: `/rewards/${slug}.png`,
+    sourceImageUrl: `https://www.serebii.net/tcgpocket/icon/${imageKey}.png`,
+    method: 'evento',
+    availability: 'evento_scaduto',
+    sourceContext: eventName,
+    requirement,
+    description: 'Icona profilo distribuita tramite un evento Wonder Pick a tempo limitato.',
+    sourceLabel,
+    sourceUrl,
+    startDate,
+    endDate,
+  } satisfies RewardGuide
+}
+
 const shopEmblems = [
   createShopEmblem(
     'sprigatito-fuecoco-and-quaxly-emblema',
@@ -296,6 +325,30 @@ const shopEmblems = [
 ]
 
 const collectionEmblems = [
+  createEmblemGuide({
+    slug: 'roaring-moon-emblema',
+    name: 'Roaring Moon Emblema',
+    imageKey: 'roaringmoonemblem',
+    method: 'themed_collection',
+    availability: 'ottenibile',
+    sourceContext: 'Paradox Drive',
+    requirement: 'Completa la Themed Collection collegata a Roaring Moon in Paradox Drive.',
+    description: 'Emblema sbloccabile completando una raccolta tematica del set Paradox Drive.',
+    sourceLabel: 'Serebii Emblems',
+    sourceUrl: serebiiEmblemsUrl,
+  }),
+  createEmblemGuide({
+    slug: 'iron-valiant-emblema',
+    name: 'Iron Valiant Emblema',
+    imageKey: 'ironvaliantemblem',
+    method: 'themed_collection',
+    availability: 'ottenibile',
+    sourceContext: 'Paradox Drive',
+    requirement: 'Completa la Themed Collection collegata a Iron Valiant in Paradox Drive.',
+    description: 'Emblema sbloccabile completando una raccolta tematica del set Paradox Drive.',
+    sourceLabel: 'Serebii Emblems',
+    sourceUrl: serebiiEmblemsUrl,
+  }),
   createThemedEmblem(
     'mabosstiff-emblema',
     'Mabosstiff Emblema',
@@ -307,6 +360,15 @@ const collectionEmblems = [
     'Meowth Emblema',
     'meowthemblem',
     'Fantastical Parade',
+  ),
+  createThemedEmblem(
+    'yamper-emblema',
+    'Yamper Emblema',
+    'yamperemblem',
+    'Everyday Wonders',
+    undefined,
+    serebiiEmblemsUrl,
+    'Serebii Emblems',
   ),
   createThemedEmblem(
     'mantyke-emblema',
@@ -362,6 +424,33 @@ const pulsingAuraEmblems = [
     'https://www.serebii.net/tcgpocket/pulsingaura/',
     'Serebii Pulsing Aura',
   ),
+]
+
+const setCompletionEmblems = [
+  createEmblemGuide({
+    slug: 'koraidon-miraidon-emblema',
+    name: 'Koraidon & Miraidon Emblema',
+    imageKey: 'koraidon&miraidonemblem',
+    method: 'missione',
+    availability: 'ottenibile',
+    sourceContext: 'Paradox Drive',
+    requirement: 'Raccogli tutte le 74 carte Diamante di Paradox Drive.',
+    description: 'Emblema del set Paradox Drive ottenibile completando la raccolta principale delle carte Diamante.',
+    sourceLabel: 'Serebii Emblems',
+    sourceUrl: serebiiEmblemsUrl,
+  }),
+  createEmblemGuide({
+    slug: 'sylveon-emblema',
+    name: 'Sylveon Emblema',
+    imageKey: 'sylveonemblem',
+    method: 'missione',
+    availability: 'ottenibile',
+    sourceContext: 'Everyday Wonders',
+    requirement: 'Raccogli tutte le 69 carte Diamante di Everyday Wonders.',
+    description: 'Emblema del set Everyday Wonders ottenibile completando la raccolta principale delle carte Diamante.',
+    sourceLabel: 'Serebii Emblems',
+    sourceUrl: serebiiEmblemsUrl,
+  }),
 ]
 
 const secretMissionEmblems = [
@@ -516,6 +605,31 @@ const celebrationEmblems = [
     sourceLabel: 'Game8 List of Emblems',
     sourceUrl: game8EmblemsUrl,
   }),
+]
+
+const eventIcons = [
+  createEventIcon(
+    'icona-psyduck',
+    'Icona Psyduck',
+    'psyduck',
+    'Wonder Pick Event November 2025',
+    'Scambia 2 Event Shop Ticket Psyduck durante il Wonder Pick Event di novembre 2025.',
+    'https://www.serebii.net/tcgpocket/events/wonderpickeventnovember2025.shtml',
+    'Serebii Wonder Pick Event November 2025',
+    '2025-11-27',
+    '2025-12-07',
+  ),
+  createEventIcon(
+    'icona-magikarp',
+    'Icona Magikarp',
+    'magikarp',
+    'Wonder Pick Event December 2025',
+    'Scambia 2 Event Shop Ticket Mega Gyarados durante il Wonder Pick Event di dicembre 2025.',
+    'https://www.serebii.net/tcgpocket/events/wonderpickeventdecember2025.shtml',
+    'Serebii Wonder Pick Event December 2025',
+    '2025-12-07',
+    '2025-12-17',
+  ),
 ]
 
 const eventEmblems = [
@@ -848,8 +962,10 @@ const eventEmblems = [
 export const rewardOverrides: RewardGuide[] = [
   ...shopEmblems,
   ...collectionEmblems,
+  ...setCompletionEmblems,
   ...pulsingAuraEmblems,
   ...secretMissionEmblems,
   ...celebrationEmblems,
   ...eventEmblems,
+  ...eventIcons,
 ]

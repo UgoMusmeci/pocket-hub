@@ -11,6 +11,7 @@
     "sync:cards:data": "node scripts/sync-tcgp-data.mjs",
     "sync:assets": "node scripts/sync-local-assets.mjs",
     "sync:cards": "npm run sync:cards:data && npm run sync:assets",
+    "autofix:content": "node scripts/autofix-content.mjs",
     "sync:rewards:data": "powershell -ExecutionPolicy Bypass -File scripts/sync-reward-catalog.ps1",
     "sync:rewards": "npm run sync:rewards:data && powershell -ExecutionPolicy Bypass -File scripts/sync-reward-assets.ps1",
     "sync:events:assets": "node scripts/sync-event-assets.mjs",
@@ -19,7 +20,7 @@
     "audit:event-reward-links": "node scripts/event-reward-link-audit.mjs",
     "audit:all": "npm run audit:content && npm run audit:event-reward-links",
     "check:links": "node scripts/check-links.mjs",
-    "update": "npm run sync:cards && npm run sync:events:assets && npm run sync:rewards && npm run audit:all && npm run build"
+    "update": "npm run sync:cards && npm run sync:events:assets && npm run sync:rewards && npm run autofix:content && npm run audit:all && npm run build"
   },
   "dependencies": {
     "node-fetch": "^3.3.2",

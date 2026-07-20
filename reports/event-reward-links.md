@@ -1,11 +1,11 @@
 # Audit Collegamenti Eventi e Ricompense
 
 - Eventi controllati: 67
-- Emblemi controllati: 91
+- Emblemi controllati: 96
 - Eventi senza emblemi collegati: 40
 - Eventi con sole carte promo collegate: 14
-- Emblemi senza eventi collegati: 45
-- Emblemi senza eventi ma con origine già classificata: 45
+- Emblemi senza eventi collegati: 50
+- Emblemi senza eventi ma con origine già classificata: 50
 - Emblemi senza eventi e ancora senza origine esplicita: 0
 
 ## Eventi Senza Emblemi Collegati
@@ -65,6 +65,8 @@
 - Giratina Emblema | espansione | Shining Revelry
 - Greninja Emblema | espansione | Deluxe Pack ex
 - Ho-Oh Emblema | espansione | Wisdom of Sea and Sky
+- Iron Valiant Emblema | themed_collection | Paradox Drive
+- Koraidon & Miraidon Emblema | missione | Paradox Drive
 - Lugia Emblema | espansione | Wisdom of Sea and Sky
 - Lunala Emblema | espansione | Celestial Guardians
 - Mabosstiff Emblema | espansione | Paldean Wonders
@@ -87,6 +89,7 @@
 - Palkia Emblema | espansione | Space-Time Smackdown
 - Pikachu Emblema | espansione | Genetic Apex
 - Pikachu ver. 2 Emblema | espansione | Deluxe Pack ex
+- Roaring Moon Emblema | themed_collection | Paradox Drive
 - Shaymin Emblema | espansione | Triumphant Light
 - Shiny Mega Gengar Emblema | espansione | Mega Shine
 - Shiny Mew Emblema | espansione | Mega Shine
@@ -95,7 +98,9 @@
 - Solgaleo Emblema | espansione | Celestial Guardians
 - Sprigatito Fuecoco and Quaxly Emblema | espansione | Paldean Wonders
 - Suicune Emblema | espansione | Secluded Springs
+- Sylveon Emblema | missione | Everyday Wonders
 - Wishiwashi Emblema | espansione | Celestial Guardians
+- Yamper Emblema | themed_collection | Everyday Wonders
 
 ## Eventi Con Sole Carte Promo
 - Evento Drop speciale 2026 | 2026-04-29 - 2026-05-09 | promo: P-B-050, P-B-051, P-B-052, P-B-053, P-B-054, P-B-055

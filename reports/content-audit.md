@@ -1,15 +1,15 @@
 # Audit contenuti
 
-Generato: 2026-05-07T10:03:22.107Z
+Generato: 2026-07-20T13:22:54.368Z
 Controllo remoto immagini: disattivato
 
 ## Riepilogo
 
-- Carte controllate: 2910
+- Carte controllate: 3141
 - Problemi carte: 0
 - Mazzi controllati: 39
 - Problemi mazzi: 0
-- Ricompense controllate: 91
+- Ricompense controllate: 96
 - Problemi ricompense: 0
 - Eventi controllati: 67
 - Problemi eventi: 0
