@@ -224,7 +224,7 @@ export function CardsPage() {
                 <span>Cerca una carta</span>
                 <input
                   type="search"
-                  placeholder="Es. Pikachu ex, Genetic Apex, Lampo..."
+                  placeholder="Es. Pikachu ex, Geni Supremi, Lampo..."
                   value={filters.search}
                   onChange={(event) =>
                     setFilters((current) => ({

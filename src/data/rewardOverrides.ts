@@ -1,4 +1,5 @@
 import type { RewardGuide } from '../types/rewards'
+import { localizeExpansionText } from '../lib/expansionNames'
 
 const serebiiEmblemsUrl = 'https://www.serebii.net/tcgpocket/emblems.shtml'
 const serebiiThemedCollectionsUrl = 'https://www.serebii.net/tcgpocket/themedcollections.shtml'
@@ -38,18 +39,18 @@ function emblemImage(imageKey: string) {
 function createEmblemGuide(input: EmblemGuideInput): RewardGuide {
   return {
     slug: input.slug,
-    name: input.name,
+    name: localizeExpansionText(input.name),
     type: 'emblema',
     imageUrl: `/rewards/${input.slug}.png`,
     sourceImageUrl: emblemImage(input.imageKey),
     method: input.method,
     availability: input.availability,
-    sourceContext: input.sourceContext,
-    requirement: input.requirement,
-    description: input.description,
-    sourceLabel: input.sourceLabel,
+    sourceContext: localizeExpansionText(input.sourceContext),
+    requirement: localizeExpansionText(input.requirement),
+    description: localizeExpansionText(input.description),
+    sourceLabel: localizeExpansionText(input.sourceLabel),
     sourceUrl: input.sourceUrl,
-    notes: input.notes,
+    notes: localizeExpansionText(input.notes),
     startDate: input.startDate,
     endDate: input.endDate,
   }
@@ -168,16 +169,16 @@ function createEventIcon(
 ) {
   return {
     slug,
-    name,
+    name: localizeExpansionText(name),
     type: 'icona',
     imageUrl: `/rewards/${slug}.png`,
     sourceImageUrl: `https://www.serebii.net/tcgpocket/icon/${imageKey}.png`,
     method: 'evento',
     availability: 'evento_scaduto',
-    sourceContext: eventName,
-    requirement,
+    sourceContext: localizeExpansionText(eventName),
+    requirement: localizeExpansionText(requirement),
     description: 'Icona profilo distribuita tramite un evento Wonder Pick a tempo limitato.',
-    sourceLabel,
+    sourceLabel: localizeExpansionText(sourceLabel),
     sourceUrl,
     startDate,
     endDate,

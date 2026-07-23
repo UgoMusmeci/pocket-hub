@@ -1,6 +1,19 @@
 import type { RewardGuide } from '../types/rewards'
+import { localizeExpansionText } from '../lib/expansionNames'
 
-export const rewardGuides: RewardGuide[] = [
+function localizeRewardGuide(reward: RewardGuide): RewardGuide {
+  return {
+    ...reward,
+    name: localizeExpansionText(reward.name),
+    sourceContext: localizeExpansionText(reward.sourceContext),
+    requirement: localizeExpansionText(reward.requirement),
+    description: localizeExpansionText(reward.description),
+    sourceLabel: localizeExpansionText(reward.sourceLabel),
+    notes: reward.notes ? localizeExpansionText(reward.notes) : undefined,
+  }
+}
+
+const baseRewardGuides = [
   {
     slug: 'sprigatito-coin',
     name: 'Moneta Sprigatito',
@@ -267,4 +280,6 @@ export const rewardGuides: RewardGuide[] = [
     sourceLabel: 'Serebii Binders',
     sourceUrl: 'https://www.serebii.net/tcgpocket/binders.shtml',
   },
-]
+] satisfies RewardGuide[]
+
+export const rewardGuides: RewardGuide[] = baseRewardGuides.map(localizeRewardGuide)

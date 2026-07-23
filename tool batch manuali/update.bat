@@ -1,55 +1,103 @@
 @echo off
+setlocal EnableDelayedExpansion
 cd /d %~dp0..
 
-set LOGFILE=log_update.txt
+set "LOGFILE=log_update.txt"
+set "HAD_ERROR=0"
+set "PUSH_CHOICE="
 
 echo =========================
 echo AVVIO AGGIORNAMENTO
 echo =========================
 
-echo Avvio: %date% %time% > %LOGFILE%
+echo Avvio: %date% %time% > "%LOGFILE%"
 
-echo.
-echo [1/6] Sync CARDS...
-call npm run sync:cards >> %LOGFILE% 2>&1
-if %errorlevel% neq 0 goto errore
-
-echo [2/6] Sync EVENT ASSETS...
-call npm run sync:events:assets >> %LOGFILE% 2>&1
-if %errorlevel% neq 0 goto errore
-
-echo [3/6] Sync REWARDS...
-call npm run sync:rewards >> %LOGFILE% 2>&1
-if %errorlevel% neq 0 goto errore
-
-echo [4/6] AUTO-FIX CONTENUTI...
-call npm run autofix:content >> %LOGFILE% 2>&1
-if %errorlevel% neq 0 goto errore
-
-echo [5/6] AUDIT CONTENUTI...
-call npm run audit:all >> %LOGFILE% 2>&1
-if %errorlevel% neq 0 goto errore
-
-echo [6/6] BUILD SITO...
-call npm run build >> %LOGFILE% 2>&1
-if %errorlevel% neq 0 goto errore
+call :runStep "[1/6] Sync CARDS..." "npm run sync:cards"
+call :runStep "[2/6] Sync EVENT ASSETS..." "npm run sync:events:assets"
+call :runStep "[3/6] Sync REWARDS..." "npm run sync:rewards"
+call :runStep "[4/6] AUTO-FIX CONTENUTI..." "npm run autofix:content"
+call :runStep "[5/6] AUDIT CONTENUTI..." "npm run audit:all"
+call :runStep "[6/6] BUILD SITO..." "npm run build"
 
 echo.
 echo =========================
-echo COMPLETATO
+if "!HAD_ERROR!"=="0" (
+  echo COMPLETATO SENZA ERRORI
+) else (
+  echo COMPLETATO CON ERRORI O PROBLEMI
+)
 echo =========================
+echo.
+type "%LOGFILE%"
+echo.
 
-type %LOGFILE%
+:askPush
+if "!HAD_ERROR!"=="0" (
+  set /p "PUSH_CHOICE=Vuoi pushare? (S/N): "
+) else (
+  set /p "PUSH_CHOICE=Ci sono stati errori o problemi. Vuoi pushare comunque? (S/N): "
+)
+
+if /I "!PUSH_CHOICE!"=="S" goto doPush
+if /I "!PUSH_CHOICE!"=="N" goto end
+
+echo Scelta non valida. Inserisci S oppure N.
+goto askPush
+
+:doPush
+echo.
+echo =========================
+echo AVVIO PUSH
+echo =========================
+echo.>> "%LOGFILE%"
+echo =========================>> "%LOGFILE%"
+echo AVVIO PUSH>> "%LOGFILE%"
+echo =========================>> "%LOGFILE%"
+
+git status --porcelain > "%TEMP%\pocket_hub_git_status.txt"
+for %%A in ("%TEMP%\pocket_hub_git_status.txt") do set "GIT_STATUS_SIZE=%%~zA"
+
+if not "!GIT_STATUS_SIZE!"=="0" (
+  git add -A >> "%LOGFILE%" 2>&1
+  git commit -m "chore: update content %date% %time%" >> "%LOGFILE%" 2>&1
+  if errorlevel 1 (
+    echo Commit non riuscito. Controlla il log: %LOGFILE%
+    type "%LOGFILE%"
+    pause
+    exit /b 1
+  )
+) else (
+  echo Nessuna modifica locale da committare.>> "%LOGFILE%"
+)
+
+git push origin HEAD >> "%LOGFILE%" 2>&1
+if errorlevel 1 (
+  echo Push non riuscito. Controlla il log: %LOGFILE%
+  echo.
+  type "%LOGFILE%"
+  pause
+  exit /b 1
+)
+
+echo Push completato con successo.
+echo.
+type "%LOGFILE%"
 pause
-exit /b
+exit /b 0
 
-:errore
+:runStep
+set "STEP_LABEL=%~1"
+set "STEP_COMMAND=%~2"
 echo.
-echo =========================
-echo ERRORE DURANTE L'ESECUZIONE
-echo =========================
-echo Controlla il log: %LOGFILE%
-echo.
-type %LOGFILE%
+echo %~1
+echo %~1>> "%LOGFILE%"
+call %~2 >> "%LOGFILE%" 2>&1
+if errorlevel 1 (
+  set "HAD_ERROR=1"
+  echo ERRORE in %~1>> "%LOGFILE%"
+)
+exit /b 0
+
+:end
 pause
-exit /b
+exit /b 0

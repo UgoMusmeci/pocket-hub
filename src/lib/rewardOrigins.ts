@@ -1,4 +1,5 @@
 import { getAllEvents } from './events'
+import { expansionNames } from './expansionNames'
 import type { EventGuide } from '../types/events'
 import type { RewardGuide } from '../types/rewards'
 
@@ -24,26 +25,7 @@ export type RewardOriginDetails = {
   isPremiumReward: boolean
 }
 
-const expansionKeywords = [
-  'Genetic Apex',
-  'Mythical Island',
-  'Space-Time Smackdown',
-  'Triumphant Light',
-  'Shining Revelry',
-  'Celestial Guardians',
-  'Extradimensional Crisis',
-  'Wisdom of Sea and Sky',
-  'Secluded Springs',
-  'Deluxe Pack ex',
-  'Eevee Grove',
-  'Mega Rising',
-  'Crimson Blaze',
-  'Fantastical Parade',
-  'Paldean Wonders',
-  'Mega Shine',
-  'Promo-A',
-  'Promo-B',
-]
+const expansionKeywords = expansionNames
 
 function localizeOriginKind(kind: RewardOriginKind) {
   const labels: Record<RewardOriginKind, string> = {

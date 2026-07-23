@@ -8,6 +8,28 @@ $excludedRewardNames = @(
   'Battle Screen Tabellone'
 )
 
+$expansionNameMap = [ordered]@{
+  'Genetic Apex' = 'Geni Supremi'
+  'Mythical Island' = "L'Isola Misteriosa"
+  'Space-Time Smackdown' = 'Scontro Spaziotemporale'
+  'Triumphant Light' = 'Luce Trionfale'
+  'Shining Revelry' = 'Tripudio Splendente'
+  'Celestial Guardians' = 'Guardiani Astrali'
+  'Extradimensional Crisis' = 'Crisi Ultradimensionale'
+  'Eevee Grove' = 'Il Bosco di Eevee'
+  'Wisdom of Sea and Sky' = 'La Via del Cielo e del Mare'
+  'Secluded Springs' = 'Sorgenti Recondite'
+  'Deluxe Pack ex' = 'Busta Deluxe ex'
+  'Mega Rising' = 'Mega Ascesa'
+  'Crimson Blaze' = 'Fiamme Cremisi'
+  'Fantastical Parade' = 'Parata Fantasmagorica'
+  'Paldean Wonders' = 'Meraviglie di Paldea'
+  'Mega Shine' = 'Mega Splendore'
+  'Pulsing Aura' = 'Aura Pulsante'
+  'Paradox Drive' = 'Assalto dei Paradossi'
+  'Everyday Wonders' = 'Giorni Giocondi'
+}
+
 function Convert-ToSlug([string]$value) {
   $lower = $value.ToLowerInvariant()
   $lower = [regex]::Replace($lower, '[^a-z0-9]+', '-')
@@ -31,6 +53,16 @@ function Build-RewardName([string]$type, [string]$alt) {
     'icona' { return 'Icona ' + $name }
     default { return $name }
   }
+}
+
+function Localize-ExpansionNames([string]$value) {
+  $localized = $value
+
+  foreach ($entry in $expansionNameMap.GetEnumerator()) {
+    $localized = $localized.Replace($entry.Key, $entry.Value)
+  }
+
+  return $localized
 }
 
 function Escape-ForTs([string]$value) {
@@ -62,7 +94,7 @@ foreach ($page in $pages) {
     if ($alt -like 'Pok*TCG Pocket*' -or $alt -in @('Display Boards', 'Binders', 'Playmats', 'Sleeves')) { continue }
 
     $absoluteSrc = if ($src.StartsWith('http')) { $src } elseif ($src.StartsWith('/')) { 'https://www.serebii.net' + $src } else { $page.Prefix + $src }
-    $rewardName = Build-RewardName -type $page.Type -alt $alt
+    $rewardName = Localize-ExpansionNames (Build-RewardName -type $page.Type -alt $alt)
     if ($excludedRewardNames -contains $rewardName) { continue }
     $slug = Convert-ToSlug($rewardName)
 

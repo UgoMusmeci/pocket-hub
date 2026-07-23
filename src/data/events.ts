@@ -1,4 +1,5 @@
 import type { EventGuide, EventType } from '../types/events'
+import { getExpansionNameById, localizeExpansionText } from '../lib/expansionNames'
 
 const serebiiEventsUrl = 'https://www.serebii.net/tcgpocket/events.shtml'
 
@@ -93,7 +94,7 @@ const eventNameOverrides: Record<string, string> = {
 }
 
 function getLocalizedEventName(slug: string, fallback: string) {
-  return eventNameOverrides[slug] ?? fallback
+  return localizeExpansionText(eventNameOverrides[slug] ?? fallback)
 }
 
 function getDefaultSummary(type: EventType) {
@@ -191,6 +192,9 @@ function getDefaultEventImage(input: EventInput) {
 
 function createEvent(input: EventInput): EventGuide {
   const localizedName = getLocalizedEventName(input.slug, input.name)
+  const localizedLinkedSetName = input.linkedSetId
+    ? getExpansionNameById(input.linkedSetId, input.linkedSetName ?? '')
+    : localizeExpansionText(input.linkedSetName)
 
   return {
     slug: input.slug,
@@ -198,17 +202,17 @@ function createEvent(input: EventInput): EventGuide {
     type: input.type,
     startDate: input.startDate,
     endDate: input.endDate,
-    summary: input.summary ?? getDefaultSummary(input.type),
-    description: input.description ?? getDefaultDescription(input.type, localizedName),
+    summary: localizeExpansionText(input.summary ?? getDefaultSummary(input.type)),
+    description: localizeExpansionText(input.description ?? getDefaultDescription(input.type, localizedName)),
     consumableRewards: input.consumableRewards ?? getDefaultConsumables(input.type),
     rewardSlugs: input.rewardSlugs ?? [],
     promoCardIds: input.promoCardIds ?? [],
     imageUrl: input.imageUrl ?? getDefaultEventImage(input),
-    imageAlt: input.imageAlt ?? `Immagine rappresentativa di ${localizedName}`,
+    imageAlt: localizeExpansionText(input.imageAlt ?? `Immagine rappresentativa di ${localizedName}`),
     linkedSetId: input.linkedSetId,
-    linkedSetName: input.linkedSetName,
-    notes: input.notes,
-    sourceLabel: input.sourceLabel ?? 'Serebii Events',
+    linkedSetName: localizedLinkedSetName,
+    notes: localizeExpansionText(input.notes),
+    sourceLabel: localizeExpansionText(input.sourceLabel ?? 'Serebii Events'),
     sourceUrl: input.sourceUrl ?? serebiiEventsUrl,
   }
 }

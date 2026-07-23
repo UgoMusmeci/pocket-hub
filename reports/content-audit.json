@@ -1,9 +1,1330 @@
 {
-  "generatedAt": "2026-07-20T13:22:54.368Z",
+  "generatedAt": "2026-07-20T21:06:00.336Z",
   "remoteCheckEnabled": false,
   "cards": {
     "total": 3141,
-    "issues": []
+    "issues": [
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B1a-088",
+        "cardId": "B1a-088",
+        "name": "Oddish",
+        "setId": "B1a",
+        "setName": "Fiamme Cremisi",
+        "localId": "088"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-001",
+        "cardId": "B2a-001",
+        "name": "Sprigatito",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "001"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-002",
+        "cardId": "B2a-002",
+        "name": "Floragato",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "002"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-003",
+        "cardId": "B2a-003",
+        "name": "Meowscarada",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "003"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-004",
+        "cardId": "B2a-004",
+        "name": "Tarountula",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "004"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-005",
+        "cardId": "B2a-005",
+        "name": "Spidops",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "005"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-006",
+        "cardId": "B2a-006",
+        "name": "Nymble",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "006"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-007",
+        "cardId": "B2a-007",
+        "name": "Smoliv",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "007"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-008",
+        "cardId": "B2a-008",
+        "name": "Dolliv",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "008"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-009",
+        "cardId": "B2a-009",
+        "name": "Arboliva",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "009"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-010",
+        "cardId": "B2a-010",
+        "name": "Bramblin",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "010"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-011",
+        "cardId": "B2a-011",
+        "name": "Brambleghast",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "011"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-012",
+        "cardId": "B2a-012",
+        "name": "Capsakid",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "012"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-013",
+        "cardId": "B2a-013",
+        "name": "Scovillain",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "013"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-014",
+        "cardId": "B2a-014",
+        "name": "Rellor",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "014"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-015",
+        "cardId": "B2a-015",
+        "name": "Wo-Chien",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "015"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-016",
+        "cardId": "B2a-016",
+        "name": "Fuecoco",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "016"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-017",
+        "cardId": "B2a-017",
+        "name": "Crocalor",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "017"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-018",
+        "cardId": "B2a-018",
+        "name": "Skeledirge",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "018"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-019",
+        "cardId": "B2a-019",
+        "name": "Charcadet",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "019"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-020",
+        "cardId": "B2a-020",
+        "name": "Armarouge",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "020"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-021",
+        "cardId": "B2a-021",
+        "name": "Chi-Yu",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "021"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-022",
+        "cardId": "B2a-022",
+        "name": "Quaxly",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "022"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-023",
+        "cardId": "B2a-023",
+        "name": "Quaxwell",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "023"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-024",
+        "cardId": "B2a-024",
+        "name": "Quaquaval",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "024"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-025",
+        "cardId": "B2a-025",
+        "name": "Wiglett",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "025"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-026",
+        "cardId": "B2a-026",
+        "name": "Wugtrio",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "026"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-027",
+        "cardId": "B2a-027",
+        "name": "Finizen",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "027"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-028",
+        "cardId": "B2a-028",
+        "name": "Palafin",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "028"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-029",
+        "cardId": "B2a-029",
+        "name": "Cetoddle",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "029"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-030",
+        "cardId": "B2a-030",
+        "name": "Cetitan",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "030"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-031",
+        "cardId": "B2a-031",
+        "name": "Veluza",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "031"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-032",
+        "cardId": "B2a-032",
+        "name": "Dondozo",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "032"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-033",
+        "cardId": "B2a-033",
+        "name": "Tatsugiri",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "033"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-034",
+        "cardId": "B2a-034",
+        "name": "Frigibax",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "034"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-035",
+        "cardId": "B2a-035",
+        "name": "Arctibax",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "035"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-036",
+        "cardId": "B2a-036",
+        "name": "Baxcalibur",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "036"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-037",
+        "cardId": "B2a-037",
+        "name": "Chien-Pao",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "037"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-038",
+        "cardId": "B2a-038",
+        "name": "Pawmi",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "038"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-039",
+        "cardId": "B2a-039",
+        "name": "Pawmo",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "039"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-040",
+        "cardId": "B2a-040",
+        "name": "Pawmot",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "040"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-041",
+        "cardId": "B2a-041",
+        "name": "Tadbulb",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "041"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-042",
+        "cardId": "B2a-042",
+        "name": "Bellibolt",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "042"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-043",
+        "cardId": "B2a-043",
+        "name": "Wattrel",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "043"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-044",
+        "cardId": "B2a-044",
+        "name": "Kilowattrel",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "044"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-045",
+        "cardId": "B2a-045",
+        "name": "Miraidon",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "045"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-046",
+        "cardId": "B2a-046",
+        "name": "Fidough",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "046"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-047",
+        "cardId": "B2a-047",
+        "name": "Dachsbun",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "047"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-048",
+        "cardId": "B2a-048",
+        "name": "Ceruledge",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "048"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-049",
+        "cardId": "B2a-049",
+        "name": "Rabsca",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "049"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-050",
+        "cardId": "B2a-050",
+        "name": "Flittle",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "050"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-051",
+        "cardId": "B2a-051",
+        "name": "Espathra",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "051"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-052",
+        "cardId": "B2a-052",
+        "name": "Greavard",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "052"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-053",
+        "cardId": "B2a-053",
+        "name": "Houndstone",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "053"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-054",
+        "cardId": "B2a-054",
+        "name": "Gimmighoul",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "054"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-055",
+        "cardId": "B2a-055",
+        "name": "Mankey",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "055"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-056",
+        "cardId": "B2a-056",
+        "name": "Primeape",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "056"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-057",
+        "cardId": "B2a-057",
+        "name": "Annihilape",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "057"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-058",
+        "cardId": "B2a-058",
+        "name": "Paldean Tauros",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "058"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-059",
+        "cardId": "B2a-059",
+        "name": "Toedscool",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "059"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-060",
+        "cardId": "B2a-060",
+        "name": "Toedscruel",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "060"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-061",
+        "cardId": "B2a-061",
+        "name": "Klawf",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "061"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-062",
+        "cardId": "B2a-062",
+        "name": "Ting-Lu",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "062"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-063",
+        "cardId": "B2a-063",
+        "name": "Koraidon",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "063"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-064",
+        "cardId": "B2a-064",
+        "name": "Paldean Wooper",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "064"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-065",
+        "cardId": "B2a-065",
+        "name": "Paldean Clodsire",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "065"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-066",
+        "cardId": "B2a-066",
+        "name": "Lokix",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "066"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-067",
+        "cardId": "B2a-067",
+        "name": "Maschiff",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "067"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-068",
+        "cardId": "B2a-068",
+        "name": "Mabosstiff",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "068"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-069",
+        "cardId": "B2a-069",
+        "name": "Shroodle",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "069"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-070",
+        "cardId": "B2a-070",
+        "name": "Grafaiai",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "070"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-071",
+        "cardId": "B2a-071",
+        "name": "Bombirdier",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "071"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-072",
+        "cardId": "B2a-072",
+        "name": "Tinkatink",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "072"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-073",
+        "cardId": "B2a-073",
+        "name": "Tinkatuff",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "073"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-074",
+        "cardId": "B2a-074",
+        "name": "Tinkaton",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "074"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-075",
+        "cardId": "B2a-075",
+        "name": "Varoom",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "075"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-076",
+        "cardId": "B2a-076",
+        "name": "Revavroom",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "076"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-077",
+        "cardId": "B2a-077",
+        "name": "Orthworm",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "077"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-078",
+        "cardId": "B2a-078",
+        "name": "Gholdengo",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "078"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-079",
+        "cardId": "B2a-079",
+        "name": "Lechonk",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "079"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-080",
+        "cardId": "B2a-080",
+        "name": "Oinkologne",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "080"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-081",
+        "cardId": "B2a-081",
+        "name": "Tandemaus",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "081"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-082",
+        "cardId": "B2a-082",
+        "name": "Maushold",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "082"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-083",
+        "cardId": "B2a-083",
+        "name": "Squawkabilly",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "083"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-084",
+        "cardId": "B2a-084",
+        "name": "Cyclizar",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "084"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-085",
+        "cardId": "B2a-085",
+        "name": "Flamigo",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "085"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-086",
+        "cardId": "B2a-086",
+        "name": "Electric Generator",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "086"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-087",
+        "cardId": "B2a-087",
+        "name": "Big Air Balloon",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "087"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-088",
+        "cardId": "B2a-088",
+        "name": "Team Star Grunt",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "088"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-089",
+        "cardId": "B2a-089",
+        "name": "Iono",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "089"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-090",
+        "cardId": "B2a-090",
+        "name": "Nemona",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "090"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-091",
+        "cardId": "B2a-091",
+        "name": "Arven",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "091"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-092",
+        "cardId": "B2a-092",
+        "name": "Penny",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "092"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-093",
+        "cardId": "B2a-093",
+        "name": "Mesagoza",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "093"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-094",
+        "cardId": "B2a-094",
+        "name": "Fuecoco",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "094"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-095",
+        "cardId": "B2a-095",
+        "name": "Greavard",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "095"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-096",
+        "cardId": "B2a-096",
+        "name": "Gimmighoul",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "096"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-097",
+        "cardId": "B2a-097",
+        "name": "Paldean Wooper",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "097"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-098",
+        "cardId": "B2a-098",
+        "name": "Orthworm",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "098"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-099",
+        "cardId": "B2a-099",
+        "name": "Maushold",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "099"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-100",
+        "cardId": "B2a-100",
+        "name": "Meowscarada",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "100"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-101",
+        "cardId": "B2a-101",
+        "name": "Armarouge",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "101"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-102",
+        "cardId": "B2a-102",
+        "name": "Chien-Pao",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "102"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-103",
+        "cardId": "B2a-103",
+        "name": "Bellibolt",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "103"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-104",
+        "cardId": "B2a-104",
+        "name": "Gholdengo",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "104"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-105",
+        "cardId": "B2a-105",
+        "name": "Team Star Grunt",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "105"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-106",
+        "cardId": "B2a-106",
+        "name": "Iono",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "106"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-107",
+        "cardId": "B2a-107",
+        "name": "Nemona",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "107"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-108",
+        "cardId": "B2a-108",
+        "name": "Arven",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "108"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-109",
+        "cardId": "B2a-109",
+        "name": "Penny",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "109"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-110",
+        "cardId": "B2a-110",
+        "name": "Meowscarada",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "110"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-111",
+        "cardId": "B2a-111",
+        "name": "Armarouge",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "111"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-112",
+        "cardId": "B2a-112",
+        "name": "Chien-Pao",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "112"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-113",
+        "cardId": "B2a-113",
+        "name": "Bellibolt",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "113"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-114",
+        "cardId": "B2a-114",
+        "name": "Gholdengo",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "114"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-115",
+        "cardId": "B2a-115",
+        "name": "Arven",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "115"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-116",
+        "cardId": "B2a-116",
+        "name": "Sprigatito",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "116"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-117",
+        "cardId": "B2a-117",
+        "name": "Floragato",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "117"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-118",
+        "cardId": "B2a-118",
+        "name": "Meowscarada",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "118"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-119",
+        "cardId": "B2a-119",
+        "name": "Pawmi",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "119"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-120",
+        "cardId": "B2a-120",
+        "name": "Pawmo",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "120"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-121",
+        "cardId": "B2a-121",
+        "name": "Pawmot",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "121"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-122",
+        "cardId": "B2a-122",
+        "name": "Gimmighoul",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "122"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-123",
+        "cardId": "B2a-123",
+        "name": "Tinkatink",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "123"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-124",
+        "cardId": "B2a-124",
+        "name": "Tinkatuff",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "124"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-125",
+        "cardId": "B2a-125",
+        "name": "Gholdengo",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "125"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-126",
+        "cardId": "B2a-126",
+        "name": "Entei",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "126"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-127",
+        "cardId": "B2a-127",
+        "name": "Suicune",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "127"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-128",
+        "cardId": "B2a-128",
+        "name": "Raikou",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "128"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-129",
+        "cardId": "B2a-129",
+        "name": "Tinkaton",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "129"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-130",
+        "cardId": "B2a-130",
+        "name": "Baxcalibur",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "130"
+      },
+      {
+        "section": "cards",
+        "kind": "missing-image",
+        "identifier": "B2a-131",
+        "cardId": "B2a-131",
+        "name": "Electric Generator",
+        "setId": "B2a",
+        "setName": "Meraviglie di Paldea",
+        "localId": "131"
+      }
+    ]
   },
   "decks": {
     "totalDeckIdeas": 23,
@@ -12,8 +1333,177 @@
     "issues": []
   },
   "rewards": {
-    "total": 96,
-    "issues": []
+    "total": 120,
+    "issues": [
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "geni-supremi-emblem-event-1-bronze-emblema",
+        "rewardName": "Geni Supremi Emblem Event 1 Bronze Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "geni-supremi-emblem-event-1-gold-emblema",
+        "rewardName": "Geni Supremi Emblem Event 1 Gold Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "geni-supremi-emblem-event-1-participation-emblema",
+        "rewardName": "Geni Supremi Emblem Event 1 Participation Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "geni-supremi-emblem-event-1-silver-emblema",
+        "rewardName": "Geni Supremi Emblem Event 1 Silver Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "geni-supremi-sp-emblem-event-1-bronze-emblema",
+        "rewardName": "Geni Supremi SP Emblem Event 1 Bronze Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "geni-supremi-sp-emblem-event-1-gold-emblema",
+        "rewardName": "Geni Supremi SP Emblem Event 1 Gold Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "geni-supremi-sp-emblem-event-1-participation-emblema",
+        "rewardName": "Geni Supremi SP Emblem Event 1 Participation Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "geni-supremi-sp-emblem-event-1-silver-emblema",
+        "rewardName": "Geni Supremi SP Emblem Event 1 Silver Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "l-isola-misteriosa-emblem-event-bronze-emblema",
+        "rewardName": "L'Isola Misteriosa Emblem Event Bronze Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "l-isola-misteriosa-emblem-event-gold-emblema",
+        "rewardName": "L'Isola Misteriosa Emblem Event Gold Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "l-isola-misteriosa-emblem-event-participation-emblema",
+        "rewardName": "L'Isola Misteriosa Emblem Event Participation Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "l-isola-misteriosa-emblem-event-silver-emblema",
+        "rewardName": "L'Isola Misteriosa Emblem Event Silver Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "l-isola-misteriosa-sp-emblem-event-bronze-emblema",
+        "rewardName": "L'Isola Misteriosa SP Emblem Event Bronze Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "l-isola-misteriosa-sp-emblem-event-gold-emblema",
+        "rewardName": "L'Isola Misteriosa SP Emblem Event Gold Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "l-isola-misteriosa-sp-emblem-event-participation-emblema",
+        "rewardName": "L'Isola Misteriosa SP Emblem Event Participation Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "l-isola-misteriosa-sp-emblem-event-silver-emblema",
+        "rewardName": "L'Isola Misteriosa SP Emblem Event Silver Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "luce-trionfale-sp-emblem-event-bronze-emblema",
+        "rewardName": "Luce Trionfale SP Emblem Event Bronze Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "luce-trionfale-sp-emblem-event-gold-emblema",
+        "rewardName": "Luce Trionfale SP Emblem Event Gold Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "luce-trionfale-sp-emblem-event-participation-emblema",
+        "rewardName": "Luce Trionfale SP Emblem Event Participation Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "luce-trionfale-sp-emblem-event-silver-emblema",
+        "rewardName": "Luce Trionfale SP Emblem Event Silver Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "scontro-spaziotemporale-emblem-event-bronze-emblema",
+        "rewardName": "Scontro Spaziotemporale Emblem Event Bronze Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "scontro-spaziotemporale-emblem-event-gold-emblema",
+        "rewardName": "Scontro Spaziotemporale Emblem Event Gold Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "scontro-spaziotemporale-emblem-event-participation-emblema",
+        "rewardName": "Scontro Spaziotemporale Emblem Event Participation Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "scontro-spaziotemporale-emblem-event-silver-emblema",
+        "rewardName": "Scontro Spaziotemporale Emblem Event Silver Emblema",
+        "type": "emblema"
+      }
+    ]
   },
   "events": {
     "total": 67,

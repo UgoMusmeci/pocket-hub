@@ -7,6 +7,54 @@ const SERIES_ID = 'tcgp'
 const GAME8_COMPLETE_DEX_URL =
   'https://game8.co/games/Pokemon-TCG-Pocket/archives/482685'
 const SEREBII_BASE_URL = 'https://www.serebii.net/tcgpocket'
+const SOURCE_SET_NAMES = {
+  A1: 'Genetic Apex',
+  A1a: 'Mythical Island',
+  A2: 'Space-Time Smackdown',
+  A2a: 'Triumphant Light',
+  A2b: 'Shining Revelry',
+  A3: 'Celestial Guardians',
+  A3a: 'Extradimensional Crisis',
+  A3b: 'Eevee Grove',
+  A4: 'Wisdom of Sea and Sky',
+  A4a: 'Secluded Springs',
+  A4b: 'Deluxe Pack ex',
+  B1: 'Mega Rising',
+  B1a: 'Crimson Blaze',
+  B2: 'Fantastical Parade',
+  B2a: 'Paldean Wonders',
+  B2b: 'Mega Shine',
+  B3: 'Pulsing Aura',
+  B3a: 'Paradox Drive',
+  B3b: 'Everyday Wonders',
+  B4: 'Sky Sovereign',
+  'P-A': 'Promo-A',
+  'P-B': 'Promo-B',
+}
+const LOCALIZED_SET_NAMES = {
+  A1: 'Geni Supremi',
+  A1a: "L'Isola Misteriosa",
+  A2: 'Scontro Spaziotemporale',
+  A2a: 'Luce Trionfale',
+  A2b: 'Tripudio Splendente',
+  A3: 'Guardiani Astrali',
+  A3a: 'Crisi Ultradimensionale',
+  A3b: 'Il Bosco di Eevee',
+  A4: 'La Via del Cielo e del Mare',
+  A4a: 'Sorgenti Recondite',
+  A4b: 'Busta Deluxe ex',
+  B1: 'Mega Ascesa',
+  B1a: 'Fiamme Cremisi',
+  B2: 'Parata Fantasmagorica',
+  B2a: 'Meraviglie di Paldea',
+  B2b: 'Mega Splendore',
+  B3: 'Aura Pulsante',
+  B3a: 'Assalto dei Paradossi',
+  B3b: 'Giorni Giocondi',
+  B4: 'Sovrano dei Cieli',
+  'P-A': 'Promo-A',
+  'P-B': 'Promo-B',
+}
 const MANUAL_SET_OVERRIDES = {
   B2b: {
     releaseDate: 'March 26, 2026',
@@ -231,10 +279,11 @@ async function mapLimit(items, limit, mapper) {
 
 function normalizeSet(set) {
   const override = MANUAL_SET_OVERRIDES[set.id] ?? {}
+  const localizedName = getLocalizedSetName(set.id, override.name ?? set.name)
 
   return {
     id: set.id,
-    name: override.name ?? set.name,
+    name: localizedName,
     releaseDate: override.releaseDate ?? set.releaseDate,
     officialCardCount: set.cardCount.official,
     totalCardCount: set.cardCount.total,
@@ -248,6 +297,7 @@ function normalizeSet(set) {
 function normalizeCard(card) {
   const override = MANUAL_CARD_OVERRIDES[card.id] ?? {}
   const setOverride = MANUAL_SET_OVERRIDES[card.set.id] ?? {}
+  const localizedSetName = getLocalizedSetName(card.set.id, setOverride.name ?? card.set.name)
   const normalizedCategory =
     override.category ??
     (card.category === 'Trainer'
@@ -267,7 +317,7 @@ function normalizeCard(card) {
     suffix: card.suffix,
     types: card.types ?? [],
     setId: card.set.id,
-    setName: setOverride.name ?? card.set.name,
+    setName: localizedSetName,
     source: 'tcgdex',
     image: imageUrl,
     localImage: getLocalCardImagePath(card.id, imageUrl),
@@ -435,6 +485,14 @@ function stripHtmlTags(value) {
 
 function toSerebiiSlug(name) {
   return name.toLowerCase().replace(/[^a-z0-9]/g, '')
+}
+
+function getLocalizedSetName(setId, fallbackName = '') {
+  return LOCALIZED_SET_NAMES[setId] ?? fallbackName
+}
+
+function getSourceSetName(setId, fallbackName = '') {
+  return SOURCE_SET_NAMES[setId] ?? fallbackName
 }
 
 function formatRarityFromAsset(assetName) {
@@ -819,6 +877,7 @@ function parseSerebiiCardPageDetails(html, card) {
 }
 
 async function fetchSerebiiSet(setCode, setName, releaseDateFallback = '', slugOverride = '') {
+  const localizedSetName = getLocalizedSetName(setCode, setName)
   const slug = slugOverride || toSerebiiSlug(setName)
   const url = `${SEREBII_BASE_URL}/${slug}/`
   const html = await fetchText(url)
@@ -827,7 +886,7 @@ async function fetchSerebiiSet(setCode, setName, releaseDateFallback = '', slugO
     throw new Error(`Unexpected Serebii payload for ${setCode}`)
   }
 
-  const parsedCards = parseSerebiiCards(html, setCode, setName, slug)
+  const parsedCards = parseSerebiiCards(html, setCode, localizedSetName, slug)
   const enrichedCards = await mapLimit(
     parsedCards,
     SEREBII_DETAIL_CONCURRENCY,
@@ -879,7 +938,7 @@ async function fetchSerebiiSet(setCode, setName, releaseDateFallback = '', slugO
   return {
     set: {
       id: setCode,
-      name: setName,
+      name: localizedSetName,
       releaseDate:
         MANUAL_SET_OVERRIDES[setCode]?.releaseDate ||
         parseSerebiiReleaseDate(html) ||
@@ -936,7 +995,7 @@ async function fetchSerebiiRepairsForBrokenSets(sets, cards) {
       const manualSetConfig = manualSerebiiSetConfigById.get(setConfig.id)
       return await fetchSerebiiSet(
         setConfig.id,
-        setConfig.name,
+        manualSetConfig?.name ?? getSourceSetName(setConfig.id, setConfig.name),
         setConfig.releaseDate,
         manualSetConfig?.slug,
       )
@@ -1028,10 +1087,11 @@ async function fetchGame8MissingSets(existingSetIds, tcgdexLastReleaseDate, tcgd
       return null
     }
 
-    const setName = setTitleMatch?.[1]?.trim() ?? setLink.name
+    const sourceSetName = setTitleMatch?.[1]?.trim() ?? setLink.name
+    const localizedSetName = getLocalizedSetName(setLink.code, sourceSetName)
 
     try {
-      return await fetchSerebiiSet(setLink.code, setName, releaseDate)
+      return await fetchSerebiiSet(setLink.code, sourceSetName, releaseDate)
     } catch (error) {
       console.warn(
         `Serebii fallback failed for ${setLink.code}, trying Game8 partial import.`,
@@ -1039,12 +1099,12 @@ async function fetchGame8MissingSets(existingSetIds, tcgdexLastReleaseDate, tcgd
       )
     }
 
-    const cards = parseGame8Cards(game8Html, setLink.code, setName)
+    const cards = parseGame8Cards(game8Html, setLink.code, localizedSetName)
 
     return {
       set: {
         id: setLink.code,
-        name: setName,
+        name: localizedSetName,
         releaseDate,
         officialCardCount: cards.length,
         totalCardCount: cards.length,
