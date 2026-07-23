@@ -5,6 +5,8 @@ cd /d %~dp0..
 set "LOGFILE=log_update.txt"
 set "HAD_ERROR=0"
 set "PUSH_CHOICE="
+set "REBASE_CHOICE="
+set "BRANCH_NAME="
 
 echo =========================
 echo AVVIO AGGIORNAMENTO
@@ -56,6 +58,7 @@ echo =========================>> "%LOGFILE%"
 
 git status --porcelain > "%TEMP%\pocket_hub_git_status.txt"
 for %%A in ("%TEMP%\pocket_hub_git_status.txt") do set "GIT_STATUS_SIZE=%%~zA"
+for /f "delims=" %%A in ('git branch --show-current') do set "BRANCH_NAME=%%A"
 
 if not "!GIT_STATUS_SIZE!"=="0" (
   git add -A >> "%LOGFILE%" 2>&1
@@ -71,19 +74,45 @@ if not "!GIT_STATUS_SIZE!"=="0" (
 )
 
 git push origin HEAD >> "%LOGFILE%" 2>&1
+if not errorlevel 1 goto pushOk
+
+echo.
+echo Push non riuscito al primo tentativo.
+echo Se il repository remoto e' piu' avanti, posso provare un pull --rebase e ritentare il push.
+
+:askRebase
+set /p "REBASE_CHOICE=Vuoi eseguire il sync con il remoto e ritentare il push? (S/N): "
+if /I "!REBASE_CHOICE!"=="S" goto doRebase
+if /I "!REBASE_CHOICE!"=="N" goto pushFailed
+echo Scelta non valida. Inserisci S oppure N.
+goto askRebase
+
+:doRebase
+if "!BRANCH_NAME!"=="" set "BRANCH_NAME=main"
+echo Eseguo pull --rebase da origin/!BRANCH_NAME!...>> "%LOGFILE%"
+git pull --rebase origin !BRANCH_NAME! >> "%LOGFILE%" 2>&1
 if errorlevel 1 (
-  echo Push non riuscito. Controlla il log: %LOGFILE%
-  echo.
-  type "%LOGFILE%"
-  pause
-  exit /b 1
+  echo Il pull --rebase non e' andato a buon fine.
+  echo Potrebbero esserci conflitti da risolvere manualmente.
+  goto pushFailed
 )
 
+git push origin HEAD >> "%LOGFILE%" 2>&1
+if errorlevel 1 goto pushFailed
+
+:pushOk
 echo Push completato con successo.
 echo.
 type "%LOGFILE%"
 pause
 exit /b 0
+
+:pushFailed
+echo Push non riuscito. Controlla il log: %LOGFILE%
+echo.
+type "%LOGFILE%"
+pause
+exit /b 1
 
 :runStep
 set "STEP_LABEL=%~1"
