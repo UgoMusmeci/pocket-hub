@@ -27,7 +27,7 @@ const SOURCE_SET_NAMES = {
   B3: 'Pulsing Aura',
   B3a: 'Paradox Drive',
   B3b: 'Everyday Wonders',
-  B4: 'Sky Sovereign',
+  B4: 'Ruler of the Skies',
   'P-A': 'Promo-A',
   'P-B': 'Promo-B',
 }
@@ -187,6 +187,12 @@ const MANUAL_CARD_OVERRIDES = {
 }
 const MANUAL_SEREBII_SETS = [
   {
+    id: 'B4',
+    name: 'Ruler of the Skies',
+    slug: 'ruleroftheskies',
+    releaseDate: 'July 30, 2026',
+  },
+  {
     id: 'B2b',
     name: 'Mega Shine',
     slug: 'megashine',
@@ -212,6 +218,7 @@ const SEREBII_DETAIL_CONCURRENCY = 8
 const speciesStageCache = new Map()
 const evolutionChainCache = new Map()
 const manualSerebiiSetConfigById = new Map(MANUAL_SEREBII_SETS.map((set) => [set.id, set]))
+const unresolvedStageNames = new Set()
 
 async function fetchJson(url) {
   const response = await fetch(url)
@@ -651,7 +658,7 @@ async function getPokemonStage(name) {
 
           return depth >= 2 ? 'Stage 2' : 'Stage 1'
         } catch (error) {
-          console.warn(`Could not resolve stage for ${name} via PokeAPI.`)
+          unresolvedStageNames.add(name)
           return undefined
         }
       })(),
@@ -659,29 +666,6 @@ async function getPokemonStage(name) {
   }
 
   return speciesStageCache.get(speciesSlug)
-}
-
-function compareSetCodes(left, right) {
-  const pattern = /^([A-Z])(\d+)([a-z]*)$/
-  const leftMatch = left.match(pattern)
-  const rightMatch = right.match(pattern)
-
-  if (!leftMatch || !rightMatch) {
-    return left.localeCompare(right, undefined, { numeric: true })
-  }
-
-  const [, leftSeries, leftNumber, leftSuffix] = leftMatch
-  const [, rightSeries, rightNumber, rightSuffix] = rightMatch
-
-  if (leftSeries !== rightSeries) {
-    return leftSeries.localeCompare(rightSeries)
-  }
-
-  if (leftNumber !== rightNumber) {
-    return Number.parseInt(leftNumber, 10) - Number.parseInt(rightNumber, 10)
-  }
-
-  return leftSuffix.localeCompare(rightSuffix)
 }
 
 function parseGame8SetLinks(html) {
@@ -1039,7 +1023,7 @@ function getLocalCardImagePath(cardId, imageUrl) {
   return `/card-images/${cardId}.${extension}`
 }
 
-async function fetchGame8MissingSets(existingSetIds, tcgdexLastReleaseDate, tcgdexLastSetId) {
+async function fetchGame8MissingSets(existingSetIds) {
   console.log('Checking Game8 for newer set lists...')
   const dexHtml = await fetchText(GAME8_COMPLETE_DEX_URL)
   const game8Sets = parseGame8SetLinks(dexHtml)
@@ -1074,18 +1058,6 @@ async function fetchGame8MissingSets(existingSetIds, tcgdexLastReleaseDate, tcgd
     }
 
     const releaseDate = parseGame8ReleaseDate(game8Html)
-    if (compareSetCodes(setLink.code, tcgdexLastSetId) <= 0) {
-      console.log(
-        `Skipping ${setLink.code} because it is not newer than latest TCGdex set code ${tcgdexLastSetId}.`,
-      )
-      return null
-    }
-    if (releaseDate && new Date(releaseDate) <= new Date(tcgdexLastReleaseDate)) {
-      console.log(
-        `Skipping ${setLink.code} because its release date ${releaseDate} is not newer than TCGdex latest ${tcgdexLastReleaseDate}.`,
-      )
-      return null
-    }
 
     const sourceSetName = setTitleMatch?.[1]?.trim() ?? setLink.name
     const localizedSetName = getLocalizedSetName(setLink.code, sourceSetName)
@@ -1151,10 +1123,6 @@ async function main() {
   )
   const supplementalCatalog = await fetchGame8MissingSets(
     new Set(normalizedSets.map((set) => set.id)),
-    normalizedSets
-      .map((set) => set.releaseDate)
-      .sort((left, right) => new Date(right) - new Date(left))[0],
-    series.lastSet.id,
   )
   const manualPromoCatalog = await fetchManualSerebiiSets(
     new Set([...normalizedSets, ...supplementalCatalog.sets].map((set) => set.id)),
@@ -1188,9 +1156,25 @@ async function main() {
   await writeFile(OUTPUT_FILE, `${JSON.stringify(catalog, null, 2)}\n`, 'utf8')
 
   console.log(`Catalog written to ${OUTPUT_FILE}`)
+
+  if (unresolvedStageNames.size > 0) {
+    const unresolvedNames = [...unresolvedStageNames].sort((left, right) =>
+      left.localeCompare(right, 'en'),
+    )
+    console.warn(
+      `Stage non risolto via PokeAPI per ${unresolvedNames.length} carte: ${unresolvedNames.join(', ')}`,
+    )
+  }
 }
 
 main().catch((error) => {
-  console.error(error)
+  const message = error instanceof Error ? error.message : String(error)
+  const cause =
+    error instanceof Error && error.cause instanceof Error ? error.cause.message : null
+
+  console.error(`Errore durante sync carte: ${message}`)
+  if (cause) {
+    console.error(`Causa: ${cause}`)
+  }
   process.exitCode = 1
 })

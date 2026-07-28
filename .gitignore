@@ -21,6 +21,8 @@ avvio-manuale-build.log
 link-report.txt
 log_audit.txt
 log_update.txt
+log_update.full.txt
+log_update.summary.txt
 promt per ulteriori modifiche.txt
 test-transparent.png
 

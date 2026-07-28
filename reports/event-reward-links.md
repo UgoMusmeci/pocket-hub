@@ -51,56 +51,56 @@
 - Evento Wonder Pick di novembre 2024 - Parte 2 | 2024-11-08 - 2024-11-15
 
 ## Emblemi Senza Eventi ma Già Classificati
-- Alcremie Emblema | espansione | Eevee Grove
-- Alolan Dugtrio Emblema | espansione | Extradimensional Crisis
-- Arceus Emblema | espansione | Triumphant Light
-- Articuno Zapdos Moltres Emblema | espansione | Genetic Apex
-- Buzzwole Emblema | espansione | Extradimensional Crisis
-- Celebi Emblema | espansione | Mythical Island
-- Charizard Emblema | espansione | Genetic Apex
-- Dialga Emblema | espansione | Space-Time Smackdown
-- Eevee Emblema | espansione | Eevee Grove
-- Garchomp Emblema | espansione | Triumphant Light
-- Gholdengo Emblema | espansione | Shining Revelry
-- Giratina Emblema | espansione | Shining Revelry
-- Greninja Emblema | espansione | Deluxe Pack ex
-- Ho-Oh Emblema | espansione | Wisdom of Sea and Sky
-- Iron Valiant Emblema | themed_collection | Paradox Drive
-- Koraidon & Miraidon Emblema | missione | Paradox Drive
-- Lugia Emblema | espansione | Wisdom of Sea and Sky
-- Lunala Emblema | espansione | Celestial Guardians
-- Mabosstiff Emblema | espansione | Paldean Wonders
-- Mantyke Emblema | espansione | Secluded Springs
-- Mega Altaria Emblema | espansione | Mega Rising
-- Mega Blastoise Emblema | espansione | Crimson Blaze
-- Mega Blaziken Emblema | espansione | Mega Rising
-- Mega Charizard Y Emblema | espansione | Crimson Blaze
-- Mega Gardevoir Emblema | espansione | Fantastical Parade
-- Mega Gyarados Emblema | espansione | Mega Rising
-- Mega Lucario Emblema | missione | Pulsing Aura
-- Mega Pinsir Emblema | espansione | Mega Rising
-- Mega Sceptile Emblema | missione | Pulsing Aura
-- Mega Venusaur Emblema | espansione | Crimson Blaze
-- Meowth Emblema | espansione | Fantastical Parade
-- Mew Emblema | espansione | Mythical Island
-- Mewtwo Emblema | espansione | Genetic Apex
-- Ogerpon Emblema | espansione | Paldean Wonders
-- Oricorio Emblema | espansione | Deluxe Pack ex
-- Palkia Emblema | espansione | Space-Time Smackdown
-- Pikachu Emblema | espansione | Genetic Apex
-- Pikachu ver. 2 Emblema | espansione | Deluxe Pack ex
-- Roaring Moon Emblema | themed_collection | Paradox Drive
-- Shaymin Emblema | espansione | Triumphant Light
-- Shiny Mega Gengar Emblema | espansione | Mega Shine
-- Shiny Mew Emblema | espansione | Mega Shine
-- Smeargle Emblema | espansione | Deluxe Pack ex
-- Sobble Emblema | themed_collection | Pulsing Aura
-- Solgaleo Emblema | espansione | Celestial Guardians
-- Sprigatito Fuecoco and Quaxly Emblema | espansione | Paldean Wonders
-- Suicune Emblema | espansione | Secluded Springs
-- Sylveon Emblema | missione | Everyday Wonders
-- Wishiwashi Emblema | espansione | Celestial Guardians
-- Yamper Emblema | themed_collection | Everyday Wonders
+- Alcremie Emblema | espansione | Il Bosco di Eevee
+- Alolan Dugtrio Emblema | espansione | Crisi Ultradimensionale
+- Arceus Emblema | espansione | Luce Trionfale
+- Articuno Zapdos Moltres Emblema | espansione | Geni Supremi
+- Buzzwole Emblema | espansione | Crisi Ultradimensionale
+- Celebi Emblema | espansione | L'Isola Misteriosa
+- Charizard Emblema | espansione | Geni Supremi
+- Dialga Emblema | espansione | Scontro Spaziotemporale
+- Eevee Emblema | espansione | Il Bosco di Eevee
+- Garchomp Emblema | espansione | Luce Trionfale
+- Gholdengo Emblema | espansione | Tripudio Splendente
+- Giratina Emblema | espansione | Tripudio Splendente
+- Greninja Emblema | espansione | Busta Deluxe ex
+- Ho-Oh Emblema | espansione | La Via del Cielo e del Mare
+- Iron Valiant Emblema | espansione | Assalto dei Paradossi
+- Koraidon & Miraidon Emblema | espansione | Assalto dei Paradossi
+- Lugia Emblema | espansione | La Via del Cielo e del Mare
+- Lunala Emblema | espansione | Guardiani Astrali
+- Mabosstiff Emblema | espansione | Meraviglie di Paldea
+- Mantyke Emblema | espansione | Sorgenti Recondite
+- Mega Altaria Emblema | espansione | Mega Ascesa
+- Mega Blastoise Emblema | espansione | Fiamme Cremisi
+- Mega Blaziken Emblema | espansione | Mega Ascesa
+- Mega Charizard Y Emblema | espansione | Fiamme Cremisi
+- Mega Gardevoir Emblema | espansione | Parata Fantasmagorica
+- Mega Gyarados Emblema | espansione | Mega Ascesa
+- Mega Lucario Emblema | espansione | Aura Pulsante
+- Mega Pinsir Emblema | espansione | Mega Ascesa
+- Mega Sceptile Emblema | espansione | Aura Pulsante
+- Mega Venusaur Emblema | espansione | Fiamme Cremisi
+- Meowth Emblema | espansione | Parata Fantasmagorica
+- Mew Emblema | espansione | L'Isola Misteriosa
+- Mewtwo Emblema | espansione | Geni Supremi
+- Ogerpon Emblema | espansione | Meraviglie di Paldea
+- Oricorio Emblema | espansione | Busta Deluxe ex
+- Palkia Emblema | espansione | Scontro Spaziotemporale
+- Pikachu Emblema | espansione | Geni Supremi
+- Pikachu ver. 2 Emblema | espansione | Busta Deluxe ex
+- Roaring Moon Emblema | espansione | Assalto dei Paradossi
+- Shaymin Emblema | espansione | Luce Trionfale
+- Shiny Mega Gengar Emblema | espansione | Mega Splendore
+- Shiny Mew Emblema | espansione | Mega Splendore
+- Smeargle Emblema | espansione | Busta Deluxe ex
+- Sobble Emblema | espansione | Aura Pulsante
+- Solgaleo Emblema | espansione | Guardiani Astrali
+- Sprigatito Fuecoco and Quaxly Emblema | espansione | Meraviglie di Paldea
+- Suicune Emblema | espansione | Sorgenti Recondite
+- Sylveon Emblema | espansione | Giorni Giocondi
+- Wishiwashi Emblema | espansione | Guardiani Astrali
+- Yamper Emblema | espansione | Giorni Giocondi
 
 ## Eventi Con Sole Carte Promo
 - Evento Drop speciale 2026 | 2026-04-29 - 2026-05-09 | promo: P-B-050, P-B-051, P-B-052, P-B-053, P-B-054, P-B-055

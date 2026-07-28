@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T13:23:00.308Z",
+  "generatedAt": "2026-07-27T13:18:37.978Z",
   "summary": {
     "eventCount": 67,
     "rewardCount": 96,
@@ -16,7 +16,7 @@
       "type": "special_missions",
       "startDate": "2026-04-04",
       "endDate": "2026-04-11",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "bonus-week-missions-march-2026",
@@ -24,7 +24,7 @@
       "type": "special_missions",
       "startDate": "2026-03-07",
       "endDate": "2026-03-14",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-march-2026",
@@ -32,7 +32,7 @@
       "type": "wonder_pick",
       "startDate": "2026-03-06",
       "endDate": "2026-03-16",
-      "linkedSetName": "Paldean Wonders"
+      "linkedSetName": "Meraviglie di Paldea"
     },
     {
       "slug": "30-days-of-gifts",
@@ -40,7 +40,7 @@
       "type": "special_event",
       "startDate": "2026-02-27",
       "endDate": "2026-06-27",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-february-2026",
@@ -48,7 +48,7 @@
       "type": "wonder_pick",
       "startDate": "2026-02-15",
       "endDate": "2026-02-25",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "bonus-week-missions-february-2026",
@@ -56,7 +56,7 @@
       "type": "special_missions",
       "startDate": "2026-02-07",
       "endDate": "2026-02-14",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "handy-card-gift-missions",
@@ -64,7 +64,7 @@
       "type": "special_missions",
       "startDate": "2026-01-30",
       "endDate": "2026-04-27",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "elite-deck-gift-missions",
@@ -72,7 +72,7 @@
       "type": "special_missions",
       "startDate": "2026-01-30",
       "endDate": "2026-04-27",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-january-2026",
@@ -80,7 +80,7 @@
       "type": "wonder_pick",
       "startDate": "2026-01-09",
       "endDate": "2026-01-19",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "bonus-week-missions-january-2026",
@@ -88,7 +88,7 @@
       "type": "special_missions",
       "startDate": "2026-01-04",
       "endDate": "2026-01-11",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "new-year-event-missions-2026",
@@ -96,7 +96,7 @@
       "type": "special_missions",
       "startDate": "2026-01-01",
       "endDate": "2026-01-08",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "holiday-event-missions-2025",
@@ -104,7 +104,7 @@
       "type": "special_missions",
       "startDate": "2025-12-25",
       "endDate": "2026-01-01",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-december-2025",
@@ -112,7 +112,7 @@
       "type": "wonder_pick",
       "startDate": "2025-12-07",
       "endDate": "2025-12-17",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-november-2025",
@@ -120,7 +120,7 @@
       "type": "wonder_pick",
       "startDate": "2025-11-27",
       "endDate": "2025-12-07",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "bonus-week-missions-november-2025",
@@ -128,7 +128,7 @@
       "type": "special_missions",
       "startDate": "2025-11-09",
       "endDate": "2025-11-16",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "promo-reissue-drop-event-2025",
@@ -136,7 +136,7 @@
       "type": "drop_event",
       "startDate": "2025-10-30",
       "endDate": "2025-11-09",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "promo-reissue-wonder-pick-event-2025",
@@ -144,7 +144,7 @@
       "type": "wonder_pick",
       "startDate": "2025-10-30",
       "endDate": "2025-11-09",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "first-anniversary-special-missions-part-1",
@@ -152,7 +152,7 @@
       "type": "special_missions",
       "startDate": "2025-10-30",
       "endDate": "2025-12-17",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "first-anniversary-countdown-missions",
@@ -160,7 +160,7 @@
       "type": "special_missions",
       "startDate": "2025-10-25",
       "endDate": "2025-11-08",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "parallel-foil-cards-mass-outbreak-event",
@@ -168,7 +168,7 @@
       "type": "mass_outbreak",
       "startDate": "2025-10-23",
       "endDate": "2025-10-30",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-october-2025",
@@ -176,7 +176,7 @@
       "type": "wonder_pick",
       "startDate": "2025-10-13",
       "endDate": "2025-10-23",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "bonus-week-missions-october-2025",
@@ -184,7 +184,7 @@
       "type": "special_missions",
       "startDate": "2025-10-12",
       "endDate": "2025-10-19",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "water-type-mass-outbreak-event",
@@ -192,7 +192,7 @@
       "type": "mass_outbreak",
       "startDate": "2025-09-25",
       "endDate": "2025-10-01",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-september-2025",
@@ -200,7 +200,7 @@
       "type": "wonder_pick",
       "startDate": "2025-09-14",
       "endDate": "2025-09-24",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "bonus-week-missions-september-2025",
@@ -208,7 +208,7 @@
       "type": "special_missions",
       "startDate": "2025-09-07",
       "endDate": "2025-09-14",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "grass-type-mass-outbreak-event",
@@ -216,7 +216,7 @@
       "type": "mass_outbreak",
       "startDate": "2025-03-24",
       "endDate": "2025-03-31",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-march-2025-part-2",
@@ -224,7 +224,7 @@
       "type": "wonder_pick",
       "startDate": "2025-03-17",
       "endDate": "2025-03-24",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-march-2025-part-1",
@@ -232,7 +232,7 @@
       "type": "wonder_pick",
       "startDate": "2025-03-10",
       "endDate": "2025-03-24",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "darkness-type-mass-outbreak-event",
@@ -240,7 +240,7 @@
       "type": "mass_outbreak",
       "startDate": "2025-02-21",
       "endDate": "2025-02-28",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-february-2025-part-2",
@@ -248,7 +248,7 @@
       "type": "wonder_pick",
       "startDate": "2025-02-14",
       "endDate": "2025-02-21",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-february-2025-part-1",
@@ -256,7 +256,7 @@
       "type": "wonder_pick",
       "startDate": "2025-02-07",
       "endDate": "2025-02-21",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "psychic-type-mass-outbreak-event",
@@ -264,7 +264,7 @@
       "type": "mass_outbreak",
       "startDate": "2025-01-23",
       "endDate": "2025-01-29",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-january-2025-part-2",
@@ -272,7 +272,7 @@
       "type": "wonder_pick",
       "startDate": "2025-01-15",
       "endDate": "2025-01-22",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-january-2025-part-1",
@@ -280,7 +280,7 @@
       "type": "wonder_pick",
       "startDate": "2025-01-07",
       "endDate": "2025-01-22",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "new-year-event-missions-2025",
@@ -288,7 +288,7 @@
       "type": "special_missions",
       "startDate": "2025-01-01",
       "endDate": "2025-01-07",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "lightning-type-mass-outbreak-event",
@@ -296,7 +296,7 @@
       "type": "mass_outbreak",
       "startDate": "2024-12-26",
       "endDate": "2025-01-01",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "holiday-event-missions-2024",
@@ -304,7 +304,7 @@
       "type": "special_missions",
       "startDate": "2024-12-25",
       "endDate": "2025-01-01",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "fire-type-mass-outbreak-event",
@@ -312,7 +312,7 @@
       "type": "mass_outbreak",
       "startDate": "2024-11-22",
       "endDate": "2024-11-29",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-november-2024-part-1",
@@ -320,7 +320,7 @@
       "type": "wonder_pick",
       "startDate": "2024-11-01",
       "endDate": "2024-11-15",
-      "linkedSetName": null
+      "linkedSetName": ""
     },
     {
       "slug": "wonder-pick-event-november-2024-part-2",
@@ -328,7 +328,7 @@
       "type": "wonder_pick",
       "startDate": "2024-11-08",
       "endDate": "2024-11-15",
-      "linkedSetName": null
+      "linkedSetName": ""
     }
   ],
   "eventsWithPromoCardsOnly": [
@@ -338,7 +338,7 @@
       "type": "drop_event",
       "startDate": "2026-04-29",
       "endDate": "2026-05-09",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-B-050",
         "P-B-051",
@@ -354,7 +354,7 @@
       "type": "wonder_pick",
       "startDate": "2026-04-17",
       "endDate": "2026-04-27",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-B-047",
         "P-B-048"
@@ -366,7 +366,7 @@
       "type": "drop_event",
       "startDate": "2026-04-09",
       "endDate": "2026-04-19",
-      "linkedSetName": "Mega Shine",
+      "linkedSetName": "Mega Splendore",
       "promoCardIds": [
         "P-B-042",
         "P-B-043",
@@ -381,7 +381,7 @@
       "type": "drop_event",
       "startDate": "2026-03-11",
       "endDate": "2026-03-21",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-B-035"
       ]
@@ -392,7 +392,7 @@
       "type": "drop_event",
       "startDate": "2026-02-12",
       "endDate": "2026-02-22",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-B-029"
       ]
@@ -403,7 +403,7 @@
       "type": "drop_event",
       "startDate": "2026-01-17",
       "endDate": "2026-01-27",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-B-024"
       ]
@@ -414,7 +414,7 @@
       "type": "drop_event",
       "startDate": "2026-01-01",
       "endDate": "2026-01-11",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-B-015"
       ]
@@ -425,7 +425,7 @@
       "type": "drop_event",
       "startDate": "2025-11-18",
       "endDate": "2025-11-28",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-B-006"
       ]
@@ -436,7 +436,7 @@
       "type": "drop_event",
       "startDate": "2025-10-06",
       "endDate": "2025-10-16",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-A-112"
       ]
@@ -447,7 +447,7 @@
       "type": "drop_event",
       "startDate": "2025-09-03",
       "endDate": "2025-09-13",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-A-106"
       ]
@@ -458,7 +458,7 @@
       "type": "drop_event",
       "startDate": "2025-03-03",
       "endDate": "2025-03-17",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-A-046"
       ]
@@ -469,7 +469,7 @@
       "type": "drop_event",
       "startDate": "2025-02-03",
       "endDate": "2025-02-17",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-A-037"
       ]
@@ -480,7 +480,7 @@
       "type": "drop_event",
       "startDate": "2025-01-01",
       "endDate": "2025-01-15",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-A-029"
       ]
@@ -491,7 +491,7 @@
       "type": "drop_event",
       "startDate": "2024-11-29",
       "endDate": "2024-12-13",
-      "linkedSetName": null,
+      "linkedSetName": "",
       "promoCardIds": [
         "P-A-018"
       ]
@@ -504,7 +504,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Eevee Grove"
+      "sourceContext": "Il Bosco di Eevee"
     },
     {
       "slug": "alolan-dugtrio-emblema",
@@ -512,7 +512,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Extradimensional Crisis"
+      "sourceContext": "Crisi Ultradimensionale"
     },
     {
       "slug": "arceus-emblema",
@@ -520,7 +520,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Triumphant Light"
+      "sourceContext": "Luce Trionfale"
     },
     {
       "slug": "articuno-zapdos-moltres-emblema",
@@ -528,7 +528,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Genetic Apex"
+      "sourceContext": "Geni Supremi"
     },
     {
       "slug": "buzzwole-emblema",
@@ -536,7 +536,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Extradimensional Crisis"
+      "sourceContext": "Crisi Ultradimensionale"
     },
     {
       "slug": "celebi-emblema",
@@ -544,7 +544,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Mythical Island"
+      "sourceContext": "L'Isola Misteriosa"
     },
     {
       "slug": "charizard-emblema",
@@ -552,7 +552,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Genetic Apex"
+      "sourceContext": "Geni Supremi"
     },
     {
       "slug": "dialga-emblema",
@@ -560,7 +560,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Space-Time Smackdown"
+      "sourceContext": "Scontro Spaziotemporale"
     },
     {
       "slug": "eevee-emblema",
@@ -568,7 +568,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Eevee Grove"
+      "sourceContext": "Il Bosco di Eevee"
     },
     {
       "slug": "garchomp-emblema",
@@ -576,7 +576,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Triumphant Light"
+      "sourceContext": "Luce Trionfale"
     },
     {
       "slug": "gholdengo-emblema",
@@ -584,7 +584,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Shining Revelry"
+      "sourceContext": "Tripudio Splendente"
     },
     {
       "slug": "giratina-emblema",
@@ -592,7 +592,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Shining Revelry"
+      "sourceContext": "Tripudio Splendente"
     },
     {
       "slug": "greninja-emblema",
@@ -600,7 +600,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Deluxe Pack ex"
+      "sourceContext": "Busta Deluxe ex"
     },
     {
       "slug": "ho-oh-emblema",
@@ -608,23 +608,23 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Wisdom of Sea and Sky"
+      "sourceContext": "La Via del Cielo e del Mare"
     },
     {
       "slug": "iron-valiant-emblema",
       "name": "Iron Valiant Emblema",
       "type": "emblema",
-      "method": "themed_collection",
+      "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Paradox Drive"
+      "sourceContext": "Assalto dei Paradossi"
     },
     {
       "slug": "koraidon-miraidon-emblema",
       "name": "Koraidon & Miraidon Emblema",
       "type": "emblema",
-      "method": "missione",
+      "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Paradox Drive"
+      "sourceContext": "Assalto dei Paradossi"
     },
     {
       "slug": "lugia-emblema",
@@ -632,7 +632,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Wisdom of Sea and Sky"
+      "sourceContext": "La Via del Cielo e del Mare"
     },
     {
       "slug": "lunala-emblema",
@@ -640,7 +640,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Celestial Guardians"
+      "sourceContext": "Guardiani Astrali"
     },
     {
       "slug": "mabosstiff-emblema",
@@ -648,7 +648,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Paldean Wonders"
+      "sourceContext": "Meraviglie di Paldea"
     },
     {
       "slug": "mantyke-emblema",
@@ -656,7 +656,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Secluded Springs"
+      "sourceContext": "Sorgenti Recondite"
     },
     {
       "slug": "mega-altaria-emblema",
@@ -664,7 +664,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Mega Rising"
+      "sourceContext": "Mega Ascesa"
     },
     {
       "slug": "mega-blastoise-emblema",
@@ -672,7 +672,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Crimson Blaze"
+      "sourceContext": "Fiamme Cremisi"
     },
     {
       "slug": "mega-blaziken-emblema",
@@ -680,7 +680,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Mega Rising"
+      "sourceContext": "Mega Ascesa"
     },
     {
       "slug": "mega-charizard-y-emblema",
@@ -688,7 +688,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Crimson Blaze"
+      "sourceContext": "Fiamme Cremisi"
     },
     {
       "slug": "mega-gardevoir-emblema",
@@ -696,7 +696,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Fantastical Parade"
+      "sourceContext": "Parata Fantasmagorica"
     },
     {
       "slug": "mega-gyarados-emblema",
@@ -704,15 +704,15 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Mega Rising"
+      "sourceContext": "Mega Ascesa"
     },
     {
       "slug": "mega-lucario-emblema",
       "name": "Mega Lucario Emblema",
       "type": "emblema",
-      "method": "missione",
+      "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Pulsing Aura"
+      "sourceContext": "Aura Pulsante"
     },
     {
       "slug": "mega-pinsir-emblema",
@@ -720,15 +720,15 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Mega Rising"
+      "sourceContext": "Mega Ascesa"
     },
     {
       "slug": "mega-sceptile-emblema",
       "name": "Mega Sceptile Emblema",
       "type": "emblema",
-      "method": "missione",
+      "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Pulsing Aura"
+      "sourceContext": "Aura Pulsante"
     },
     {
       "slug": "mega-venusaur-emblema",
@@ -736,7 +736,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Crimson Blaze"
+      "sourceContext": "Fiamme Cremisi"
     },
     {
       "slug": "meowth-emblema",
@@ -744,7 +744,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Fantastical Parade"
+      "sourceContext": "Parata Fantasmagorica"
     },
     {
       "slug": "mew-emblema",
@@ -752,7 +752,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Mythical Island"
+      "sourceContext": "L'Isola Misteriosa"
     },
     {
       "slug": "mewtwo-emblema",
@@ -760,7 +760,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Genetic Apex"
+      "sourceContext": "Geni Supremi"
     },
     {
       "slug": "ogerpon-emblema",
@@ -768,7 +768,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Paldean Wonders"
+      "sourceContext": "Meraviglie di Paldea"
     },
     {
       "slug": "oricorio-emblema",
@@ -776,7 +776,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Deluxe Pack ex"
+      "sourceContext": "Busta Deluxe ex"
     },
     {
       "slug": "palkia-emblema",
@@ -784,7 +784,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Space-Time Smackdown"
+      "sourceContext": "Scontro Spaziotemporale"
     },
     {
       "slug": "pikachu-emblema",
@@ -792,7 +792,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Genetic Apex"
+      "sourceContext": "Geni Supremi"
     },
     {
       "slug": "pikachu-ver-2-emblema",
@@ -800,15 +800,15 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Deluxe Pack ex"
+      "sourceContext": "Busta Deluxe ex"
     },
     {
       "slug": "roaring-moon-emblema",
       "name": "Roaring Moon Emblema",
       "type": "emblema",
-      "method": "themed_collection",
+      "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Paradox Drive"
+      "sourceContext": "Assalto dei Paradossi"
     },
     {
       "slug": "shaymin-emblema",
@@ -816,7 +816,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Triumphant Light"
+      "sourceContext": "Luce Trionfale"
     },
     {
       "slug": "shiny-mega-gengar-emblema",
@@ -824,7 +824,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Mega Shine"
+      "sourceContext": "Mega Splendore"
     },
     {
       "slug": "shiny-mew-emblema",
@@ -832,7 +832,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Mega Shine"
+      "sourceContext": "Mega Splendore"
     },
     {
       "slug": "smeargle-emblema",
@@ -840,15 +840,15 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Deluxe Pack ex"
+      "sourceContext": "Busta Deluxe ex"
     },
     {
       "slug": "sobble-emblema",
       "name": "Sobble Emblema",
       "type": "emblema",
-      "method": "themed_collection",
+      "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Pulsing Aura"
+      "sourceContext": "Aura Pulsante"
     },
     {
       "slug": "solgaleo-emblema",
@@ -856,7 +856,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Celestial Guardians"
+      "sourceContext": "Guardiani Astrali"
     },
     {
       "slug": "sprigatito-fuecoco-and-quaxly-emblema",
@@ -864,7 +864,7 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Paldean Wonders"
+      "sourceContext": "Meraviglie di Paldea"
     },
     {
       "slug": "suicune-emblema",
@@ -872,15 +872,15 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Secluded Springs"
+      "sourceContext": "Sorgenti Recondite"
     },
     {
       "slug": "sylveon-emblema",
       "name": "Sylveon Emblema",
       "type": "emblema",
-      "method": "missione",
+      "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Everyday Wonders"
+      "sourceContext": "Giorni Giocondi"
     },
     {
       "slug": "wishiwashi-emblema",
@@ -888,15 +888,15 @@
       "type": "emblema",
       "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Celestial Guardians"
+      "sourceContext": "Guardiani Astrali"
     },
     {
       "slug": "yamper-emblema",
       "name": "Yamper Emblema",
       "type": "emblema",
-      "method": "themed_collection",
+      "method": "espansione",
       "availability": "ottenibile",
-      "sourceContext": "Everyday Wonders"
+      "sourceContext": "Giorni Giocondi"
     }
   ],
   "rewardsWithoutAnyOrigin": []

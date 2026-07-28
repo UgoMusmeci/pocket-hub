@@ -1,20 +1,6 @@
 ﻿import type { RewardGuide } from '../types/rewards'
 
-import { localizeExpansionText } from '../lib/expansionNames'
-
-function localizeRewardGuide(reward: RewardGuide): RewardGuide {
-  return {
-    ...reward,
-    name: localizeExpansionText(reward.name),
-    sourceContext: localizeExpansionText(reward.sourceContext),
-    requirement: localizeExpansionText(reward.requirement),
-    description: localizeExpansionText(reward.description),
-    sourceLabel: localizeExpansionText(reward.sourceLabel),
-    notes: reward.notes ? localizeExpansionText(reward.notes) : undefined,
-  }
-}
-
-const baseGeneratedRewardGuides = [
+export const generatedRewardGuides: RewardGuide[] = [
   {
     slug: 'acerola-copertina-carte',
     name: 'Acerola Copertina carte',
@@ -6679,6 +6665,4 @@ const baseGeneratedRewardGuides = [
     sourceLabel: 'Serebii Playmats',
     sourceUrl: 'https://www.serebii.net/tcgpocket/playmats.shtml',
   },
-] satisfies RewardGuide[]
-
-export const generatedRewardGuides: RewardGuide[] = baseGeneratedRewardGuides.map(localizeRewardGuide)
+]

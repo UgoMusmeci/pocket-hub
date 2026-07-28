@@ -2,6 +2,12 @@ param(
   [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 )
 
+$ErrorActionPreference = 'Stop'
+trap {
+  Write-Host ("ERRORE: " + $_.Exception.Message)
+  exit 1
+}
+
 $outputFile = Join-Path $ProjectRoot 'src\data\generatedRewards.ts'
 
 $excludedRewardNames = @(
@@ -69,6 +75,21 @@ function Escape-ForTs([string]$value) {
   return $value.Replace('\', '\\').Replace("'", "\'")
 }
 
+function Get-RemoteHtml([string]$url) {
+  try {
+    $response = Invoke-WebRequest -Uri $url
+    $html = $response.Content
+  } catch {
+    throw "Impossibile scaricare la pagina sorgente: $url"
+  }
+
+  if ([string]::IsNullOrWhiteSpace($html)) {
+    throw "La pagina sorgente è vuota: $url"
+  }
+
+  return $html
+}
+
 $pages = @(
   @{ Url = 'https://www.serebii.net/tcgpocket/emblems.shtml'; Prefix = 'https://www.serebii.net'; Type = 'emblema'; Context = 'Ricompense emblema'; SourceLabel = 'Serebii Emblems'; Requirement = 'Ricompensa catalogata nell archivio emblemi. Metodo preciso di ottenimento da verificare.'; Description = 'Emblema presente nell archivio del gioco.' },
   @{ Url = 'https://www.serebii.net/tcgpocket/coins.shtml'; Prefix = 'https://www.serebii.net/tcgpocket/'; Type = 'moneta'; Context = 'Ricompense moneta'; SourceLabel = 'Serebii Coins'; Requirement = 'Ricompensa confermata nell archivio del gioco. Il metodo preciso di sblocco puo variare tra evento, missione o shop.'; Description = 'Moneta cosmetica confermata nell archivio del gioco.' },
@@ -82,7 +103,7 @@ $pages = @(
 $allRewards = New-Object System.Collections.Generic.List[object]
 
 foreach ($page in $pages) {
-  $html = curl.exe -sSL $page.Url
+  $html = Get-RemoteHtml -url $page.Url
   $matches = [regex]::Matches($html, '<img[^>]+src="([^"]+)"[^>]*alt="([^"]*)"', 'IgnoreCase')
 
   foreach ($match in $matches) {
@@ -119,6 +140,10 @@ $deduped = $allRewards |
   Group-Object { $_.type + '::' + $_.name.ToLowerInvariant() } |
   ForEach-Object { $_.Group[0] } |
   Sort-Object type, name
+
+if ($deduped.Count -eq 0) {
+  throw 'Il catalogo reward generato è vuoto. Aggiornamento interrotto.'
+}
 
 $lines = @()
 $lines += "import type { RewardGuide } from '../types/rewards'"

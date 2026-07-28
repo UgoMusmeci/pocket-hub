@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import vm from 'node:vm'
 import ts from 'typescript'
-import { existsSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -14,13 +14,25 @@ const reportMdPath = path.join(reportDir, 'event-reward-links.md')
 
 const moduleCache = new Map()
 
-async function loadTsModule(modulePath) {
-  const resolvedPath = path.resolve(projectRoot, modulePath)
+function resolveModulePath(fromPath, specifier) {
+  let targetPath = path.resolve(path.dirname(fromPath), specifier)
+  if (!path.extname(targetPath)) {
+    if (existsSync(`${targetPath}.ts`)) {
+      targetPath = `${targetPath}.ts`
+    } else if (existsSync(path.join(targetPath, 'index.ts'))) {
+      targetPath = path.join(targetPath, 'index.ts')
+    }
+  }
+
+  return targetPath
+}
+
+function loadTsModuleSync(resolvedPath) {
   if (moduleCache.has(resolvedPath)) {
     return moduleCache.get(resolvedPath)
   }
 
-  const source = await readFile(resolvedPath, 'utf8')
+  const source = readFileSync(resolvedPath, 'utf8')
   const transpiled = ts.transpileModule(source, {
     compilerOptions: {
       module: ts.ModuleKind.CommonJS,
@@ -38,21 +50,8 @@ async function loadTsModule(modulePath) {
       throw new Error(`Unsupported import in link audit loader: ${specifier}`)
     }
 
-    let targetPath = path.resolve(path.dirname(resolvedPath), specifier)
-    if (!path.extname(targetPath)) {
-      if (existsSync(`${targetPath}.ts`)) {
-        targetPath = `${targetPath}.ts`
-      } else if (existsSync(path.join(targetPath, 'index.ts'))) {
-        targetPath = path.join(targetPath, 'index.ts')
-      }
-    }
-
-    const loaded = moduleCache.get(targetPath)
-    if (loaded) {
-      return loaded
-    }
-
-    throw new Error(`Synchronous require cache miss for ${specifier}`)
+    const targetPath = resolveModulePath(resolvedPath, specifier)
+    return loadTsModuleSync(targetPath)
   }
 
   moduleCache.set(resolvedPath, exports)
@@ -73,7 +72,13 @@ async function loadTsModule(modulePath) {
   return module.exports
 }
 
+async function loadTsModule(modulePath) {
+  const resolvedPath = path.resolve(projectRoot, modulePath)
+  return loadTsModuleSync(resolvedPath)
+}
+
 async function loadData() {
+  await loadTsModule('src/lib/expansionNames.ts')
   await loadTsModule('src/data/rewards.ts')
   await loadTsModule('src/data/rewardOverrides.ts')
   await loadTsModule('src/data/generatedRewards.ts')

@@ -15,6 +15,55 @@ $tempDir = Join-Path $ProjectRoot '.tmp\reward-assets'
 New-Item -ItemType Directory -Force -Path $outputDir | Out-Null
 New-Item -ItemType Directory -Force -Path $tempDir | Out-Null
 
+function Get-DownloadCandidates([string]$url) {
+  $candidates = New-Object System.Collections.Generic.List[string]
+
+  if (-not [string]::IsNullOrWhiteSpace($url)) {
+    [void]$candidates.Add($url)
+
+    try {
+      $uri = [System.Uri]$url
+      $encodedPath = [System.Uri]::EscapeUriString($uri.GetLeftPart([System.UriPartial]::Authority) + $uri.AbsolutePath)
+      if ($encodedPath -ne $url) {
+        [void]$candidates.Add($encodedPath)
+      }
+
+      if ($uri.AbsolutePath -like '*/th/*') {
+        $withoutThumb = $url -replace '/th/', '/'
+        if ($withoutThumb -ne $url) {
+          [void]$candidates.Add($withoutThumb)
+        }
+      }
+    } catch {
+    }
+  }
+
+  return $candidates | Select-Object -Unique
+}
+
+function Invoke-RewardDownload([string]$url, [string]$targetFile) {
+  $lastError = $null
+
+  foreach ($candidate in (Get-DownloadCandidates $url)) {
+    try {
+      Invoke-WebRequest -Uri $candidate -OutFile $targetFile
+      return @{
+        Success = $true
+        Url = $candidate
+        Error = $null
+      }
+    } catch {
+      $lastError = $_.Exception.Message
+    }
+  }
+
+  return @{
+    Success = $false
+    Url = $url
+    Error = $lastError
+  }
+}
+
 $pattern = "slug:\s*'([^']+)'.*?sourceImageUrl:\s*'([^']+)'"
 $matches = New-Object System.Collections.Generic.List[System.Text.RegularExpressions.Match]
 foreach ($rewardFile in $rewardFiles) {
@@ -54,6 +103,61 @@ function New-TransparentCanvas([int]$size) {
   $graphics.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::HighQuality
   $graphics.PixelOffsetMode = [System.Drawing.Drawing2D.PixelOffsetMode]::HighQuality
   return @{ Bitmap = $canvas; Graphics = $graphics }
+}
+
+function New-PlaceholderRewardImage([string]$label, [string]$targetFile) {
+  $canvasInfo = New-TransparentCanvas 600
+  $canvas = $canvasInfo.Bitmap
+  $graphics = $canvasInfo.Graphics
+
+  $backgroundBrush = New-Object System.Drawing.Drawing2D.LinearGradientBrush(
+    (New-Object System.Drawing.Rectangle 0, 0, 600, 600),
+    [System.Drawing.Color]::FromArgb(255, 255, 248, 232),
+    [System.Drawing.Color]::FromArgb(255, 220, 234, 255),
+    45
+  )
+  $graphics.FillRectangle($backgroundBrush, 0, 0, 600, 600)
+
+  $borderPen = New-Object System.Drawing.Pen ([System.Drawing.Color]::FromArgb(255, 20, 53, 113)), 10
+  $graphics.DrawRectangle($borderPen, 24, 24, 552, 552)
+
+  $titleFont = New-Object System.Drawing.Font('Segoe UI', 28, [System.Drawing.FontStyle]::Bold)
+  $bodyFont = New-Object System.Drawing.Font('Segoe UI', 16, [System.Drawing.FontStyle]::Regular)
+  $titleBrush = New-Object System.Drawing.SolidBrush ([System.Drawing.Color]::FromArgb(255, 20, 53, 113))
+  $bodyBrush = New-Object System.Drawing.SolidBrush ([System.Drawing.Color]::FromArgb(255, 55, 65, 81))
+  $format = New-Object System.Drawing.StringFormat
+  $format.Alignment = [System.Drawing.StringAlignment]::Center
+  $format.LineAlignment = [System.Drawing.StringAlignment]::Center
+
+  $graphics.DrawString(
+    'Asset non disponibile',
+    $titleFont,
+    $titleBrush,
+    (New-Object System.Drawing.RectangleF 60, 170, 480, 80),
+    $format
+  )
+  $graphics.DrawString(
+    $label,
+    $bodyFont,
+    $bodyBrush,
+    (New-Object System.Drawing.RectangleF 70, 265, 460, 120),
+    $format
+  )
+
+  $canvas.Save($targetFile, [System.Drawing.Imaging.ImageFormat]::Png)
+
+  $backgroundBrush.Dispose()
+  $borderPen.Dispose()
+  $titleFont.Dispose()
+  $bodyFont.Dispose()
+  $titleBrush.Dispose()
+  $bodyBrush.Dispose()
+  $graphics.Dispose()
+  $canvas.Dispose()
+}
+
+function Convert-SlugToLabel([string]$slug) {
+  return (($slug -replace '-', ' ') -replace '\s+', ' ').Trim()
 }
 
 function Convert-ToTransparentPng([string]$sourceFile, [string]$targetFile) {
@@ -145,11 +249,15 @@ foreach ($match in $matches) {
   }
 
   try {
-    Invoke-WebRequest -Uri $url -OutFile $tempFile
+    $download = Invoke-RewardDownload -url $url -targetFile $tempFile
+    if (-not $download.Success) {
+      throw $download.Error
+    }
     Convert-ToTransparentPng -sourceFile $tempFile -targetFile $outputFile
     $processed += $slug
   } catch {
-    Write-Warning ("Skipped reward asset: " + $slug + " | " + $url)
+    New-PlaceholderRewardImage -label (Convert-SlugToLabel $slug) -targetFile $outputFile
+    Write-Warning ("Reward asset non trovato alla fonte, placeholder generato: " + $slug + " | " + $url + " | " + $_.Exception.Message)
   }
 }
 
@@ -164,11 +272,15 @@ foreach ($overrideEntry in $overrideEntries) {
   }
 
   try {
-    Invoke-WebRequest -Uri $url -OutFile $tempFile
+    $download = Invoke-RewardDownload -url $url -targetFile $tempFile
+    if (-not $download.Success) {
+      throw $download.Error
+    }
     Convert-ToTransparentPng -sourceFile $tempFile -targetFile $outputFile
     $processed += $slug
   } catch {
-    Write-Warning ("Skipped reward override asset: " + $slug + " | " + $url)
+    New-PlaceholderRewardImage -label (Convert-SlugToLabel $slug) -targetFile $outputFile
+    Write-Warning ("Reward override asset non trovato alla fonte, placeholder generato: " + $slug + " | " + $url + " | " + $_.Exception.Message)
   }
 }
 
