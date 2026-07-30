@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-07-29T08:00:01.571Z",
+    "generatedAt": "2026-07-30T07:43:21.153Z",
     "source": "https://api.tcgdex.net/v2/en + Serebii fallback + Game8 fallback",
     "seriesId": "tcgp",
     "seriesName": "Pokémon TCG Pocket",
@@ -87556,7 +87556,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "ryoma uratsuka"
     },
     {
       "id": "B4-002",
@@ -87583,7 +87584,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Satoshi Shirai"
     },
     {
       "id": "B4-003",
@@ -87611,7 +87613,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Suwama Chiaki"
     },
     {
       "id": "B4-004",
@@ -87638,7 +87641,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Aya Kusube"
     },
     {
       "id": "B4-005",
@@ -87667,7 +87671,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Midori Harada"
     },
     {
       "id": "B4-006",
@@ -87695,7 +87700,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kouki Saitou"
     },
     {
       "id": "B4-007",
@@ -87724,7 +87730,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Midori Harada"
     },
     {
       "id": "B4-008",
@@ -87752,7 +87759,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Sumiyoshi Kizuki"
     },
     {
       "id": "B4-009",
@@ -87780,7 +87788,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Anesaki Dynamic"
     },
     {
       "id": "B4-010",
@@ -87808,7 +87817,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Yoriyuki Ikegami"
     },
     {
       "id": "B4-011",
@@ -87838,7 +87848,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-012",
@@ -87867,7 +87878,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "sowsow"
     },
     {
       "id": "B4-013",
@@ -87895,7 +87907,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "sui"
     },
     {
       "id": "B4-014",
@@ -87924,7 +87937,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Hasuno"
     },
     {
       "id": "B4-015",
@@ -87954,7 +87968,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kyoko Umemoto"
     },
     {
       "id": "B4-016",
@@ -87983,7 +87998,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Hitoshi Ariga"
     },
     {
       "id": "B4-017",
@@ -88011,7 +88027,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Miki Tanaka"
     },
     {
       "id": "B4-018",
@@ -88040,7 +88057,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Tomokazu Komiya"
     },
     {
       "id": "B4-019",
@@ -88068,7 +88086,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Naoyo Kimura"
     },
     {
       "id": "B4-020",
@@ -88095,7 +88114,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Saya Tsuruta"
     },
     {
       "id": "B4-021",
@@ -88125,7 +88145,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Yukiko Baba"
     },
     {
       "id": "B4-022",
@@ -88155,7 +88176,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "AKIRA EGAWA"
     },
     {
       "id": "B4-023",
@@ -88186,7 +88208,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Ken Sugimori"
     },
     {
       "id": "B4-024",
@@ -88213,7 +88236,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Teeziro"
     },
     {
       "id": "B4-025",
@@ -88242,7 +88266,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Naoyo Kimura"
     },
     {
       "id": "B4-026",
@@ -88273,7 +88298,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-027",
@@ -88301,7 +88327,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kurata So"
     },
     {
       "id": "B4-028",
@@ -88330,7 +88357,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "hncl"
     },
     {
       "id": "B4-029",
@@ -88361,7 +88389,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kouki Saitou"
     },
     {
       "id": "B4-030",
@@ -88389,7 +88418,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Mousho"
     },
     {
       "id": "B4-031",
@@ -88419,7 +88449,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Shigenori Negishi"
     },
     {
       "id": "B4-032",
@@ -88447,7 +88478,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Shigenori Negishi"
     },
     {
       "id": "B4-033",
@@ -88476,7 +88508,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Akira Komayama"
     },
     {
       "id": "B4-034",
@@ -88504,7 +88537,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Jerky"
     },
     {
       "id": "B4-035",
@@ -88533,7 +88567,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-036",
@@ -88563,7 +88598,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "kodama"
     },
     {
       "id": "B4-037",
@@ -88595,7 +88631,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-038",
@@ -88624,7 +88661,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "sui"
     },
     {
       "id": "B4-039",
@@ -88654,7 +88692,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Masakazu Fukuda"
     },
     {
       "id": "B4-040",
@@ -88685,7 +88724,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Satoshi Shirai"
     },
     {
       "id": "B4-041",
@@ -88715,7 +88755,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Shin Nagasawa"
     },
     {
       "id": "B4-042",
@@ -88743,7 +88784,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "kurumitsu"
     },
     {
       "id": "B4-043",
@@ -88771,7 +88813,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Megumi Higuchi"
     },
     {
       "id": "B4-044",
@@ -88800,7 +88843,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Masakazu Fukuda"
     },
     {
       "id": "B4-045",
@@ -88829,7 +88873,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kagemaru Himeno"
     },
     {
       "id": "B4-046",
@@ -88857,7 +88902,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "sui"
     },
     {
       "id": "B4-047",
@@ -88886,7 +88932,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "match"
     },
     {
       "id": "B4-048",
@@ -88914,7 +88961,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Misa Tsutsui"
     },
     {
       "id": "B4-049",
@@ -88941,7 +88989,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kariya"
     },
     {
       "id": "B4-050",
@@ -88970,7 +89019,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "GIDORA"
     },
     {
       "id": "B4-051",
@@ -88999,7 +89049,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Naoki Saito"
     },
     {
       "id": "B4-052",
@@ -89028,7 +89079,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Eri Yamaki"
     },
     {
       "id": "B4-053",
@@ -89058,7 +89110,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "aoki"
     },
     {
       "id": "B4-054",
@@ -89086,7 +89139,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Keisin"
     },
     {
       "id": "B4-055",
@@ -89117,7 +89171,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-056",
@@ -89145,7 +89200,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Akira Komayama"
     },
     {
       "id": "B4-057",
@@ -89174,7 +89230,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "NC Empire"
     },
     {
       "id": "B4-058",
@@ -89203,7 +89260,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Shin Nagasawa"
     },
     {
       "id": "B4-059",
@@ -89233,7 +89291,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Souichirou Gunjima"
     },
     {
       "id": "B4-060",
@@ -89260,7 +89319,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Taiga Kayama"
     },
     {
       "id": "B4-061",
@@ -89288,7 +89348,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "5ban Graphics"
     },
     {
       "id": "B4-062",
@@ -89316,7 +89377,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Shin Nagasawa"
     },
     {
       "id": "B4-063",
@@ -89346,7 +89408,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kouki Saitou"
     },
     {
       "id": "B4-064",
@@ -89375,7 +89438,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "sowsow"
     },
     {
       "id": "B4-065",
@@ -89405,7 +89469,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "ryoma uratsuka"
     },
     {
       "id": "B4-066",
@@ -89434,7 +89499,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Tomokazu Komiya"
     },
     {
       "id": "B4-067",
@@ -89464,7 +89530,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Shinji Kanda"
     },
     {
       "id": "B4-068",
@@ -89491,7 +89558,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Miki Tanaka"
     },
     {
       "id": "B4-069",
@@ -89520,7 +89588,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "OOYAMA"
     },
     {
       "id": "B4-070",
@@ -89550,7 +89619,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kouki Saitou"
     },
     {
       "id": "B4-071",
@@ -89577,7 +89647,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Nagomi Nijo"
     },
     {
       "id": "B4-072",
@@ -89605,7 +89676,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "kawayoo"
     },
     {
       "id": "B4-073",
@@ -89634,7 +89706,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Shibuzoh."
     },
     {
       "id": "B4-074",
@@ -89661,7 +89734,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kagemaru Himeno"
     },
     {
       "id": "B4-075",
@@ -89689,7 +89763,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Shibuzoh."
     },
     {
       "id": "B4-076",
@@ -89717,7 +89792,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Narumi Sato"
     },
     {
       "id": "B4-077",
@@ -89745,7 +89821,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "akagi"
     },
     {
       "id": "B4-078",
@@ -89773,7 +89850,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "mingo"
     },
     {
       "id": "B4-079",
@@ -89802,7 +89880,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Naoyo Kimura"
     },
     {
       "id": "B4-080",
@@ -89832,7 +89911,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Hisao Nakamura"
     },
     {
       "id": "B4-081",
@@ -89860,7 +89940,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kouki Saitou"
     },
     {
       "id": "B4-082",
@@ -89889,7 +89970,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Souichirou Gunjima"
     },
     {
       "id": "B4-083",
@@ -89919,7 +90001,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Shin Nagasawa"
     },
     {
       "id": "B4-084",
@@ -89950,7 +90033,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-085",
@@ -89978,7 +90062,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "tetsuya koizumi"
     },
     {
       "id": "B4-086",
@@ -90006,7 +90091,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Anesaki Dynamic"
     },
     {
       "id": "B4-087",
@@ -90035,7 +90121,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Tomokazu Komiya"
     },
     {
       "id": "B4-088",
@@ -90064,7 +90151,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Sumiyoshi Kizuki"
     },
     {
       "id": "B4-089",
@@ -90094,7 +90182,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Masakazu Fukuda"
     },
     {
       "id": "B4-090",
@@ -90122,7 +90211,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "OKUBO"
     },
     {
       "id": "B4-091",
@@ -90150,7 +90240,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Nisota Niso"
     },
     {
       "id": "B4-092",
@@ -90178,7 +90269,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "match"
     },
     {
       "id": "B4-093",
@@ -90205,7 +90297,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "ryoma uratsuka"
     },
     {
       "id": "B4-094",
@@ -90233,7 +90326,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Aya Kusube"
     },
     {
       "id": "B4-095",
@@ -90260,7 +90354,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Eri Yamaki"
     },
     {
       "id": "B4-096",
@@ -90287,7 +90382,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "sowsow"
     },
     {
       "id": "B4-097",
@@ -90315,7 +90411,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kouki Saitou"
     },
     {
       "id": "B4-098",
@@ -90343,7 +90440,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Sumiyoshi Kizuki"
     },
     {
       "id": "B4-099",
@@ -90373,7 +90471,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Yuka Morii"
     },
     {
       "id": "B4-100",
@@ -90401,7 +90500,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Ebila"
     },
     {
       "id": "B4-101",
@@ -90428,7 +90528,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Shigenori Negishi"
     },
     {
       "id": "B4-102",
@@ -90458,7 +90559,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Narumi Sato"
     },
     {
       "id": "B4-103",
@@ -90496,7 +90598,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-104",
@@ -90525,7 +90628,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Sanosuke Sakuma"
     },
     {
       "id": "B4-105",
@@ -90554,7 +90658,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "0313"
     },
     {
       "id": "B4-106",
@@ -90582,7 +90687,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Aya Kusube"
     },
     {
       "id": "B4-107",
@@ -90611,7 +90717,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kazuma Koda"
     },
     {
       "id": "B4-108",
@@ -90641,7 +90748,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "kawayoo"
     },
     {
       "id": "B4-109",
@@ -90672,7 +90780,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA Yamashita"
     },
     {
       "id": "B4-110",
@@ -90701,7 +90810,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Nurikabe"
     },
     {
       "id": "B4-111",
@@ -90730,7 +90840,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Nelnal"
     },
     {
       "id": "B4-112",
@@ -90760,7 +90871,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "kawayoo"
     },
     {
       "id": "B4-113",
@@ -90791,7 +90903,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Takumi Wada"
     },
     {
       "id": "B4-114",
@@ -90820,7 +90933,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Mina Nakai"
     },
     {
       "id": "B4-115",
@@ -90851,7 +90965,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Sanosuke Sakuma"
     },
     {
       "id": "B4-116",
@@ -90879,7 +90994,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Sekio"
     },
     {
       "id": "B4-117",
@@ -90908,7 +91024,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "HACCAN"
     },
     {
       "id": "B4-118",
@@ -90938,7 +91055,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Naoyo Kimura"
     },
     {
       "id": "B4-119",
@@ -90969,7 +91087,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "kawayoo"
     },
     {
       "id": "B4-120",
@@ -90999,7 +91118,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA Igarasahi"
     },
     {
       "id": "B4-121",
@@ -91028,7 +91148,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "UKUMO uiti"
     },
     {
       "id": "B4-122",
@@ -91057,7 +91178,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "aoki"
     },
     {
       "id": "B4-123",
@@ -91087,7 +91209,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Anesaki Dynamic"
     },
     {
       "id": "B4-124",
@@ -91116,7 +91239,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "match"
     },
     {
       "id": "B4-125",
@@ -91145,7 +91269,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Miki Tanaka"
     },
     {
       "id": "B4-126",
@@ -91174,7 +91299,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Tomomi Ozaki"
     },
     {
       "id": "B4-127",
@@ -91203,7 +91329,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kuroimori"
     },
     {
       "id": "B4-128",
@@ -91233,7 +91360,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Iori Suzuki"
     },
     {
       "id": "B4-129",
@@ -91262,7 +91390,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Yukiko Baba"
     },
     {
       "id": "B4-130",
@@ -91291,7 +91420,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "sowsow"
     },
     {
       "id": "B4-131",
@@ -91319,7 +91449,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Sumiyoshi Kizuki"
     },
     {
       "id": "B4-132",
@@ -91348,7 +91479,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Sekio"
     },
     {
       "id": "B4-133",
@@ -91377,7 +91509,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Atsuko Nishida"
     },
     {
       "id": "B4-134",
@@ -91404,7 +91537,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "kawayoo"
     },
     {
       "id": "B4-135",
@@ -91433,7 +91567,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Shin Nagasawa"
     },
     {
       "id": "B4-136",
@@ -91461,7 +91596,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Midori Harada"
     },
     {
       "id": "B4-137",
@@ -91489,7 +91625,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Naoki Saito"
     },
     {
       "id": "B4-138",
@@ -91517,7 +91654,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Midori Harada"
     },
     {
       "id": "B4-139",
@@ -91546,7 +91684,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Naoyo Kimura"
     },
     {
       "id": "B4-140",
@@ -91575,7 +91714,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Shinya Komatsu"
     },
     {
       "id": "B4-141",
@@ -91606,7 +91746,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-142",
@@ -91634,7 +91775,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "HYOGONOSUKE"
     },
     {
       "id": "B4-143",
@@ -91663,7 +91805,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "KEIICHIRO ITO"
     },
     {
       "id": "B4-144",
@@ -91693,7 +91836,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Kazumasa Yasukuni"
     },
     {
       "id": "B4-145",
@@ -91708,7 +91852,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/145.jpg",
       "localImage": "/card-images/B4-145.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Studio Bora Inc."
     },
     {
       "id": "B4-146",
@@ -91723,7 +91868,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/146.jpg",
       "localImage": "/card-images/B4-146.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Toyste Beach"
     },
     {
       "id": "B4-147",
@@ -91738,7 +91884,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/147.jpg",
       "localImage": "/card-images/B4-147.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "5ban Graphics"
     },
     {
       "id": "B4-148",
@@ -91753,7 +91900,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/148.jpg",
       "localImage": "/card-images/B4-148.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Studio Bora Inc."
     },
     {
       "id": "B4-149",
@@ -91768,7 +91916,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/149.jpg",
       "localImage": "/card-images/B4-149.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Toyste Beach"
     },
     {
       "id": "B4-150",
@@ -91783,7 +91932,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/150.jpg",
       "localImage": "/card-images/B4-150.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "GIDORA"
     },
     {
       "id": "B4-151",
@@ -91798,7 +91948,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/151.jpg",
       "localImage": "/card-images/B4-151.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Souichirou Gunjima"
     },
     {
       "id": "B4-152",
@@ -91813,7 +91964,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/152.jpg",
       "localImage": "/card-images/B4-152.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Nobusawa Mochipuyo"
     },
     {
       "id": "B4-153",
@@ -91828,7 +91980,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/153.jpg",
       "localImage": "/card-images/B4-153.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Teeziro"
     },
     {
       "id": "B4-154",
@@ -91843,7 +91996,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/154.jpg",
       "localImage": "/card-images/B4-154.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "AYUMI ODASHIMA"
     },
     {
       "id": "B4-155",
@@ -91858,7 +92012,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/155.jpg",
       "localImage": "/card-images/B4-155.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "AYUMI ODASHIMA"
     },
     {
       "id": "B4-156",
@@ -91886,7 +92041,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Ounishi"
     },
     {
       "id": "B4-157",
@@ -91914,7 +92070,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Gapao"
     },
     {
       "id": "B4-158",
@@ -91942,7 +92099,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "OKACHEKE"
     },
     {
       "id": "B4-159",
@@ -91971,7 +92129,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "NC Empire"
     },
     {
       "id": "B4-160",
@@ -91998,7 +92157,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Yoko Hishida"
     },
     {
       "id": "B4-161",
@@ -92027,7 +92187,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Uninori"
     },
     {
       "id": "B4-162",
@@ -92057,7 +92218,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "chibi"
     },
     {
       "id": "B4-163",
@@ -92086,7 +92248,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Ligton"
     },
     {
       "id": "B4-164",
@@ -92115,7 +92278,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "HYOGONOSUKE"
     },
     {
       "id": "B4-165",
@@ -92143,7 +92307,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Taira Akitsu"
     },
     {
       "id": "B4-166",
@@ -92172,7 +92337,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Rond"
     },
     {
       "id": "B4-167",
@@ -92199,7 +92365,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "OKUBO"
     },
     {
       "id": "B4-168",
@@ -92226,7 +92393,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Yoshimoto Yoshimon"
     },
     {
       "id": "B4-169",
@@ -92254,7 +92422,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "SIE NANAHARA"
     },
     {
       "id": "B4-170",
@@ -92282,7 +92451,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Yuriko Akase"
     },
     {
       "id": "B4-171",
@@ -92309,7 +92479,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "okayamatakatoshi"
     },
     {
       "id": "B4-172",
@@ -92337,7 +92508,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Mekayu"
     },
     {
       "id": "B4-173",
@@ -92364,7 +92536,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Rianti Hidayat"
     },
     {
       "id": "B4-174",
@@ -92393,7 +92566,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kazumasa Yasukuni"
     },
     {
       "id": "B4-175",
@@ -92422,7 +92596,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "rika"
     },
     {
       "id": "B4-176",
@@ -92451,7 +92626,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "AKIRA EGAWA"
     },
     {
       "id": "B4-177",
@@ -92481,7 +92657,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Natsumi Yoshida"
     },
     {
       "id": "B4-178",
@@ -92510,7 +92687,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "MINAMINAMI Take"
     },
     {
       "id": "B4-179",
@@ -92539,7 +92717,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "osare"
     },
     {
       "id": "B4-180",
@@ -92569,7 +92748,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-181",
@@ -92600,7 +92780,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-182",
@@ -92629,7 +92810,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-183",
@@ -92661,7 +92843,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-184",
@@ -92692,7 +92875,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-185",
@@ -92723,7 +92907,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-186",
@@ -92761,7 +92946,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-187",
@@ -92792,7 +92978,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA Yamashita"
     },
     {
       "id": "B4-188",
@@ -92822,7 +93009,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA Igarasahi"
     },
     {
       "id": "B4-189",
@@ -92853,7 +93041,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-190",
@@ -92868,7 +93057,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/190.jpg",
       "localImage": "/card-images/B4-190.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "GIDORA"
     },
     {
       "id": "B4-191",
@@ -92883,7 +93073,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/191.jpg",
       "localImage": "/card-images/B4-191.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Souichirou Gunjima"
     },
     {
       "id": "B4-192",
@@ -92898,7 +93089,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/192.jpg",
       "localImage": "/card-images/B4-192.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Nobusawa Mochipuyo"
     },
     {
       "id": "B4-193",
@@ -92913,7 +93105,8 @@
       "image": "https://www.serebii.net/tcgpocket/th/ruleroftheskies/193.jpg",
       "localImage": "/card-images/B4-193.jpg",
       "attacks": [],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "Teeziro"
     },
     {
       "id": "B4-194",
@@ -92943,7 +93136,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "mashu"
     },
     {
       "id": "B4-195",
@@ -92974,7 +93168,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Ryota Murayama"
     },
     {
       "id": "B4-196",
@@ -93003,7 +93198,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Nurikabe"
     },
     {
       "id": "B4-197",
@@ -93035,7 +93231,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "USGMEN"
     },
     {
       "id": "B4-198",
@@ -93066,7 +93263,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Kuroimori"
     },
     {
       "id": "B4-199",
@@ -93104,7 +93302,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Yano Keiji"
     },
     {
       "id": "B4-200",
@@ -93135,7 +93334,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "GOSSAN"
     },
     {
       "id": "B4-201",
@@ -93161,7 +93361,8 @@
           ]
         }
       ],
-      "weaknesses": []
+      "weaknesses": [],
+      "illustrator": "HACCAN"
     },
     {
       "id": "B4-202",
@@ -93192,7 +93393,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Akino Fukuji"
     },
     {
       "id": "B4-203",
@@ -93222,7 +93424,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Iwamoto05"
     },
     {
       "id": "B4-204",
@@ -93249,7 +93452,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Souichirou Gunjima"
     },
     {
       "id": "B4-205",
@@ -93277,7 +93481,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Taiga Kasai"
     },
     {
       "id": "B4-206",
@@ -93306,7 +93511,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Taiga Kasai"
     },
     {
       "id": "B4-207",
@@ -93336,7 +93542,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Taiga Kasai"
     },
     {
       "id": "B4-208",
@@ -93364,7 +93571,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Taiga Kasai"
     },
     {
       "id": "B4-209",
@@ -93392,7 +93600,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "MAHOU"
     },
     {
       "id": "B4-210",
@@ -93420,7 +93629,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "MAHOU"
     },
     {
       "id": "B4-211",
@@ -93449,7 +93659,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "MAHOU"
     },
     {
       "id": "B4-212",
@@ -93479,7 +93690,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Souichirou Gunjima"
     },
     {
       "id": "B4-213",
@@ -93508,7 +93720,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Taiga Kasai"
     },
     {
       "id": "B4-214",
@@ -93538,7 +93751,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Taiga Kasai"
     },
     {
       "id": "B4-215",
@@ -93566,7 +93780,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "MAHOU"
     },
     {
       "id": "B4-216",
@@ -93594,7 +93809,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Souichirou Gunjima"
     },
     {
       "id": "B4-217",
@@ -93623,7 +93839,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "Souichirou Gunjima"
     },
     {
       "id": "B4-218",
@@ -93650,7 +93867,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "MAHOU"
     },
     {
       "id": "B4-219",
@@ -93678,7 +93896,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "MAHOU"
     },
     {
       "id": "B4-220",
@@ -93707,7 +93926,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Souichirou Gunjima"
     },
     {
       "id": "B4-221",
@@ -93736,7 +93956,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Souichirou Gunjima"
     },
     {
       "id": "B4-222",
@@ -93765,7 +93986,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "Taiga Kasai"
     },
     {
       "id": "B4-223",
@@ -93793,7 +94015,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "MAHOU"
     },
     {
       "id": "B4-224",
@@ -93830,7 +94053,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "5ban Graphics"
     },
     {
       "id": "B4-225",
@@ -93859,7 +94083,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-226",
@@ -93890,7 +94115,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-227",
@@ -93920,7 +94146,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-228",
@@ -93950,7 +94177,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA Yamashita"
     },
     {
       "id": "B4-229",
@@ -93981,7 +94209,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-230",
@@ -94010,7 +94239,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-231",
@@ -94041,7 +94271,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 1
+      "retreat": 1,
+      "illustrator": "PLANETA CG Works"
     },
     {
       "id": "B4-232",
@@ -94070,7 +94301,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA Mamiya"
     },
     {
       "id": "B4-233",
@@ -94099,7 +94331,8 @@
         }
       ],
       "weaknesses": [],
-      "retreat": 0
+      "retreat": 0,
+      "illustrator": "PLANETA Mamiya"
     },
     {
       "id": "P-A-001",
