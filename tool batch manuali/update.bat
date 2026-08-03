@@ -16,6 +16,8 @@ set "PUSH_CHOICE="
 set "REBASE_CHOICE="
 set "BRANCH_NAME="
 set "RETRY_WAIT_SECONDS=3"
+set "LOCK_WAIT_SECONDS=5"
+set "LOCK_CHECK_MAX=3"
 set "REBASE_RESOLVED=0"
 
 echo =========================
@@ -77,6 +79,9 @@ echo =========================
 >> "%LOGFILE%" echo =========================
 >> "%SUMMARYFILE%" echo.
 >> "%SUMMARYFILE%" echo PUSH
+
+call :prepareGitForPush
+if errorlevel 1 goto pushFailed
 
 git status --porcelain > "%TEMP%\pocket_hub_git_status.txt"
 for %%A in ("%TEMP%\pocket_hub_git_status.txt") do set "GIT_STATUS_SIZE=%%~zA"
@@ -140,6 +145,45 @@ type "%SUMMARYFILE%"
 echo.
 echo Log completo: %LOGFILE%
 pause
+exit /b 1
+
+:prepareGitForPush
+set "LOCK_ATTEMPT=1"
+
+:prepareGitForPushCheck
+if not exist ".git\index.lock" exit /b 0
+
+tasklist /FI "IMAGENAME eq git.exe" | find /I "git.exe" >nul
+if errorlevel 1 goto removeStaleGitLock
+
+if "!LOCK_ATTEMPT!"=="!LOCK_CHECK_MAX!" goto activeGitLockDetected
+
+echo Operazione Git ancora attiva. Attendo %LOCK_WAIT_SECONDS% secondi e ricontrollo...
+>> "%LOGFILE%" echo Lock Git rilevato con processo git.exe attivo. Attendo %LOCK_WAIT_SECONDS% secondi e ricontrollo...
+timeout /t %LOCK_WAIT_SECONDS% /nobreak >nul
+set /a LOCK_ATTEMPT+=1
+goto prepareGitForPushCheck
+
+:removeStaleGitLock
+del /f /q ".git\index.lock" >nul 2>&1
+if exist ".git\index.lock" (
+  echo Non sono riuscito a rimuovere il lock Git automaticamante.
+  >> "%SUMMARYFILE%" echo - Lock Git trovato ma non rimovibile automaticamente.
+  >> "%LOGFILE%" echo Impossibile rimuovere .git\index.lock
+  exit /b 1
+)
+
+echo Lock Git precedente rilevato e rimosso automaticamente.
+>> "%SUMMARYFILE%" echo - Lock Git precedente rilevato e rimosso automaticamente.
+>> "%LOGFILE%" echo Lock Git precedente rilevato e rimosso automaticamente.
+exit /b 0
+
+:activeGitLockDetected
+echo Ho trovato un'operazione Git ancora in corso. Interrompo il push per evitare danni.
+echo Chiudi eventuali finestre batch o Git ancora aperte, poi rilancia il push.
+>> "%SUMMARYFILE%" echo - Git risulta ancora in esecuzione: push interrotto per sicurezza.
+>> "%SUMMARYFILE%" echo   - Chiudi eventuali finestre batch o Git ancora aperte, poi riprova.
+>> "%LOGFILE%" echo Lock Git presente con processi git.exe ancora attivi. Push interrotto per sicurezza.
 exit /b 1
 
 :runStep
