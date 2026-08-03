@@ -61,9 +61,13 @@ const MANUAL_SET_OVERRIDES = {
   },
   'P-A': {
     name: 'Promo-A',
+    packArt: undefined,
+    localPackArt: '/set-artworks/P-A.png',
   },
   'P-B': {
     name: 'Promo-B',
+    packArt: undefined,
+    localPackArt: '/set-artworks/P-B.png',
   },
 }
 const MANUAL_CARD_OVERRIDES = {
@@ -364,8 +368,18 @@ function normalizeSet(set) {
     sourceUrl: `${API_ROOT}/sets/${set.id}`,
     symbol: set.symbol,
     logo: set.logo,
-    packArt: undefined,
-    localPackArt: undefined,
+    packArt: override.packArt,
+    localPackArt: override.localPackArt,
+  }
+}
+
+function applySetArtworkOverrides(set) {
+  const override = MANUAL_SET_OVERRIDES[set.id] ?? {}
+
+  return {
+    ...set,
+    packArt: override.packArt ?? set.packArt,
+    localPackArt: override.localPackArt ?? set.localPackArt,
   }
 }
 
@@ -1022,7 +1036,7 @@ async function fetchSerebiiSet(setCode, setName, releaseDateFallback = '', slugO
   const primaryPackArt = packArtUrls[0]
 
   return {
-    set: {
+    set: applySetArtworkOverrides({
       id: setCode,
       name: localizedSetName,
       releaseDate:
@@ -1035,13 +1049,17 @@ async function fetchSerebiiSet(setCode, setName, releaseDateFallback = '', slugO
       sourceUrl: url,
       packArt: primaryPackArt,
       localPackArt: primaryPackArt ? getLocalSetArtworkPath(setCode, primaryPackArt) : undefined,
-    },
+    }),
     cards: enrichedCards,
   }
 }
 
 async function hydrateSetPackArt(sets) {
   const hydratedSets = await mapLimit(sets, 4, async (set) => {
+    if (MANUAL_SET_OVERRIDES[set.id]?.localPackArt) {
+      return applySetArtworkOverrides(set)
+    }
+
     if (set.packArt) {
       return set
     }
@@ -1060,11 +1078,11 @@ async function hydrateSetPackArt(sets) {
         return set
       }
 
-      return {
+      return applySetArtworkOverrides({
         ...set,
         packArt: primaryPackArt,
         localPackArt: getLocalSetArtworkPath(set.id, primaryPackArt),
-      }
+      })
     } catch (error) {
       console.warn(
         `Could not fetch pack artwork for ${set.id} from Serebii.`,

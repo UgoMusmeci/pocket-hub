@@ -4,6 +4,8 @@ const setVisualOverrides: Record<string, string> = {
   B1a: '/set-visuals/b1a-crimson-blaze.svg',
   B2a: '/set-visuals/b2a-paldean-wonders.svg',
   B2b: '/set-visuals/b2b-mega-shine.svg',
+  'P-A': '/set-artworks/P-A.png',
+  'P-B': '/set-artworks/P-B.png',
 }
 
 export async function loadCatalog() {
@@ -208,11 +210,11 @@ function normalizeTcgdexAssetUrl(url?: string) {
 
 export function getSetVisualUrl(set: CatalogSet) {
   return (
+    setVisualOverrides[set.id] ??
     set.localPackArt ??
     set.packArt ??
     normalizeTcgdexAssetUrl(set.logo) ??
     normalizeTcgdexAssetUrl(set.symbol) ??
-    setVisualOverrides[set.id] ??
     null
   )
 }
