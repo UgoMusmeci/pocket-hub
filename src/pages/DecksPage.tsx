@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom'
 import { missionDecks } from '../data/missionDecks'
 import { metaDecks, metaDeckSnapshot } from '../data/metaDecks'
 import { usePageMeta } from '../hooks/usePageMeta'
-import { getDeckCardTotal, getDeckIdeasSortedByRecent } from '../lib/decks'
+import {
+  getDeckCardTotal,
+  getDeckIdeasSortedByRecent,
+  getExperimentalDeckIdeasSortedByRecent,
+} from '../lib/decks'
 import { localizeCardName } from '../lib/catalog'
 
 export function DecksPage() {
@@ -14,6 +18,7 @@ export function DecksPage() {
   })
 
   const decks = getDeckIdeasSortedByRecent()
+  const experimentalDecks = getExperimentalDeckIdeasSortedByRecent()
   const [sortBy, setSortBy] = useState<'winrate' | 'share'>('winrate')
 
   const competitiveDecks = useMemo(() => {
@@ -142,6 +147,54 @@ export function DecksPage() {
                   {deck.strengths.map((strength) => (
                     <li key={strength}>{strength}</li>
                   ))}
+                </ul>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="decks-section">
+          <div className="section-heading">
+            <div>
+              <p className="section-kicker">Laboratorio mazzi</p>
+              <h2>Proposte sperimentali del portale.</h2>
+            </div>
+            <p className="section-note">
+              Varianti suggerite da noi per testare linee meno standard, senza uscire dal perimetro
+              di carte e archetipi giÃ  presenti nel catalogo.
+            </p>
+          </div>
+
+          <div className="deck-directory-grid">
+            {experimentalDecks.map((deck) => (
+              <Link
+                key={deck.slug}
+                to={`/mazzi/${deck.slug}`}
+                className="deck-directory-card deck-directory-card-link"
+                aria-label={`Apri il mazzo sperimentale ${deck.name}`}
+              >
+                <div className="deck-directory-top">
+                  <div>
+                    <div className="deck-topline">
+                      <span>{deck.tier}</span>
+                      <span>{deck.playStyle}</span>
+                    </div>
+                    <h3>{deck.name}</h3>
+                  </div>
+                  <div className="deck-directory-sprite-stack">
+                    <img
+                      className="deck-directory-sprite"
+                      src={deck.representativePokemon.sprite}
+                      alt={deck.representativePokemon.name}
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <p>{deck.description}</p>
+                <ul className="tag-list" aria-label={`Profilo sperimentale ${deck.name}`}>
+                  <li>DifficoltÃ : {deck.difficulty}</li>
+                  <li>{getDeckCardTotal(deck)}/20 carte</li>
+                  <li>Carta simbolo: {localizeCardName(deck.representativeCard)}</li>
                 </ul>
               </Link>
             ))}

@@ -8,6 +8,8 @@ export type CatalogSet = {
   sourceUrl?: string
   symbol?: string
   logo?: string
+  packArt?: string
+  localPackArt?: string
 }
 
 export type CatalogCard = {

@@ -184,6 +184,72 @@ const MANUAL_CARD_OVERRIDES = {
   'P-B-076': {
     stage: 'Basic',
   },
+  'A4b-308': {
+    category: 'Item',
+  },
+  'A4b-309': {
+    category: 'Item',
+  },
+  'A4b-310': {
+    category: 'Item',
+  },
+  'A4b-311': {
+    category: 'Item',
+  },
+  'A4b-312': {
+    category: 'Item',
+  },
+  'A4b-313': {
+    category: 'Item',
+  },
+  'A4b-314': {
+    category: 'Item',
+  },
+  'A4b-315': {
+    category: 'Item',
+  },
+  'A4b-316': {
+    category: 'Item',
+  },
+  'A4b-317': {
+    category: 'Item',
+  },
+  'A4b-379': {
+    category: 'Item',
+  },
+  'A4b-068': {
+    stage: 'Basic',
+  },
+  'A4b-130': {
+    stage: 'Stage 1',
+  },
+  'A4b-233': {
+    stage: 'Basic',
+  },
+  'A4b-234': {
+    stage: 'Basic',
+  },
+  'A4b-235': {
+    stage: 'Stage 1',
+  },
+  'A4b-236': {
+    stage: 'Basic',
+  },
+  'A4b-237': {
+    stage: 'Basic',
+  },
+  'A4b-249': {
+    stage: 'Basic',
+  },
+  'A4b-250': {
+    stage: 'Basic',
+  },
+  'A4b-251': {
+    stage: 'Stage 1',
+  },
+  'A4b-362': {
+    stage: 'Basic',
+  },
 }
 const MANUAL_SEREBII_SETS = [
   {
@@ -298,6 +364,8 @@ function normalizeSet(set) {
     sourceUrl: `${API_ROOT}/sets/${set.id}`,
     symbol: set.symbol,
     logo: set.logo,
+    packArt: undefined,
+    localPackArt: undefined,
   }
 }
 
@@ -354,7 +422,7 @@ function normalizeTcgdexTrainerCategory(trainerType) {
     'Pokémon Tool': 'Pokémon Tool',
   }
 
-  return mapping[trainerType] ?? 'Trainer'
+  return mapping[trainerType] ?? 'Item'
 }
 
 function hasBrokenImage(card) {
@@ -502,6 +570,23 @@ function getSourceSetName(setId, fallbackName = '') {
   return SOURCE_SET_NAMES[setId] ?? fallbackName
 }
 
+function getSerebiiSlugForSet(setId, fallbackName = '') {
+  const manualSetConfig = manualSerebiiSetConfigById.get(setId)
+
+  if (manualSetConfig?.slug) {
+    return manualSetConfig.slug
+  }
+
+  const sourceSetName = getSourceSetName(setId, fallbackName)
+  return sourceSetName ? toSerebiiSlug(sourceSetName) : ''
+}
+
+function getLocalSetArtworkPath(setId, imageUrl) {
+  const extensionMatch = imageUrl?.match(/\.([a-z0-9]+)(?:$|\?)/i)
+  const extension = extensionMatch?.[1]?.toLowerCase() ?? 'jpg'
+  return `/set-artworks/${setId}.${extension}`
+}
+
 function formatRarityFromAsset(assetName) {
   const mappings = {
     promo: 'None',
@@ -545,7 +630,7 @@ function normalizeSerebiiCategory(value, hasHp = false) {
   const normalized = decodeHtml(value || '').trim()
   const mapping = {
     Pokemon: 'Pokemon',
-    Trainer: 'Trainer',
+    Trainer: 'Item',
     Supporter: 'Supporter',
     Stadium: 'Stadium',
     'Pokemon Tool': 'Pokémon Tool',
@@ -557,7 +642,7 @@ function normalizeSerebiiCategory(value, hasHp = false) {
     return mapping[normalized]
   }
 
-  return hasHp ? 'Pokemon' : 'Trainer'
+  return hasHp ? 'Pokemon' : 'Item'
 }
 
 function normalizePokemonLookupName(name) {
@@ -765,6 +850,21 @@ function parseSerebiiReleaseDate(html) {
   return match?.[1] ?? ''
 }
 
+function parseSerebiiPackArtUrls(html, slug) {
+  const imageMatches = html.matchAll(/<img[^>]+src="(?<src>[^"]+)"[^>]*>/gi)
+  const packArtUrls = Array.from(imageMatches, (match) => match.groups?.src?.trim())
+    .filter(Boolean)
+    .filter((src) => /\.(?:png|jpe?g|webp)(?:$|\?)/i.test(src))
+    .filter((src) => !src.startsWith('/tcgpocket/logo/'))
+    .filter((src) => !src.startsWith('/tcgpocket/image/'))
+    .filter((src) => !src.startsWith('/hidden/'))
+    .filter((src) => !src.startsWith('/Banner'))
+    .filter((src) => !new RegExp(String.raw`^/tcgpocket/(?:th/)?${slug}/\d+\.(?:png|jpe?g|webp)$`, 'i').test(src))
+    .map((src) => new URL(src, `${SEREBII_BASE_URL}/${slug}/`).toString())
+
+  return uniqueBy(packArtUrls, (url) => url)
+}
+
 function parseSerebiiCards(html, setCode, setName, slug) {
   const isPromoSet = setCode.startsWith('P-')
   const rowPattern = new RegExp(
@@ -918,6 +1018,8 @@ async function fetchSerebiiSet(setCode, setName, releaseDateFallback = '', slugO
     (max, card) => Math.max(max, card.officialCount ?? 0),
     0,
   )
+  const packArtUrls = parseSerebiiPackArtUrls(html, slug)
+  const primaryPackArt = packArtUrls[0]
 
   return {
     set: {
@@ -931,9 +1033,48 @@ async function fetchSerebiiSet(setCode, setName, releaseDateFallback = '', slugO
       totalCardCount: enrichedCards.length,
       source: 'serebii-fallback',
       sourceUrl: url,
+      packArt: primaryPackArt,
+      localPackArt: primaryPackArt ? getLocalSetArtworkPath(setCode, primaryPackArt) : undefined,
     },
     cards: enrichedCards,
   }
+}
+
+async function hydrateSetPackArt(sets) {
+  const hydratedSets = await mapLimit(sets, 4, async (set) => {
+    if (set.packArt) {
+      return set
+    }
+
+    const slug = getSerebiiSlugForSet(set.id, set.name)
+    if (!slug) {
+      return set
+    }
+
+    try {
+      const html = await fetchText(`${SEREBII_BASE_URL}/${slug}/`)
+      const packArtUrls = parseSerebiiPackArtUrls(html, slug)
+      const primaryPackArt = packArtUrls[0]
+
+      if (!primaryPackArt) {
+        return set
+      }
+
+      return {
+        ...set,
+        packArt: primaryPackArt,
+        localPackArt: getLocalSetArtworkPath(set.id, primaryPackArt),
+      }
+    } catch (error) {
+      console.warn(
+        `Could not fetch pack artwork for ${set.id} from Serebii.`,
+        error instanceof Error ? error.message : error,
+      )
+      return set
+    }
+  })
+
+  return hydratedSets
 }
 
 async function fetchManualSerebiiSets(existingSetIds) {
@@ -1132,6 +1273,7 @@ async function main() {
     [...normalizedSets, ...manualPromoCatalog.sets, ...supplementalCatalog.sets],
     (set) => set.id,
   ).sort((left, right) => left.id.localeCompare(right.id, undefined, { numeric: true }))
+  const hydratedSets = await hydrateSetPackArt(allSets)
   const allCards = mergeCards(
     mergeCards([...normalizedCards, ...supplementalCatalog.cards], brokenImageRepairs.cards),
     manualPromoCatalog.cards,
@@ -1148,7 +1290,7 @@ async function main() {
       setCount: allSets.length,
       cardCount: allCards.length,
     },
-    sets: allSets,
+    sets: hydratedSets,
     cards: allCards,
   }
 

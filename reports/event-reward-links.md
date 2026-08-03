@@ -1,12 +1,12 @@
 # Audit Collegamenti Eventi e Ricompense
 
 - Eventi controllati: 67
-- Emblemi controllati: 96
+- Emblemi controllati: 98
 - Eventi senza emblemi collegati: 40
 - Eventi con sole carte promo collegate: 14
-- Emblemi senza eventi collegati: 50
+- Emblemi senza eventi collegati: 52
 - Emblemi senza eventi ma con origine già classificata: 50
-- Emblemi senza eventi e ancora senza origine esplicita: 0
+- Emblemi senza eventi e ancora senza origine esplicita: 2
 
 ## Eventi Senza Emblemi Collegati
 - Missioni Community Week di aprile 2026 | 2026-04-04 - 2026-04-11
@@ -119,5 +119,6 @@
 - Evento Drop di Venusaur | 2024-11-29 - 2024-12-13 | promo: P-A-018
 
 ## Emblemi Senza Origine Esplicita
-- Nessuna voce
+- Mega Metagross Emblema | emblema | Ricompense emblema
+- Mega Rayquaza Emblema | emblema | Ricompense emblema
 

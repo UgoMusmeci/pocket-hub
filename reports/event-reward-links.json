@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-27T13:18:37.978Z",
+  "generatedAt": "2026-08-03T10:09:14.425Z",
   "summary": {
     "eventCount": 67,
-    "rewardCount": 96,
+    "rewardCount": 98,
     "eventsWithoutRewardsCount": 40,
     "eventsWithPromoCardsOnlyCount": 14,
-    "rewardsWithoutEventsCount": 50,
+    "rewardsWithoutEventsCount": 52,
     "rewardsWithoutEventsButClassifiedCount": 50,
-    "rewardsWithoutAnyOriginCount": 0
+    "rewardsWithoutAnyOriginCount": 2
   },
   "eventsWithoutRewards": [
     {
@@ -899,5 +899,20 @@
       "sourceContext": "Giorni Giocondi"
     }
   ],
-  "rewardsWithoutAnyOrigin": []
+  "rewardsWithoutAnyOrigin": [
+    {
+      "slug": "mega-metagross-emblema",
+      "name": "Mega Metagross Emblema",
+      "type": "emblema",
+      "availability": "catalogata",
+      "sourceContext": "Ricompense emblema"
+    },
+    {
+      "slug": "mega-rayquaza-emblema",
+      "name": "Mega Rayquaza Emblema",
+      "type": "emblema",
+      "availability": "catalogata",
+      "sourceContext": "Ricompense emblema"
+    }
+  ]
 }

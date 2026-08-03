@@ -94,6 +94,7 @@ async function preloadAuditModules() {
   await loadTsModule('src/data/deckSet3.ts')
   await loadTsModule('src/data/deckSet4.ts')
   await loadTsModule('src/data/deckSet5.ts')
+  await loadTsModule('src/data/experimentalDecks.ts')
   await loadTsModule('src/data/decks.ts')
   await loadTsModule('src/data/metaDecks.ts')
   await loadTsModule('src/data/missionDecks.ts')

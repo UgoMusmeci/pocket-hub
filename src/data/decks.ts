@@ -4,6 +4,7 @@ import { deckSet2 } from './deckSet2'
 import { deckSet3 } from './deckSet3'
 import { deckSet4 } from './deckSet4'
 import { deckSet5 } from './deckSet5'
+import { experimentalDecks } from './experimentalDecks'
 
 export const allDeckIdeas = [
   ...deckSet1,
@@ -11,6 +12,7 @@ export const allDeckIdeas = [
   ...deckSet3,
   ...deckSet4,
   ...deckSet5,
+  ...experimentalDecks,
 ]
 
 export const deckIdeas = [
@@ -27,3 +29,5 @@ export const deckIdeas = [
   deckSet5[3],
   deckSet5[4],
 ]
+
+export { experimentalDecks }

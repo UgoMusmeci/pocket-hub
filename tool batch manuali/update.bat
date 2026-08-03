@@ -10,11 +10,13 @@ set "TERM=dumb"
 set "LOGFILE=log_update.full.txt"
 set "SUMMARYFILE=log_update.summary.txt"
 set "STEPLOG=%TEMP%\pocket_hub_update_step.log"
+set "COMMAND_FILE=%TEMP%\pocket_hub_command.cmd"
 set "HAD_ERROR=0"
 set "PUSH_CHOICE="
 set "REBASE_CHOICE="
 set "BRANCH_NAME="
 set "RETRY_WAIT_SECONDS=3"
+set "REBASE_RESOLVED=0"
 
 echo =========================
 echo AVVIO AGGIORNAMENTO
@@ -24,13 +26,14 @@ echo =========================
 > "%SUMMARYFILE%" echo RIEPILOGO AGGIORNAMENTO - %date% %time%
 >> "%SUMMARYFILE%" echo.
 
-call :runStep "[1/7] Sync CARDS..." "npm run sync:cards"
-call :runStep "[2/7] Verifica ESPANSIONI..." "node scripts/report-content-health.mjs"
-call :runStep "[3/7] Sync EVENT ASSETS..." "npm run sync:events:assets"
-call :runStep "[4/7] Sync REWARDS..." "npm run sync:rewards"
-call :runStep "[5/7] AUTO-FIX CONTENUTI..." "npm run autofix:content"
-call :runStep "[6/7] AUDIT CONTENUTI..." "npm run audit:all"
-call :runStep "[7/7] BUILD SITO..." "npm run build"
+call :runStep "[1/8] Sync CARDS..." "npm run sync:cards"
+call :runStep "[2/8] Verifica ESPANSIONI..." "node scripts/report-content-health.mjs"
+call :runStep "[3/8] Sync MAZZI..." "npm run sync:decks"
+call :runStep "[4/8] Sync EVENT ASSETS..." "npm run sync:events:assets"
+call :runStep "[5/8] Sync REWARDS..." "npm run sync:rewards"
+call :runStep "[6/8] AUTO-FIX CONTENUTI..." "npm run autofix:content"
+call :runStep "[7/8] AUDIT CONTENUTI..." "npm run audit:all"
+call :runStep "[8/8] BUILD SITO..." "npm run build"
 
 echo.
 echo =========================
@@ -81,7 +84,9 @@ for /f "delims=" %%A in ('git branch --show-current') do set "BRANCH_NAME=%%A"
 if "!BRANCH_NAME!"=="" set "BRANCH_NAME=main"
 
 if not "!GIT_STATUS_SIZE!"=="0" (
-  call :runCommand "Commit locale" "git add -A && git commit -m ""chore: update content %date% %time%"""
+  call :runCommand "Preparazione commit locale" "git add -A"
+  if errorlevel 1 goto pushFailed
+  call :runCommand "Commit locale" "git commit -m chore-update-content"
   if errorlevel 1 goto pushFailed
 ) else (
   >> "%SUMMARYFILE%" echo - Nessuna modifica locale da committare.
@@ -104,6 +109,13 @@ goto askRebase
 :doRebase
 call :runCommand "Pull --rebase da origin/!BRANCH_NAME!" "git pull --rebase origin !BRANCH_NAME!"
 if errorlevel 1 (
+  call :attemptKnownRebaseRecovery
+  if "!REBASE_RESOLVED!"=="1" (
+    call :runCommand "Secondo tentativo di push" "git push origin HEAD:!BRANCH_NAME!"
+    if errorlevel 1 goto pushFailed
+    goto pushOk
+  )
+
   echo Il pull --rebase non e' andato a buon fine.
   echo Potrebbero esserci conflitti da risolvere manualmente.
   goto pushFailed
@@ -177,7 +189,9 @@ set "COMMAND_LABEL=%~1"
 set "COMMAND_TEXT=%~2"
 set "COMMAND_STATUS=OK"
 
-cmd /c %COMMAND_TEXT% > "%STEPLOG%" 2>&1
+> "%COMMAND_FILE%" echo @echo off
+>> "%COMMAND_FILE%" echo !COMMAND_TEXT!
+call "%COMMAND_FILE%" > "%STEPLOG%" 2>&1
 set "COMMAND_EXIT=%errorlevel%"
 type "%STEPLOG%" >> "%LOGFILE%"
 >> "%LOGFILE%" echo.
@@ -187,8 +201,48 @@ if not "!COMMAND_EXIT!"=="0" set "COMMAND_STATUS=ERRORE"
 >> "%SUMMARYFILE%" echo - %COMMAND_LABEL% - !COMMAND_STATUS!
 powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\extract-log-highlights.ps1" "%STEPLOG%" >> "%SUMMARYFILE%"
 del "%STEPLOG%" >nul 2>&1
+del "%COMMAND_FILE%" >nul 2>&1
 
 if not "!COMMAND_EXIT!"=="0" exit /b 1
+exit /b 0
+
+:attemptKnownRebaseRecovery
+set "REBASE_RESOLVED=0"
+echo.
+echo Verifico se il conflitto del rebase e' risolvibile automaticamente...
+>> "%SUMMARYFILE%" echo - Tentativo risoluzione automatica conflitti rebase
+
+git diff --name-only --diff-filter=U > "%TEMP%\pocket_hub_rebase_conflicts.txt"
+findstr /R /C:"^public/data/catalog\.json$" "%TEMP%\pocket_hub_rebase_conflicts.txt" >nul
+if errorlevel 1 (
+  >> "%SUMMARYFILE%" echo   - Nessun conflitto noto risolvibile in automatico.
+  del "%TEMP%\pocket_hub_rebase_conflicts.txt" >nul 2>&1
+  exit /b 0
+)
+
+set "RESOLVE_STATUS=OK"
+> "%COMMAND_FILE%" echo @echo off
+>> "%COMMAND_FILE%" echo git checkout --theirs public/data/catalog.json
+>> "%COMMAND_FILE%" echo git add public/data/catalog.json
+>> "%COMMAND_FILE%" echo set GIT_EDITOR=true
+>> "%COMMAND_FILE%" echo git rebase --continue
+call "%COMMAND_FILE%" > "%STEPLOG%" 2>&1
+set "RESOLVE_EXIT=%errorlevel%"
+type "%STEPLOG%" >> "%LOGFILE%"
+>> "%LOGFILE%" echo.
+
+if not "!RESOLVE_EXIT!"=="0" set "RESOLVE_STATUS=ERRORE"
+>> "%SUMMARYFILE%" echo   - Conflitto catalogo generato - !RESOLVE_STATUS!
+powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\extract-log-highlights.ps1" "%STEPLOG%" >> "%SUMMARYFILE%"
+del "%STEPLOG%" >nul 2>&1
+del "%COMMAND_FILE%" >nul 2>&1
+del "%TEMP%\pocket_hub_rebase_conflicts.txt" >nul 2>&1
+
+if "!RESOLVE_EXIT!"=="0" (
+  set "REBASE_RESOLVED=1"
+  echo Rebase ripristinato automaticamente usando il catalogo locale aggiornato.
+)
+
 exit /b 0
 
 :end

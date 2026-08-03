@@ -91,7 +91,7 @@ const rarityIcons: Record<string, string> = {
 
 const categoryLabels: Record<string, string> = {
   Pokemon: 'Pokemon',
-  Trainer: 'Allenatore',
+  Trainer: 'Oggetto',
   Supporter: 'Aiuto',
   Stadium: 'Stadio',
   'Pokemon Tool': 'Strumento Pokemon',
@@ -208,6 +208,8 @@ function normalizeTcgdexAssetUrl(url?: string) {
 
 export function getSetVisualUrl(set: CatalogSet) {
   return (
+    set.localPackArt ??
+    set.packArt ??
     normalizeTcgdexAssetUrl(set.logo) ??
     normalizeTcgdexAssetUrl(set.symbol) ??
     setVisualOverrides[set.id] ??

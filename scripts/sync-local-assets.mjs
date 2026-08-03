@@ -7,6 +7,7 @@ const publicDir = path.join(projectRoot, 'public')
 const catalogPath = path.join(publicDir, 'data', 'catalog.json')
 const cardOutputDir = path.join(publicDir, 'card-images')
 const spriteOutputDir = path.join(publicDir, 'pokemon-artwork')
+const setArtworkOutputDir = path.join(publicDir, 'set-artworks')
 const spriteRemoteBase =
   'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork'
 const concurrency = 16
@@ -113,6 +114,49 @@ async function syncCardImages(catalog) {
   return { total: jobs.length, downloaded, skipped, failed }
 }
 
+async function syncSetArtwork(catalog) {
+  await mkdir(setArtworkOutputDir, { recursive: true })
+
+  const jobs = catalog.sets
+    .map((set) => ({
+      setId: set.id,
+      remoteUrl: ensureUrl(set.packArt),
+      outputPath: set.localPackArt ? toAbsoluteOutput(set.localPackArt) : null,
+    }))
+    .filter((job) => job.remoteUrl && job.outputPath)
+
+  let downloaded = 0
+  let skipped = 0
+  let failed = 0
+
+  await mapLimit(jobs, concurrency, async (job, index) => {
+    if (existsSync(job.outputPath)) {
+      skipped += 1
+      return
+    }
+
+    try {
+      const data = await fetchBuffer(job.remoteUrl)
+      await mkdir(path.dirname(job.outputPath), { recursive: true })
+      await writeFile(job.outputPath, data)
+      downloaded += 1
+    } catch (error) {
+      failed += 1
+      console.warn(
+        `Skipped set artwork ${job.setId}: ${
+          error instanceof Error ? error.message : String(error)
+        }`,
+      )
+    }
+
+    if ((index + 1) % 10 === 0 || index === jobs.length - 1) {
+      console.log(`Set artwork processed ${index + 1}/${jobs.length}`)
+    }
+  })
+
+  return { total: jobs.length, downloaded, skipped, failed }
+}
+
 async function collectArtworkDexIds() {
   const sourceFiles = [
     'src/data/deckTypes.ts',
@@ -121,6 +165,7 @@ async function collectArtworkDexIds() {
     'src/data/deckSet3.ts',
     'src/data/deckSet4.ts',
     'src/data/deckSet5.ts',
+    'src/data/experimentalDecks.ts',
     'src/data/metaDecks.ts',
     'src/data/missionDecks.ts',
   ]
@@ -178,9 +223,10 @@ async function syncPokemonArtwork() {
 async function main() {
   const catalog = JSON.parse(await readFile(catalogPath, 'utf8'))
 
-  const [cardResult, spriteResult] = await Promise.all([
+  const [cardResult, spriteResult, setArtworkResult] = await Promise.all([
     syncCardImages(catalog),
     syncPokemonArtwork(),
+    syncSetArtwork(catalog),
   ])
 
   console.log(
@@ -188,6 +234,7 @@ async function main() {
       {
         cards: cardResult,
         pokemonArtwork: spriteResult,
+        setArtwork: setArtworkResult,
       },
       null,
       2,

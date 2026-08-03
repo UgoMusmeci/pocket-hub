@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-27T13:18:36.619Z",
+  "generatedAt": "2026-08-03T10:09:13.159Z",
   "remoteCheckEnabled": false,
   "cards": {
-    "total": 3520,
+    "total": 3761,
     "issues": [
       {
         "section": "cards",
         "kind": "incomplete-info",
-        "identifier": "A4b-068",
-        "cardId": "A4b-068",
-        "name": "Ho-Oh ex",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "068",
+        "identifier": "B4-019",
+        "cardId": "B4-019",
+        "name": "Teal Mask Ogerpon",
+        "setId": "B4",
+        "setName": "Sovrano dei Cieli",
+        "localId": "019",
         "missingFields": [
           "stage"
         ]
@@ -20,12 +20,12 @@
       {
         "section": "cards",
         "kind": "incomplete-info",
-        "identifier": "A4b-130",
-        "cardId": "A4b-130",
-        "name": "Alolan Raichu ex",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "130",
+        "identifier": "B4-095",
+        "cardId": "B4-095",
+        "name": "Galarian Zigzagoon",
+        "setId": "B4",
+        "setName": "Sovrano dei Cieli",
+        "localId": "095",
         "missingFields": [
           "stage"
         ]
@@ -33,12 +33,12 @@
       {
         "section": "cards",
         "kind": "incomplete-info",
-        "identifier": "A4b-233",
-        "cardId": "A4b-233",
-        "name": "Alolan Grimer",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "233",
+        "identifier": "B4-096",
+        "cardId": "B4-096",
+        "name": "Galarian Linoone",
+        "setId": "B4",
+        "setName": "Sovrano dei Cieli",
+        "localId": "096",
         "missingFields": [
           "stage"
         ]
@@ -46,12 +46,12 @@
       {
         "section": "cards",
         "kind": "incomplete-info",
-        "identifier": "A4b-234",
-        "cardId": "A4b-234",
-        "name": "Alolan Grimer",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "234",
+        "identifier": "B4-097",
+        "cardId": "B4-097",
+        "name": "Galarian Obstagoon",
+        "setId": "B4",
+        "setName": "Sovrano dei Cieli",
+        "localId": "097",
         "missingFields": [
           "stage"
         ]
@@ -59,12 +59,12 @@
       {
         "section": "cards",
         "kind": "incomplete-info",
-        "identifier": "A4b-235",
-        "cardId": "A4b-235",
-        "name": "Alolan Muk ex",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "235",
+        "identifier": "B4-204",
+        "cardId": "B4-204",
+        "name": "Alolan Vulpix",
+        "setId": "B4",
+        "setName": "Sovrano dei Cieli",
+        "localId": "204",
         "missingFields": [
           "stage"
         ]
@@ -72,12 +72,12 @@
       {
         "section": "cards",
         "kind": "incomplete-info",
-        "identifier": "A4b-236",
-        "cardId": "A4b-236",
-        "name": "Paldean Wooper",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "236",
+        "identifier": "B4-218",
+        "cardId": "B4-218",
+        "name": "Galarian Meowth",
+        "setId": "B4",
+        "setName": "Sovrano dei Cieli",
+        "localId": "218",
         "missingFields": [
           "stage"
         ]
@@ -85,12 +85,12 @@
       {
         "section": "cards",
         "kind": "incomplete-info",
-        "identifier": "A4b-237",
-        "cardId": "A4b-237",
-        "name": "Paldean Wooper",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "237",
+        "identifier": "B4-219",
+        "cardId": "B4-219",
+        "name": "Galarian Perrserker",
+        "setId": "B4",
+        "setName": "Sovrano dei Cieli",
+        "localId": "219",
         "missingFields": [
           "stage"
         ]
@@ -98,190 +98,60 @@
       {
         "section": "cards",
         "kind": "incomplete-info",
-        "identifier": "A4b-249",
-        "cardId": "A4b-249",
-        "name": "Alolan Diglett",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "249",
+        "identifier": "B4-225",
+        "cardId": "B4-225",
+        "name": "Alolan Ninetales ex",
+        "setId": "B4",
+        "setName": "Sovrano dei Cieli",
+        "localId": "225",
         "missingFields": [
           "stage"
         ]
-      },
-      {
-        "section": "cards",
-        "kind": "incomplete-info",
-        "identifier": "A4b-250",
-        "cardId": "A4b-250",
-        "name": "Alolan Diglett",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "250",
-        "missingFields": [
-          "stage"
-        ]
-      },
-      {
-        "section": "cards",
-        "kind": "incomplete-info",
-        "identifier": "A4b-251",
-        "cardId": "A4b-251",
-        "name": "Alolan Dugtrio ex",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "251",
-        "missingFields": [
-          "stage"
-        ]
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-308",
-        "cardId": "A4b-308",
-        "name": "Eevee Bag",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "308",
-        "category": "Trainer"
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-309",
-        "cardId": "A4b-309",
-        "name": "Eevee Bag",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "309",
-        "category": "Trainer"
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-310",
-        "cardId": "A4b-310",
-        "name": "Elemental Switch",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "310",
-        "category": "Trainer"
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-311",
-        "cardId": "A4b-311",
-        "name": "Elemental Switch",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "311",
-        "category": "Trainer"
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-312",
-        "cardId": "A4b-312",
-        "name": "Old Amber",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "312",
-        "category": "Trainer"
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-313",
-        "cardId": "A4b-313",
-        "name": "Old Amber",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "313",
-        "category": "Trainer"
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-314",
-        "cardId": "A4b-314",
-        "name": "Rare Candy",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "314",
-        "category": "Trainer"
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-315",
-        "cardId": "A4b-315",
-        "name": "Rare Candy",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "315",
-        "category": "Trainer"
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-316",
-        "cardId": "A4b-316",
-        "name": "Pokemon Communication",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "316",
-        "category": "Trainer"
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-317",
-        "cardId": "A4b-317",
-        "name": "Pokemon Communication",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "317",
-        "category": "Trainer"
-      },
-      {
-        "section": "cards",
-        "kind": "incomplete-info",
-        "identifier": "A4b-362",
-        "cardId": "A4b-362",
-        "name": "Ho-Oh ex",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "362",
-        "missingFields": [
-          "stage"
-        ]
-      },
-      {
-        "section": "cards",
-        "kind": "invalid-category",
-        "identifier": "A4b-379",
-        "cardId": "A4b-379",
-        "name": "Rare Candy",
-        "setId": "A4b",
-        "setName": "Busta Deluxe ex",
-        "localId": "379",
-        "category": "Trainer"
       }
     ]
   },
   "decks": {
-    "totalDeckIdeas": 23,
+    "totalDeckIdeas": 26,
     "totalMetaDecks": 12,
     "totalMissionDecks": 4,
     "issues": []
   },
   "rewards": {
-    "total": 96,
-    "issues": []
+    "total": 98,
+    "issues": [
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "mega-metagross-emblema",
+        "rewardName": "Mega Metagross Emblema",
+        "type": "emblema"
+      },
+      {
+        "section": "rewards",
+        "kind": "generic-emblem-info",
+        "identifier": "mega-rayquaza-emblema",
+        "rewardName": "Mega Rayquaza Emblema",
+        "type": "emblema"
+      }
+    ]
   },
   "events": {
     "total": 67,
-    "issues": []
+    "issues": [
+      {
+        "section": "events",
+        "kind": "missing-linked-reward",
+        "identifier": "special-drop-event-2026::icona-meloetta",
+        "eventName": "Evento Drop speciale 2026",
+        "rewardSlug": "icona-meloetta"
+      },
+      {
+        "section": "events",
+        "kind": "missing-linked-reward",
+        "identifier": "wonder-pick-event-january-2026::icona-goomy",
+        "eventName": "Evento Wonder Pick di gennaio 2026",
+        "rewardSlug": "icona-goomy"
+      }
+    ]
   }
 }

@@ -1,4 +1,10 @@
-import { allDeckIdeas, deckIdeas, type DeckCardEntry, type DeckIdea } from '../data/decks'
+import {
+  allDeckIdeas,
+  deckIdeas,
+  experimentalDecks,
+  type DeckCardEntry,
+  type DeckIdea,
+} from '../data/decks'
 import { metaDecks } from '../data/metaDecks'
 import type { CatalogCard } from '../types/catalog'
 
@@ -47,6 +53,12 @@ export function getDeckIdeasSortedByRecent() {
 
 export function getFeaturedDeckIdeas(limit = 3) {
   return getDeckIdeasSortedByRecent().slice(0, limit)
+}
+
+export function getExperimentalDeckIdeasSortedByRecent() {
+  return [...experimentalDecks].sort(
+    (left, right) => normalizeDeckDate(right.updatedAt) - normalizeDeckDate(left.updatedAt),
+  )
 }
 
 export function getDeckBySlug(slug: string) {

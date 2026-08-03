@@ -33,6 +33,8 @@ $patterns = @(
   'Could not connect to server',
   'Reward asset non trovato',
   'Reward override asset non trovato',
+  'Skipped set artwork',
+  'Set artwork processed',
   'Stage non risolto via PokeAPI',
   'Verifica catalogo espansioni:',
   'Set presenti nel catalogo:',
@@ -42,6 +44,7 @@ $patterns = @(
   'Generated reward catalog entries',
   'Generated event images',
   'Processed reward assets:',
+  'Mazzi sincronizzati:',
   'Catalog written to',
   'Build completata in'
 )
