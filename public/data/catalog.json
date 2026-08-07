@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-06T07:48:47.843Z",
+    "generatedAt": "2026-08-07T06:18:50.046Z",
     "source": "https://api.tcgdex.net/v2/en + Serebii fallback + Game8 fallback",
     "seriesId": "tcgp",
     "seriesName": "Pokémon TCG Pocket",
@@ -94058,6 +94058,7 @@
       "category": "Pokemon",
       "rarity": "Two Shiny",
       "hp": 140,
+      "stage": "Basic",
       "suffix": "EX",
       "types": [
         "Fire"
