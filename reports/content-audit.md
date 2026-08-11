@@ -1,6 +1,6 @@
 # Audit contenuti
 
-Generato: 2026-08-11T07:55:53.986Z
+Generato: 2026-08-11T08:09:37.632Z
 Controllo remoto immagini: disattivato
 
 ## Riepilogo
