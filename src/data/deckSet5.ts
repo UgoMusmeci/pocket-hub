@@ -24,7 +24,7 @@ export const deckSet5: DeckIdea[] = [
     source: 'Game8 Best Mega Lucario ex Decks and Card List',
     updatedAt: '28 aprile 2026',
     representativeCard: 'Mega Lucario ex',
-    representativePokemon: { name: 'Mega Lucario', sprite: '/card-images/B3-081.jpg' },
+    representativePokemon: { name: 'Mega Lucario', sprite: formArtwork('mega-lucario') },
     secondaryPokemon: { name: 'Lucario', sprite: artwork(448) },
     cards: [
       { name: 'Hitmonlee', count: 2 },
@@ -64,7 +64,7 @@ export const deckSet5: DeckIdea[] = [
     source: 'Game8 Best Mega Sceptile ex Decks and Card List',
     updatedAt: '28 aprile 2026',
     representativeCard: 'Mega Sceptile ex',
-    representativePokemon: { name: 'Mega Sceptile', sprite: '/card-images/B3-008.jpg' },
+    representativePokemon: { name: 'Mega Sceptile', sprite: formArtwork('mega-sceptile') },
     secondaryPokemon: { name: 'Pheromosa', sprite: artwork(795) },
     cards: [
       { name: 'Pheromosa', count: 2 },
@@ -104,7 +104,7 @@ export const deckSet5: DeckIdea[] = [
     source: 'Game8 Best Zoroark ex Decks and Card List',
     updatedAt: '28 aprile 2026',
     representativeCard: 'Zoroark ex',
-    representativePokemon: { name: 'Zoroark', sprite: '/card-images/B3-106.jpg' },
+    representativePokemon: { name: 'Zoroark', sprite: artwork(571) },
     secondaryPokemon: { name: 'Mega Absol', sprite: formArtwork('mega-absol') },
     cards: [
       { name: 'Zorua', count: 2 },

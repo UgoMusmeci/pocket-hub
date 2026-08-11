@@ -96,6 +96,17 @@ function assertUniqueSlugs(decks, label) {
   }
 }
 
+function assertRepresentativePokemonSprites(decks, label) {
+  for (const deck of decks) {
+    const sprite = deck.representativePokemon?.sprite ?? ''
+    if (sprite.startsWith('/card-images/')) {
+      throw new Error(
+        `Il mazzo ${deck.slug} in ${label} usa ancora un'immagine carta come representativePokemon: ${sprite}.`,
+      )
+    }
+  }
+}
+
 function assertReferenceDecks(metaDecks, allDeckIdeas) {
   const allDeckSlugs = new Set(allDeckIdeas.map((deck) => deck.slug))
 
@@ -192,6 +203,9 @@ async function main() {
   assertUniqueSlugs(metaDecks, 'metaDecks')
   assertUniqueSlugs(missionDecks, 'missionDecks')
   assertReferenceDecks(metaDecks, allDeckIdeas)
+  assertRepresentativePokemonSprites(allDeckIdeas, 'allDeckIdeas')
+  assertRepresentativePokemonSprites(metaDecks, 'metaDecks')
+  assertRepresentativePokemonSprites(missionDecks, 'missionDecks')
 
   for (const deck of allDeckIdeas) {
     assertTwentyCards(deck)

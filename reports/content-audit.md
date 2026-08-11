@@ -1,6 +1,6 @@
 # Audit contenuti
 
-Generato: 2026-08-11T11:09:25.440Z
+Generato: 2026-08-11T11:54:14.937Z
 Controllo remoto immagini: disattivato
 
 ## Riepilogo
@@ -8,7 +8,7 @@ Controllo remoto immagini: disattivato
 - Carte controllate: 3761
 - Problemi carte: 8
 - Mazzi controllati: 41
-- Problemi mazzi: 0
+- Problemi mazzi: 2
 - Ricompense controllate: 98
 - Problemi ricompense: 2
 - Eventi controllati: 67
@@ -27,7 +27,8 @@ Controllo remoto immagini: disattivato
 
 ## Mazzi con problemi
 
-- Nessun problema rilevato
+- Zoroark ex e Mega Absol ex | missing-representative-sprite
+- Zoroark ex e Mega Absol ex | meta-missing-representative-sprite
 
 ## Ricompense con problemi
 

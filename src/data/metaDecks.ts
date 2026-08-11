@@ -47,7 +47,7 @@ export const metaDecks: MetaDeckEntry[] = [
     record: '48 decklist / 819 match',
     winRate: 52.7,
     referenceDeckSlug: 'zoroark-ex-mega-absol-ex',
-    representativePokemon: { name: 'Zoroark', sprite: '/card-images/B3-106.jpg' },
+    representativePokemon: { name: 'Zoroark', sprite: artwork(571) },
     secondaryPokemon: { name: 'Mega Absol', sprite: formArtwork('mega-absol') },
   },
   {
@@ -95,7 +95,7 @@ export const metaDecks: MetaDeckEntry[] = [
     record: '83 decklist / 2601 match',
     winRate: 49.4,
     referenceDeckSlug: 'mega-lucario-ex-lucario',
-    representativePokemon: { name: 'Mega Lucario', sprite: '/card-images/B3-081.jpg' },
+    representativePokemon: { name: 'Mega Lucario', sprite: formArtwork('mega-lucario') },
     secondaryPokemon: { name: 'Lucario', sprite: artwork(448) },
   },
   {

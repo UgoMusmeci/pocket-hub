@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T11:09:25.440Z",
+  "generatedAt": "2026-08-11T11:54:14.937Z",
   "remoteCheckEnabled": false,
   "cards": {
     "total": 3761,
@@ -114,7 +114,26 @@
     "totalDeckIdeas": 26,
     "totalMetaDecks": 11,
     "totalMissionDecks": 4,
-    "issues": []
+    "issues": [
+      {
+        "section": "decks",
+        "kind": "missing-representative-sprite",
+        "identifier": "zoroark-ex-mega-absol-ex",
+        "deckName": "Zoroark ex e Mega Absol ex",
+        "pokemonName": "Zoroark",
+        "sprite": "/pokemon-artwork/571.png",
+        "status": "missing-local"
+      },
+      {
+        "section": "decks",
+        "kind": "meta-missing-representative-sprite",
+        "identifier": "meta-zoroark-ex-mega-absol-ex",
+        "deckName": "Zoroark ex e Mega Absol ex",
+        "pokemonName": "Zoroark",
+        "sprite": "/pokemon-artwork/571.png",
+        "status": "missing-local"
+      }
+    ]
   },
   "rewards": {
     "total": 98,
