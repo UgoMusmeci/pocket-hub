@@ -1,6 +1,7 @@
 import type { CatalogCard, CatalogData, CatalogSet } from '../types/catalog'
 
 const setVisualOverrides: Record<string, string> = {
+  A2: '/set-artworks/A2.jpg',
   B1a: '/set-visuals/b1a-crimson-blaze.svg',
   B2a: '/set-visuals/b2a-paldean-wonders.svg',
   B2b: '/set-visuals/b2b-mega-shine.svg',

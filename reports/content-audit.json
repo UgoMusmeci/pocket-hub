@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T11:27:24.841Z",
+  "generatedAt": "2026-08-11T07:55:53.986Z",
   "remoteCheckEnabled": false,
   "cards": {
     "total": 3761,
@@ -112,7 +112,7 @@
   },
   "decks": {
     "totalDeckIdeas": 26,
-    "totalMetaDecks": 12,
+    "totalMetaDecks": 11,
     "totalMissionDecks": 4,
     "issues": []
   },

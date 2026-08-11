@@ -92,7 +92,7 @@ export function DeckDetailPage() {
                       <article className="summary-card">
                         <p>Winrate</p>
                         <strong>{metaReference ? `${metaReference.winRate.toFixed(2)}%` : 'n/d'}</strong>
-                        <small>{metaReference ? `${metaReference.deckCount} liste tracciate` : 'Dati in aggiornamento'}</small>
+                        <small>{metaReference ? `${metaReference.deckCount} match tracciati` : 'Dati in aggiornamento'}</small>
                       </article>
                       <article className="summary-card">
                         <p>Presenza</p>
@@ -198,7 +198,7 @@ export function DeckDetailPage() {
                       <li>Archetipo di riferimento: {metaReference.archetype}</li>
                       <li>Presenza nel meta: {metaReference.share.toFixed(2)}%</li>
                       <li>Winrate: {metaReference.winRate.toFixed(2)}%</li>
-                      <li>Campione: {metaReference.deckCount} liste su {metaDeckSnapshot.tournaments} tornei</li>
+                      <li>Campione: {metaReference.deckCount} match su {metaDeckSnapshot.tournaments} tornei</li>
                     </ul>
                   </div>
                 ) : null}

@@ -47,6 +47,8 @@ $patterns = @(
   'Generated event images',
   'Processed reward assets:',
   'Mazzi sincronizzati:',
+  'Report JSON aggiornato:',
+  'Report Markdown aggiornato:',
   'Catalog written to',
   'Build completata in'
 )

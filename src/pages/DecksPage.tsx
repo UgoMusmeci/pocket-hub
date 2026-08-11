@@ -81,7 +81,7 @@ export function DecksPage() {
               <Link key={entry.slug} to={`/mazzi/${entry.slug}`} className="meta-rank-card meta-rank-card-link">
                 <div className="meta-rank-topline">
                   <span className="meta-rank-badge">#{entry.rank}</span>
-                  <span>{entry.deckCount} liste</span>
+                  <span>{entry.deckCount} match</span>
                 </div>
                 <div className="meta-rank-sprites">
                   <img

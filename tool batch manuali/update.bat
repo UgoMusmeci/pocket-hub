@@ -257,35 +257,71 @@ echo Verifico se il conflitto del rebase e' risolvibile automaticamente...
 >> "%SUMMARYFILE%" echo - Tentativo risoluzione automatica conflitti rebase
 
 git diff --name-only --diff-filter=U > "%TEMP%\pocket_hub_rebase_conflicts.txt"
+git status --porcelain > "%TEMP%\pocket_hub_rebase_status.txt"
+for %%A in ("%TEMP%\pocket_hub_rebase_conflicts.txt") do set "REBASE_CONFLICT_SIZE=%%~zA"
+for %%A in ("%TEMP%\pocket_hub_rebase_status.txt") do set "REBASE_STATUS_SIZE=%%~zA"
+
+if exist ".git\rebase-merge" (
+  if "!REBASE_CONFLICT_SIZE!"=="0" if "!REBASE_STATUS_SIZE!"=="0" (
+    set "RESOLVE_STATUS=OK"
+    > "%COMMAND_FILE%" echo @echo off
+    >> "%COMMAND_FILE%" echo set GIT_EDITOR=true
+    >> "%COMMAND_FILE%" echo git rebase --continue
+    call "%COMMAND_FILE%" > "%STEPLOG%" 2>&1
+    set "RESOLVE_EXIT=!errorlevel!"
+    type "%STEPLOG%" >> "%LOGFILE%"
+    >> "%LOGFILE%" echo.
+
+    if not "!RESOLVE_EXIT!"=="0" set "RESOLVE_STATUS=ERRORE"
+    >> "%SUMMARYFILE%" echo   - Rebase gia' aperto senza conflitti - !RESOLVE_STATUS!
+    powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\extract-log-highlights.ps1" "%STEPLOG%" >> "%SUMMARYFILE%"
+    del "%STEPLOG%" >nul 2>&1
+    del "%COMMAND_FILE%" >nul 2>&1
+    del "%TEMP%\pocket_hub_rebase_conflicts.txt" >nul 2>&1
+    del "%TEMP%\pocket_hub_rebase_status.txt" >nul 2>&1
+
+    if "!RESOLVE_EXIT!"=="0" (
+      set "REBASE_RESOLVED=1"
+      echo Rebase gia' aperto completato automaticamente.
+      exit /b 0
+    )
+  )
+)
+
 findstr /R /C:"^public/data/catalog\.json$" "%TEMP%\pocket_hub_rebase_conflicts.txt" >nul
-if errorlevel 1 (
-  >> "%SUMMARYFILE%" echo   - Nessun conflitto noto risolvibile in automatico.
+if not errorlevel 1 (
+  set "RESOLVE_STATUS=OK"
+  > "%COMMAND_FILE%" echo @echo off
+  >> "%COMMAND_FILE%" echo git checkout --theirs public/data/catalog.json
+  >> "%COMMAND_FILE%" echo git add public/data/catalog.json
+  if exist ".git\rebase-merge" (
+    >> "%COMMAND_FILE%" echo set GIT_EDITOR=true
+    >> "%COMMAND_FILE%" echo git rebase --continue
+  )
+  call "%COMMAND_FILE%" > "%STEPLOG%" 2>&1
+  set "RESOLVE_EXIT=%errorlevel%"
+  type "%STEPLOG%" >> "%LOGFILE%"
+  >> "%LOGFILE%" echo.
+
+  if not "!RESOLVE_EXIT!"=="0" set "RESOLVE_STATUS=ERRORE"
+  >> "%SUMMARYFILE%" echo   - Conflitto catalogo generato - !RESOLVE_STATUS!
+  powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\extract-log-highlights.ps1" "%STEPLOG%" >> "%SUMMARYFILE%"
+  del "%STEPLOG%" >nul 2>&1
+  del "%COMMAND_FILE%" >nul 2>&1
   del "%TEMP%\pocket_hub_rebase_conflicts.txt" >nul 2>&1
+  del "%TEMP%\pocket_hub_rebase_status.txt" >nul 2>&1
+
+  if "!RESOLVE_EXIT!"=="0" (
+    set "REBASE_RESOLVED=1"
+    echo Rebase ripristinato automaticamente usando il catalogo locale aggiornato.
+  )
+
   exit /b 0
 )
 
-set "RESOLVE_STATUS=OK"
-> "%COMMAND_FILE%" echo @echo off
->> "%COMMAND_FILE%" echo git checkout --theirs public/data/catalog.json
->> "%COMMAND_FILE%" echo git add public/data/catalog.json
->> "%COMMAND_FILE%" echo set GIT_EDITOR=true
->> "%COMMAND_FILE%" echo git rebase --continue
-call "%COMMAND_FILE%" > "%STEPLOG%" 2>&1
-set "RESOLVE_EXIT=%errorlevel%"
-type "%STEPLOG%" >> "%LOGFILE%"
->> "%LOGFILE%" echo.
-
-if not "!RESOLVE_EXIT!"=="0" set "RESOLVE_STATUS=ERRORE"
->> "%SUMMARYFILE%" echo   - Conflitto catalogo generato - !RESOLVE_STATUS!
-powershell -NoProfile -ExecutionPolicy Bypass -File "scripts\extract-log-highlights.ps1" "%STEPLOG%" >> "%SUMMARYFILE%"
-del "%STEPLOG%" >nul 2>&1
-del "%COMMAND_FILE%" >nul 2>&1
+>> "%SUMMARYFILE%" echo   - Nessun conflitto noto risolvibile in automatico.
 del "%TEMP%\pocket_hub_rebase_conflicts.txt" >nul 2>&1
-
-if "!RESOLVE_EXIT!"=="0" (
-  set "REBASE_RESOLVED=1"
-  echo Rebase ripristinato automaticamente usando il catalogo locale aggiornato.
-)
+del "%TEMP%\pocket_hub_rebase_status.txt" >nul 2>&1
 
 exit /b 0
 

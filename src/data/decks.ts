@@ -16,18 +16,18 @@ export const allDeckIdeas = [
 ]
 
 export const deckIdeas = [
-  ...deckSet1,
-  deckSet5[0],
-  deckSet5[1],
   deckSet5[2],
-  deckSet2[1],
-  deckSet2[2],
-  deckSet3[0],
-  deckSet3[3],
   deckSet4[0],
-  deckSet4[2],
-  deckSet5[3],
+  deckSet1[1],
+  deckSet2[1],
+  deckSet5[0],
+  deckSet2[3],
+  deckSet3[0],
   deckSet5[4],
+  deckSet1[3],
+  deckSet1[2],
+  deckSet3[2],
+  deckSet5[1],
 ]
 
 export { experimentalDecks }

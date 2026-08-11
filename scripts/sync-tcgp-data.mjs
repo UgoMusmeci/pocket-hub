@@ -56,6 +56,10 @@ const LOCALIZED_SET_NAMES = {
   'P-B': 'Promo-B',
 }
 const MANUAL_SET_OVERRIDES = {
+  A2: {
+    packArt: 'https://www.serebii.net/tcgpocket/space-timesmackdown/dialga.jpg',
+    localPackArt: '/set-artworks/A2.jpg',
+  },
   B2b: {
     releaseDate: 'March 26, 2026',
   },

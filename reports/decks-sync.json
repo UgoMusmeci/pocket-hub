@@ -1,0 +1,143 @@
+{
+  "generatedAt": "2026-08-11T07:48:09.097Z",
+  "metaSnapshot": {
+    "generatedAtLabel": "10/08/2026",
+    "tournaments": 105,
+    "players": 0,
+    "matches": 48053,
+    "sourceLabel": "Pokemon Zone / Limitless Pocket",
+    "sourceUrl": "https://www.pokemon-zone.com/decks/?name=2026"
+  },
+  "counts": {
+    "editorial": 12,
+    "indexed": 26,
+    "competitive": 11,
+    "mission": 4,
+    "experimental": 3
+  },
+  "competitiveTop": [
+    {
+      "rank": 1,
+      "archetype": "Zoroark ex e Mega Absol ex",
+      "winRate": 52.7,
+      "share": 1.7,
+      "referenceDeckSlug": "zoroark-ex-mega-absol-ex"
+    },
+    {
+      "rank": 2,
+      "archetype": "Greninja ex e Suicune ex",
+      "winRate": 51.4,
+      "share": 0.23,
+      "referenceDeckSlug": "greninja-ex-suicune-ex"
+    },
+    {
+      "rank": 3,
+      "archetype": "Chien-Pao ex e Baxcalibur",
+      "winRate": 51.1,
+      "share": 6.72,
+      "referenceDeckSlug": "chien-pao-ex-baxcalibur"
+    },
+    {
+      "rank": 4,
+      "archetype": "Magnezone e Miraidon ex",
+      "winRate": 49.9,
+      "share": 0.79,
+      "referenceDeckSlug": "bellibolt-ex-magnezone"
+    },
+    {
+      "rank": 5,
+      "archetype": "Mega Lucario ex e Lucario",
+      "winRate": 49.4,
+      "share": 5.41,
+      "referenceDeckSlug": "mega-lucario-ex-lucario"
+    },
+    {
+      "rank": 6,
+      "archetype": "Mega Altaria ex e Gourgeist",
+      "winRate": 49.2,
+      "share": 0.55,
+      "referenceDeckSlug": "mega-altaria-ex-gourgeist"
+    },
+    {
+      "rank": 7,
+      "archetype": "Mega Manectric ex e Zeraora",
+      "winRate": 49,
+      "share": 1.02,
+      "referenceDeckSlug": "mega-manectric-ex-zeraora"
+    },
+    {
+      "rank": 8,
+      "archetype": "Mega Charizard Y ex e Entei ex",
+      "winRate": 48.9,
+      "share": 1.08,
+      "referenceDeckSlug": "mega-charizard-y-ex-entei-ex"
+    }
+  ],
+  "suggestedGuides": [
+    {
+      "slug": "zoroark-ex-mega-absol-ex",
+      "name": "Zoroark ex e Mega Absol ex",
+      "tier": "A",
+      "updatedAt": "28 aprile 2026"
+    },
+    {
+      "slug": "greninja-ex-suicune-ex",
+      "name": "Greninja ex e Suicune ex",
+      "tier": "A",
+      "updatedAt": "26 marzo 2026"
+    },
+    {
+      "slug": "chien-pao-ex-baxcalibur",
+      "name": "Chien-Pao ex e Baxcalibur",
+      "tier": "S",
+      "updatedAt": "27 marzo 2026"
+    },
+    {
+      "slug": "bellibolt-ex-magnezone",
+      "name": "Bellibolt ex e Magnezone",
+      "tier": "A+",
+      "updatedAt": "26 marzo 2026"
+    },
+    {
+      "slug": "mega-lucario-ex-lucario",
+      "name": "Mega Lucario ex e Lucario",
+      "tier": "A",
+      "updatedAt": "28 aprile 2026"
+    },
+    {
+      "slug": "mega-altaria-ex-gourgeist",
+      "name": "Mega Altaria ex e Gourgeist",
+      "tier": "A+",
+      "updatedAt": "27 marzo 2026"
+    },
+    {
+      "slug": "mega-manectric-ex-zeraora",
+      "name": "Mega Manectric ex e Zeraora",
+      "tier": "A",
+      "updatedAt": "27 marzo 2026"
+    },
+    {
+      "slug": "mega-charizard-y-ex-entei-ex",
+      "name": "Mega Charizard Y ex e Entei ex",
+      "tier": "B",
+      "updatedAt": "27 marzo 2026"
+    }
+  ],
+  "experimentalHighlights": [
+    {
+      "slug": "bellibolt-ex-oricorio-pressure-lab",
+      "name": "Bellibolt ex e Oricorio Pressure Lab",
+      "updatedAt": "29 luglio 2026"
+    },
+    {
+      "slug": "greninja-ex-suicune-ex-attrito",
+      "name": "Greninja ex e Suicune ex Attrito",
+      "updatedAt": "29 luglio 2026"
+    },
+    {
+      "slug": "gourgeist-houndstone-darkrai-pivot",
+      "name": "Gourgeist e Houndstone Darkrai Pivot",
+      "updatedAt": "29 luglio 2026"
+    }
+  ]
+}

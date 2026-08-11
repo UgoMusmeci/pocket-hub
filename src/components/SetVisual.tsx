@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import type { CatalogSet } from '../types/catalog'
 import { getSetVisualUrl } from '../lib/catalog'
 
@@ -18,15 +19,26 @@ const presetMap: Record<string, string> = {
 
 export function SetVisual({ set, size = 'default' }: SetVisualProps) {
   const visualUrl = getSetVisualUrl(set)
+  const [imageFailed, setImageFailed] = useState(false)
   const words = set.name.split(' ')
   const firstLine = words.slice(0, Math.ceil(words.length / 2)).join(' ')
   const secondLine = words.slice(Math.ceil(words.length / 2)).join(' ')
   const presetClass = presetMap[set.id] ?? 'preset-default'
 
-  if (visualUrl) {
+  useEffect(() => {
+    setImageFailed(false)
+  }, [set.id, visualUrl])
+
+  if (visualUrl && !imageFailed) {
     return (
       <div className={`set-visual-image-shell set-visual-${size}`.trim()} aria-label={set.name}>
-        <img src={visualUrl} alt={`Artwork bustina ${set.name}`} className="set-visual-image" loading="lazy" />
+        <img
+          src={visualUrl}
+          alt={`Artwork bustina ${set.name}`}
+          className="set-visual-image"
+          loading="lazy"
+          onError={() => setImageFailed(true)}
+        />
       </div>
     )
   }
