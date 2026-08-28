@@ -1,6 +1,6 @@
 # Report sincronizzazione mazzi
 
-Generato il: 2026-08-25T08:50:06.605Z
+Generato il: 2026-08-28T10:29:56.139Z
 
 ## Totali
 - Guide editoriali: 12
